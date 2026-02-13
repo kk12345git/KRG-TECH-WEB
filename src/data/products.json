@@ -1,0 +1,647 @@
+[
+    {
+        "id": "gen-surgical-drape-pack",
+        "name": "General Surgical Drape Pack",
+        "category": "general-surgery-drapes",
+        "material": "SMS 45 GSM",
+        "size": "Standard Set",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "200 Packs",
+        "features": [
+            "Essential for general surgery",
+            "High fluid control",
+            "Adhesive secure edges"
+        ],
+        "description": "Standard sterile pack containing essential drapes for general surgical intervention.",
+        "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "mini-drape-pack",
+        "name": "Mini Drape Pack",
+        "category": "general-surgery-drapes",
+        "material": "SMS / Spunbond",
+        "size": "Compact Set",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "500 Packs",
+        "features": [
+            "Ideal for minor procedures",
+            "Cost-effective",
+            "Rapid deployment"
+        ],
+        "description": "Compact sterile pack for minor surgical and clinical procedures.",
+        "image": "https://images.unsplash.com/photo-1579154235828-ac01eefe3e8e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "universal-drape-pack",
+        "name": "Universal Drape Pack",
+        "category": "general-surgery-drapes",
+        "material": "High-Performance SMS",
+        "size": "Comprehensive Set",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "150 Packs",
+        "features": [
+            "Versatile for multiple specialties",
+            "Maximum fluid absorption",
+            "AAMI Level 3 protection"
+        ],
+        "description": "Comprehensive universal pack designed for a wide variety of surgical procedures.",
+        "image": "https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "hb-sag-drape-pack",
+        "name": "Hb SAG Drape Pack",
+        "category": "general-surgery-drapes",
+        "material": "Specialized SMS",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "200 Packs",
+        "features": [
+            "Specialized SAG application",
+            "Superior barrier properties",
+            "Optimized clinical design"
+        ],
+        "description": "Specialized SAG drape pack engineered for high-barrier surgical requirements.",
+        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "hiv-protection-drape-kit",
+        "name": "HIV Protection Drape kit",
+        "category": "general-surgery-drapes",
+        "material": "Reinforced Impermeable",
+        "size": "Standard Kit",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "100 Kits",
+        "features": [
+            "Maximum personnel protection",
+            "Total fluid barrier",
+            "High-safety disposables"
+        ],
+        "description": "Reinforced protection kit designed for procedures with high risk of fluid-borne pathogens.",
+        "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": "ortho-drape-pack",
+        "name": "Ortho Drape pack (with 5 gown & 3 gown)",
+        "category": "ortho-surgery-drapes",
+        "material": "Reinforced SMS",
+        "size": "Large Set",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "100 Packs",
+        "features": [
+            "Includes 5 or 3 Gowns",
+            "Reinforced zones for Ortho",
+            "U-Drapes & Limb sleeves"
+        ],
+        "description": "Primary orthopedic pack including gowns and specialized limb drapes for major bone surgery.",
+        "image": "https://images.unsplash.com/photo-1631815541542-e8fc9529598e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "knee-o-drape",
+        "name": "Knee O Drape",
+        "category": "ortho-surgery-drapes",
+        "material": "Flexible SMS",
+        "size": "Dedicated Knee",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "150 Packs",
+        "features": [
+            "Circular fenestration",
+            "Integrated fluid collection",
+            "Excellent drapeability"
+        ],
+        "description": "Procedure-specific drape for knee surgery and interventions.",
+        "image": "https://images.unsplash.com/photo-1549479366-2e860bc4b92b?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "hip-u-drape",
+        "name": "Hip U Drape",
+        "category": "ortho-surgery-drapes",
+        "material": "Heavy-duty SMS",
+        "size": "Dedicated Hip",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "150 Packs",
+        "features": [
+            "U-split design for hip access",
+            "Reinforced adhesive zones",
+            "High fluid management"
+        ],
+        "description": "Specialized U-shaped drape optimized for hip replacement and trauma surgery.",
+        "image": "https://images.unsplash.com/photo-1579684453423-f8ff34692f82?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "tkr-drape-pack",
+        "name": "TKR - Total Knee Replacement Drape Pack",
+        "category": "ortho-surgery-drapes",
+        "material": "Maximum Protection SMS",
+        "size": "Full Procedure Set",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "100 Packs",
+        "features": [
+            "Total knee replacement focus",
+            "Includes limb sleeves",
+            "Enhanced fluid collection pouches"
+        ],
+        "description": "Premium procedure pack for total knee arthroplasty.",
+        "image": "https://images.unsplash.com/photo-1584622781564-1d9876a13d1e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "thr-drape-pack",
+        "name": "THR - Total Hip Replacement Drape Pack",
+        "category": "ortho-surgery-drapes",
+        "material": "Maximum Protection SMS",
+        "size": "Full Procedure Set",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "100 Packs",
+        "features": [
+            "Total hip replacement focus",
+            "Impermeable barrier",
+            "Integrated leg stockings"
+        ],
+        "description": "Premium procedure pack for total hip arthroplasty.",
+        "image": "https://images.unsplash.com/photo-1576091160550-2173bdd99602?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "knee-arthroscopy",
+        "name": "Knee Arthroscopy",
+        "category": "ortho-surgery-drapes",
+        "material": "Fluid-Control SMS",
+        "size": "Single Drape",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "200 Units",
+        "features": [
+            "Elastic fenestration",
+            "Large fluid collection pouch",
+            "Matte finish to reduce glare"
+        ],
+        "description": "Specialized drape for arthroscopic knee procedures.",
+        "image": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "shoulder-arthroscopy",
+        "name": "Shoulder Arthroscopy",
+        "category": "ortho-surgery-drapes",
+        "material": "Fluid-Control SMS",
+        "size": "Single Drape",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "200 Units",
+        "features": [
+            "Lateral or beach-chair position",
+            "Integrated tubing organizers",
+            "Maximum fluid containment"
+        ],
+        "description": "Specialized drape optimized for arthroscopic shoulder surgery.",
+        "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "lscs-drape-pack",
+        "name": "LSCS Drape pack",
+        "category": "gynae-surgery-drapes",
+        "material": "Amniotic-Control SMS",
+        "size": "Full OBG Set",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "200 Packs",
+        "features": [
+            "Large fluid collection pouch",
+            "Integrated incise film",
+            "Complete neonatal care access"
+        ],
+        "description": "Comprehensive sterile pack for Cesarean section procedures.",
+        "image": "https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "delivery-drape-pack",
+        "name": "Delivery Drape pack",
+        "category": "gynae-surgery-drapes",
+        "material": "Highly Absorbent Spunbond",
+        "size": "Hospital Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "250 Packs",
+        "features": [
+            "Under-buttock drape with pouch",
+            "Abdominal drape",
+            "Leggings included"
+        ],
+        "description": "Essential sterile pack for normal vaginal delivery procedures.",
+        "image": "https://images.unsplash.com/photo-1581056399312-60381aa0b5c0?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "dnc-drape-kit",
+        "name": "DNC Drape kit",
+        "category": "gynae-surgery-drapes",
+        "material": "Lightweight SMS",
+        "size": "Compact Kit",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "300 Kits",
+        "features": [
+            "Optimized for D&C",
+            "High-hygiene barrier",
+            "Compact packaging"
+        ],
+        "description": "Specialized drape kit for Dilation and Curettage procedures.",
+        "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "hystro-lap-pouch",
+        "name": "Hystro lap pouch",
+        "category": "gynae-surgery-drapes",
+        "material": "Impermeable Film/SMS",
+        "size": "Dedicated Drape",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "200 Units",
+        "features": [
+            "Fluid collection for laparoscopy",
+            "Strong adhesive contact",
+            "Transparent pouch"
+        ],
+        "description": "Specialized collection pouch for hysteroscopic and laparoscopic gynecology.",
+        "image": "https://images.unsplash.com/photo-1584622781564-1d9876a13d1e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "perineal-drape-kit",
+        "name": "Perineal Drape kit",
+        "category": "gynae-surgery-drapes",
+        "material": "Barrier SMS",
+        "size": "Standard Kit",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "250 Kits",
+        "features": [
+            "Perineal access focus",
+            "Integrated leggings",
+            "Fluid redirection properties"
+        ],
+        "description": "Kit designed for varied perineal surgical interventions.",
+        "image": "https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "maternity-mat",
+        "name": "Maternity Mat",
+        "category": "gynae-surgery-drapes",
+        "material": "Super Absorbent Core",
+        "size": "Standard",
+        "sterilization": "Non-Sterile / Sterile",
+        "customizable": true,
+        "moq": "1000 Units",
+        "features": [
+            "High absorption capacity",
+            "Soft non-woven topsheet",
+            "Leak-proof backing"
+        ],
+        "description": "Hygienic absorbent mats for post-delivery and ward use.",
+        "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "cabg-drape-packs",
+        "name": "CABG Drape Packs",
+        "category": "other-surgery-drapes",
+        "material": "Cardio-Reinforced SMS",
+        "size": "Large Set",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "50 Packs",
+        "features": [
+            "Coronary artery bypass focus",
+            "Dual artery access drapes",
+            "High-compliance barrier"
+        ],
+        "description": "High-complexity pack for open-heart surgery.",
+        "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": "urology-drape-packs",
+        "name": "Urology Drape Packs",
+        "category": "other-surgery-drapes",
+        "material": "Fluid-Barrier SMS",
+        "size": "Standard Set",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "150 Packs",
+        "features": [
+            "Specialized urological access",
+            "Integrated finger cots",
+            "Maximum fluid management"
+        ],
+        "description": "Specialized packs for transurethral and general urology.",
+        "image": "https://images.unsplash.com/photo-1631815541542-e8fc9529598e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "neurology-drape-packs",
+        "name": "Neurology Drape Packs",
+        "category": "other-surgery-drapes",
+        "material": "Precision SMS",
+        "size": "Dedicated Neuro",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "100 Packs",
+        "features": [
+            "Craniotomy fenestration",
+            "Integrated fluid collection",
+            "Tangle-free hose organizers"
+        ],
+        "description": "Procedure-specific drapes for neurosurgery.",
+        "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "anglo-drape-packs",
+        "name": "Anglo Drape Packs",
+        "category": "other-surgery-drapes",
+        "material": "Barrier SMS",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "100 Packs"
+    },
+    {
+        "id": "lavh-drape-kit",
+        "name": "LAVH Drape Kit",
+        "category": "other-surgery-drapes",
+        "material": "Specialized SMS",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "100 Packs"
+    },
+    {
+        "id": "renal-transplant-packs",
+        "name": "Renal Transplant Packs",
+        "category": "other-surgery-drapes",
+        "material": "High-Barrier SMS",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "50 Packs"
+    },
+    {
+        "id": "cystoscopy-drape-packs",
+        "name": "Cystoscopy Drape Packs",
+        "category": "other-surgery-drapes",
+        "material": "SMS",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "150 Packs"
+    },
+    {
+        "id": "embryo-transplant-packs",
+        "name": "Embryo Transplant Packs",
+        "category": "other-surgery-drapes",
+        "material": "Soft Spunbond",
+        "size": "Compact",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "100 Packs"
+    },
+    {
+        "id": "egg-collection-packs",
+        "name": "Egg Collection Packs",
+        "category": "other-surgery-drapes",
+        "material": "Soft Spunbond",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "100 Packs"
+    },
+    {
+        "id": "ivf-drape-packs",
+        "name": "IVF Drape Packs",
+        "category": "other-surgery-drapes",
+        "material": "Medical Grade SMS",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "100 Packs"
+    },
+    {
+        "id": "ocr-et-packs",
+        "name": "OCR -ET Packs",
+        "category": "other-surgery-drapes",
+        "material": "SMS",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "100 Packs"
+    },
+    {
+        "id": "laparoscopy-drape-packs",
+        "name": "Laparoscopy Drape Packs",
+        "category": "other-surgery-drapes",
+        "material": "Impermeable SMS",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "200 Packs"
+    },
+    {
+        "id": "pcnl-drape",
+        "name": "PCNL Drape",
+        "category": "other-surgery-drapes",
+        "material": "Fluid-Control SMS",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "150 Units"
+    },
+    {
+        "id": "turp-drape",
+        "name": "TURP Drape",
+        "category": "other-surgery-drapes",
+        "material": "UID-Fluid Barrier",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "150 Units"
+    },
+    {
+        "id": "bed-sheet-sms-pillow",
+        "name": "Disposable Bed Sheets With Pillow Cover - SMS",
+        "category": "bed-sheets",
+        "material": "SMS 30-40 GSM",
+        "size": "Standard / Customizable",
+        "sterilization": "Non-Sterile",
+        "customizable": true,
+        "moq": "1000 Sets",
+        "features": [
+            "Includes matching pillow cover",
+            "High fluid repellency",
+            "Soft, linen-like feel"
+        ],
+        "description": "Premium SMS bed sheet set designed for patient comfort and maximum hygiene barrier.",
+        "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "bed-sheet-pp-pillow",
+        "name": "Disposable Bed Sheets With Pillow Cover - PP SPUN BOND",
+        "category": "bed-sheets",
+        "material": "PP Spunbond",
+        "size": "Standard / Customizable",
+        "sterilization": "Non-Sterile",
+        "customizable": true,
+        "moq": "2000 Sets",
+        "features": [
+            "Lightweight and breathable",
+            "Cost-effective for short stays",
+            "Eco-friendly PP material"
+        ],
+        "description": "Standard PP Spunbond bed sheet set for clinics and clinical examination rooms.",
+        "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "gown-sms-standard",
+        "name": "Surgeon Gowns - SMS Standard",
+        "category": "surgeon-gowns",
+        "material": "SMS 43 GSM",
+        "size": "L, XL, XXL",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "500 Units",
+        "features": [
+            "AAMI Level 3 Protection",
+            "Knitted soft cuffs",
+            "Generous cut for movement"
+        ],
+        "description": "Standard clinical surgeon gown for general surgical protocols.",
+        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "gown-sms-reinforced",
+        "name": "Surgeon Gowns - SMS - Wrap around + Reinforced",
+        "category": "surgeon-gowns",
+        "material": "Reinforced SMS",
+        "size": "L, XL",
+        "sterilization": "Sterile (ETO)",
+        "customizable": true,
+        "moq": "200 Units",
+        "features": [
+            "AAMI Level 4 critical zones",
+            "Liquid-repellent chest/sleeves",
+            "Maximum barrier for high-fluid cases"
+        ],
+        "description": "Top-tier reinforced gown for high-risk, high-fluid surgical interventions.",
+        "image": "https://images.unsplash.com/photo-1631815541542-e8fc9529598e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "large-sheet",
+        "name": "Large Sheet",
+        "category": "ancillary-disposables",
+        "material": "SMS 45 GSM",
+        "size": "150 x 200 cm",
+        "sterilization": "Sterile (ETO)",
+        "moq": "500 Units",
+        "description": "Universal sterile large sheet for surgical field coverage and patient draping.",
+        "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "center-hole-sheet",
+        "name": "Center Hole Sheet",
+        "category": "ancillary-disposables",
+        "material": "SMS / Spunbond",
+        "size": "90 x 120 cm",
+        "sterilization": "Sterile (ETO)",
+        "moq": "500 Units",
+        "description": "Fenestrated sterile sheet for localized surgical access and isolation.",
+        "image": "https://images.unsplash.com/photo-1579684385127-1ef15d5f14af?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "mayo-cover",
+        "name": "Mayo Cover",
+        "category": "ancillary-disposables",
+        "material": "Poly-Lined SMS",
+        "size": "Standard",
+        "sterilization": "Sterile (ETO)",
+        "moq": "200 Units",
+        "description": "Reinforced mayo stand cover for sterile instrument management in the OR.",
+        "image": "https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "c-arm-cover",
+        "name": "C-Arm Cover",
+        "category": "ancillary-disposables",
+        "material": "Clear Polyethylene",
+        "size": "Universal Fit",
+        "sterilization": "Sterile (ETO)",
+        "moq": "100 Units",
+        "description": "Disposable sterile cover for C-Arm imaging systems, ensuring aseptic intraoperative imaging.",
+        "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+        "id": "leggings",
+        "name": "Leggings",
+        "category": "ancillary-disposables",
+        "material": "SMS",
+        "size": "Pair (Standard)",
+        "sterilization": "Sterile (ETO)",
+        "moq": "400 Pairs",
+        "description": "Fluid-resistant surgical leggings for lithotomy and lower limb procedures.",
+        "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "camera-cover",
+        "name": "Camera Cover",
+        "category": "ancillary-disposables",
+        "material": "HDPE Film",
+        "size": "15 x 250 cm",
+        "sterilization": "Sterile (ETO)",
+        "moq": "200 Units",
+        "description": "Telescopic camera cover for laparoscopic and endoscopic camera systems.",
+        "image": "https://images.unsplash.com/photo-1579154235828-ac01eefe3e8e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "shoe-cover",
+        "name": "Shoe Cover",
+        "category": "ancillary-disposables",
+        "material": "CPE / Non-Woven",
+        "size": "Universal",
+        "sterilization": "Non-Sterile",
+        "moq": "5000 Pairs",
+        "description": "Anti-skid, high-durability shoe covers for clinical and cleanroom environments.",
+        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "trolley-sheet",
+        "name": "Trolley Sheet",
+        "category": "ancillary-disposables",
+        "material": "Spunbond PP",
+        "size": "120 x 210 cm",
+        "sterilization": "Non-Sterile / Sterile",
+        "moq": "1000 Units",
+        "description": "Disposable trolley sheets for patient transport and equipment coverage.",
+        "image": "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "poly-apron",
+        "name": "Apron",
+        "category": "ancillary-disposables",
+        "material": "LDPE / Poly",
+        "size": "Standard Pack",
+        "sterilization": "Non-Sterile",
+        "moq": "2000 Units",
+        "description": "Liquid-proof protective aprons for debridement, cleaning, and laboratory use.",
+        "image": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        "id": "under-pad",
+        "name": "Under Pad",
+        "category": "ancillary-disposables",
+        "material": "SAP Absorbent Core",
+        "size": "60 x 90 cm",
+        "sterilization": "Non-Sterile",
+        "moq": "1000 Units",
+        "description": "Super-absorbent under pads for surface protection and patient hygiene management.",
+        "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800"
+    }
+]

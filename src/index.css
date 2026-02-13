@@ -1,0 +1,148 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Lexend:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-medical-50: #f0f7ff;
+  --color-medical-100: #e0effe;
+  --color-medical-200: #bae0fd;
+  --color-medical-300: #7cc7fb;
+  --color-medical-400: #36a9f7;
+  --color-medical-500: #0c8de6;
+  --color-medical-600: #006ec1;
+  --color-medical-700: #0055a4;
+  /* Primary Medical Blue */
+  --color-medical-800: #064987;
+  --color-medical-900: #0b3e70;
+  --color-medical-950: #07274a;
+
+  --font-sans: "Outfit", "Inter", "system-ui", "sans-serif";
+  --font-brand: "Space Grotesk", sans-serif;
+  --font-medifabb: "Lexend", sans-serif;
+
+  /* True Brand Colors from Image Audit */
+  --color-brand-red: #e91e63;
+  --color-brand-green: #22c55e;
+
+  /* Premium Design Tokens */
+  --shadow-premium: 0 20px 50px rgba(0, 85, 164, 0.05);
+  --ease-premium: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+:root {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #1e293b;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #1e293b;
+  background-color: #ffffff;
+  /* Clean white background */
+}
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-black text-slate-900 tracking-tighter;
+    color: #0f172a;
+    /* Force dark slate for headings */
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 backdrop-blur-lg border border-white/20 shadow-xl;
+  }
+
+  .glass-dark {
+    @apply bg-slate-900/80 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+
+  .premium-shadow {
+    @apply shadow-premium;
+  }
+
+  .text-gradient {
+    color: var(--color-medical-700);
+    background-image: linear-gradient(to right, var(--color-medical-700), var(--color-medical-500));
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    .text-gradient {
+      @apply text-transparent;
+    }
+  }
+
+  .hover-lift {
+    @apply transition-all duration-500 ease-premium hover:-translate-y-2 hover:shadow-2xl;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 85, 164, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 85, 164, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 85, 164, 0);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite;
+}
+
+.hot-cta {
+  @apply relative overflow-hidden transition-all duration-300 active:scale-95 shadow-xl hover:shadow-medical-700/30;
+}
+
+.hot-cta::after {
+  content: '';
+  @apply absolute inset-0 bg-white opacity-0 transition-opacity duration-300;
+}
+
+.hot-cta:hover::after {
+  @apply opacity-10;
+}
