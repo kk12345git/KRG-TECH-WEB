@@ -52,7 +52,7 @@ export default function Contact() {
     const prevStep = () => setStep(s => s - 1);
 
     const onSubmit = async (data) => {
-        console.log('[B2B LEAD CAPTURE]:', data);
+
         await new Promise(resolve => setTimeout(resolve, 2000));
         setSubmitted(true);
     };

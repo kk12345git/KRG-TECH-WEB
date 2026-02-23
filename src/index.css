@@ -25,7 +25,14 @@
 
   /* Premium Design Tokens */
   --shadow-premium: 0 20px 50px rgba(0, 85, 164, 0.05);
+  --shadow-elite: 0 40px 80px rgba(0, 0, 0, 0.1);
   --ease-premium: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* Glassmorphism 2.0 */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
 }
 
 :root {
@@ -95,6 +102,30 @@ body {
   .hover-lift {
     @apply transition-all duration-500 ease-premium hover:-translate-y-2 hover:shadow-2xl;
   }
+
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .bento-item {
+    @apply relative overflow-hidden rounded-[2.5rem] border border-slate-100 bg-white p-8 transition-all duration-500 ease-premium hover:shadow-elite;
+  }
+
+  .elite-glow {
+    @apply absolute -inset-[100%] opacity-0 transition-opacity duration-1000 group-hover:opacity-100;
+    background: radial-gradient(circle at center, var(--color-medical-400) 0%, transparent 70%);
+    filter: blur(80px);
+  }
+
+  .glass-2 {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+  }
 }
 
 /* Custom animations */
@@ -145,4 +176,18 @@ body {
 
 .hot-cta:hover::after {
   @apply opacity-10;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
 }

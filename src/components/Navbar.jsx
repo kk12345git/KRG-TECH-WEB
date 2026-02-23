@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Bars3Icon, XMarkIcon, UserCircleIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline';
 import { useAuth } from '../context/AuthContext';
-// import logo from '../assets/logo.png';
 
 const navigation = [
     { name: 'About Us', href: '/about' },
@@ -16,8 +16,17 @@ const navigation = [
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const { user, logout, isAuthenticated } = useAuth();
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 20);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const handleLogout = () => {
         logout();
@@ -25,8 +34,8 @@ export default function Navbar() {
     };
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-[100] px-6 py-4 pointer-events-none">
-            <nav className="mx-auto max-w-7xl glass h-16 rounded-2xl flex items-center justify-between px-6 pointer-events-auto" aria-label="Global">
+        <header className="fixed top-0 left-0 right-0 z-[100] px-6 py-4 pointer-events-none transition-all duration-500">
+            <nav className={`mx-auto max-w-7xl h-16 rounded-2xl flex items-center justify-between px-6 pointer-events-auto transition-all duration-500 ${isScrolled ? 'glass-2 py-2' : 'bg-transparent'}`} aria-label="Global">
                 <div className="flex lg:flex-1">
                     <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2 group">
                         <div className="flex flex-col leading-[0.7] items-start">
@@ -50,10 +59,13 @@ export default function Navbar() {
                         <Link
                             key={item.name}
                             to={item.href}
-                            className="text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-medical-700 transition-all relative group"
+                            className={`text-[10px] font-black uppercase tracking-widest transition-all relative group ${isScrolled ? 'text-slate-600' : 'text-slate-500 hover:text-white'}`}
                         >
                             {item.name}
-                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-medical-700 transition-all group-hover:w-full"></span>
+                            <motion.span
+                                className="absolute -bottom-1 left-0 w-0 h-0.5 bg-medical-700 transition-all group-hover:w-full"
+                                whileHover={{ width: '100%' }}
+                            ></motion.span>
                         </Link>
                     ))}
 

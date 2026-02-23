@@ -5,7 +5,7 @@
 
 export const useB2BAnalytics = () => {
     const trackConversion = (type, details) => {
-        console.log(`[B2B ANALYTICS] Conversion: ${type}`, details);
+
         // In production, this would trigger GTM, Meta Pixel, or LinkedIn Insight tags.
         if (typeof window.gtag !== 'undefined') {
             window.gtag('event', 'b2b_conversion', {

@@ -1,5 +1,13 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import {
+    CheckBadgeIcon,
+    GlobeAsiaAustraliaIcon,
+    TruckIcon,
+    ShieldCheckIcon,
+    BeakerIcon,
+    SparklesIcon
+} from '@heroicons/react/24/outline';
 
 // Simplified intersection observer hook
 function useInView(options = {}) {
@@ -29,35 +37,35 @@ function useInView(options = {}) {
     return [setRef, inView];
 }
 
+const badges = [
+    { icon: <CheckBadgeIcon className="w-8 h-8" />, label: 'ISO 13485:2016', sublabel: 'Certified Excellence' },
+    { icon: <GlobeAsiaAustraliaIcon className="w-8 h-8" />, label: '500+ Hubs', sublabel: 'Global Network' },
+    { icon: <SparklesIcon className="w-8 h-8" />, label: 'CE Marked', sublabel: 'EU MDR Compliant' },
+    { icon: <TruckIcon className="w-8 h-8" />, label: 'Clinical Logic', sublabel: '2-3 Day Fulfillment' },
+    { icon: <ShieldCheckIcon className="w-8 h-8" />, label: '100% Sterile', sublabel: 'ETO Validated' },
+    { icon: <BeakerIcon className="w-8 h-8" />, label: 'SMS Barrier', sublabel: 'Level 4 Tech' }
+];
+
 export function TrustBadges() {
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.1
-    });
-
-    const badges = [
-        { icon: '🏆', label: 'ISO 13485:2016', sublabel: 'Certified' },
-        { icon: '🌍', label: '500+', sublabel: 'Hospitals Served' },
-        { icon: '✓', label: 'CE Marked', sublabel: 'EU Compliant' },
-        { icon: '⚡', label: '2-3 Days', sublabel: 'Fast Delivery' },
-        { icon: '🔒', label: '100%', sublabel: 'Sterility Assured' },
-        { icon: '♻️', label: 'Eco-Friendly', sublabel: 'Manufacturing' }
-    ];
-
     return (
-        <div ref={ref} className="py-12 bg-slate-50/50 border-y border-slate-100">
+        <div className="py-20 bg-white border-y border-slate-100">
             <div className="mx-auto max-w-7xl px-6">
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12">
                     {badges.map((badge, index) => (
                         <motion.div
                             key={badge.label}
-                            animate={inView ? { opacity: 1, y: 0 } : {}}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="text-center p-4 bg-white rounded-2xl border border-slate-100 hover:border-medical-200 hover:shadow-md transition-all"
+                            whileHover={{ scale: 1.05 }}
+                            className="text-center group"
                         >
-                            <div className="text-3xl mb-2">{badge.icon}</div>
-                            <p className="font-black text-slate-900 text-sm uppercase tracking-tight">{badge.label}</p>
-                            <p className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">{badge.sublabel}</p>
+                            <div className="w-16 h-16 mx-auto bg-slate-50 rounded-2xl flex items-center justify-center mb-6 text-slate-400 group-hover:text-medical-700 group-hover:bg-medical-50 transition-all duration-500">
+                                {badge.icon}
+                            </div>
+                            <p className="font-black text-slate-900 text-xs uppercase tracking-[0.2em] mb-1">{badge.label}</p>
+                            <p className="text-[10px] text-slate-400 uppercase tracking-widest font-black">{badge.sublabel}</p>
                         </motion.div>
                     ))}
                 </div>
@@ -67,7 +75,7 @@ export function TrustBadges() {
 }
 
 export function AnimatedCounter({ end, duration = 2, suffix = '' }) {
-    const [ref, inView] = useInView({
+    const [setRef, inView] = useInView({
         triggerOnce: true,
         threshold: 0.5
     });
@@ -92,7 +100,7 @@ export function AnimatedCounter({ end, duration = 2, suffix = '' }) {
     }, [inView, end, duration]);
 
     return (
-        <span ref={ref}>
+        <span ref={setRef}>
             {count}{suffix}
         </span>
     );

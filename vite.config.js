@@ -8,6 +8,16 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    // Suggestion: Add vite-plugin-sitemap for Phase 5 SEO automation
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'framer-motion'],
+          icons: ['@heroicons/react'],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+  },
 });

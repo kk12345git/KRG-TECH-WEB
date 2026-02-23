@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
     ShieldCheckIcon,
@@ -49,41 +50,47 @@ export default function Home() {
                 description="KRG Medifabb is an ISO 13485:2016 certified manufacturer of premium surgical drapes, customized packs, and medical disposables. Serving global hospital networks with clinical excellence."
             />
             {/* Minimalist Hero Section */}
-            <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32">
-                <div className="absolute inset-0 z-0">
-                    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-medical-50 rounded-full blur-[120px] opacity-60 -translate-y-1/2 translate-x-1/2"></div>
-                    <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-medical-100 rounded-full blur-[100px] opacity-40 translate-y-1/2 -translate-x-1/2"></div>
+            <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 min-h-screen flex items-center">
+                <div className="absolute inset-0 z-0 overflow-hidden">
+                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-medical-50 rounded-full blur-[150px] opacity-60 -translate-y-1/2 translate-x-1/2 animate-pulse"></div>
+                    <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-medical-100/50 rounded-full blur-[120px] opacity-40 translate-y-1/2 -translate-x-1/2"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--color-medical-50)_0%,_transparent_70%)] opacity-30"></div>
                 </div>
 
-                <div className="mx-auto max-w-7xl px-6 relative z-10">
+                <div className="mx-auto max-w-7xl px-6 relative z-10 w-full">
                     <div className="lg:flex lg:items-center lg:gap-24">
-                        <div className="max-w-2xl">
-                            <div className="flex items-center gap-3 mb-8">
-                                <span className="h-px w-10 bg-medical-700"></span>
-                                <span className="text-[10px] font-black uppercase tracking-[0.4em] text-medical-700">ISO 13485:2016 Certified</span>
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="max-w-3xl"
+                        >
+                            <div className="flex items-center gap-3 mb-10">
+                                <span className="h-0.5 w-12 bg-medical-700"></span>
+                                <span className="text-[12px] font-black uppercase tracking-[0.5em] text-medical-700">Enterprise Standard 2026</span>
                             </div>
-                            <h1 className="text-6xl sm:text-8xl font-black text-slate-900 leading-[0.9] uppercase tracking-tighter mb-8">
+                            <h1 className="text-7xl sm:text-9xl font-black text-slate-900 leading-[0.85] uppercase tracking-tighter mb-10">
                                 Clinical <br />
-                                <span className="text-gradient">Precision.</span>
+                                <span className="text-gradient">Authority.</span>
                             </h1>
-                            <p className="text-lg sm:text-xl text-slate-500 leading-relaxed mb-12 max-w-lg">
-                                High-performance surgical disposables manufactured in state-of-the-art cleanrooms. Excellence in medical textiles for global healthcare.
+                            <p className="text-xl sm:text-2xl text-slate-500 leading-relaxed mb-16 max-w-xl font-light">
+                                Engineering the future of sterile surgery with high-performance medical textiles and precision-grade disposables.
                             </p>
-                            <div className="flex flex-col sm:flex-row items-center gap-6">
+                            <div className="flex flex-col sm:flex-row items-center gap-8">
                                 <Link
                                     to="/products"
-                                    className="w-full sm:w-auto px-10 py-5 bg-medical-700 text-white rounded-2xl font-black text-xs uppercase tracking-widest hover:bg-medical-900 shadow-2xl shadow-medical-700/20 transition-all hover:scale-105 active:scale-95"
+                                    className="w-full sm:w-auto px-12 py-6 bg-slate-900 text-white rounded-[2rem] font-black text-xs uppercase tracking-widest hover:bg-medical-700 shadow-[0_20px_40px_rgba(0,0,0,0.1)] transition-all hover:scale-105 active:scale-95 text-center"
                                 >
                                     Explore Catalog
                                 </Link>
                                 <Link
                                     to="/contact"
-                                    className="text-xs font-black uppercase tracking-[0.3em] text-slate-400 hover:text-medical-700 transition-colors flex items-center gap-2 group"
+                                    className="text-xs font-black uppercase tracking-[0.4em] text-slate-400 hover:text-medical-700 transition-colors flex items-center gap-3 group"
                                 >
-                                    Direct Inquiry <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                                    Direct Inquiry <ArrowRightIcon className="w-5 h-5 transition-transform group-hover:translate-x-2" />
                                 </Link>
                             </div>
-                        </div>
+                        </motion.div>
 
                         <div className="mt-20 lg:mt-0 relative">
                             <div className="relative group">
@@ -212,90 +219,170 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* Aesthetic Categories Grid */}
-            <div className="py-32">
+            {/* Bento Categories Grid */}
+            <div className="py-32 bg-white">
                 <div className="mx-auto max-w-7xl px-6">
                     <div className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-20">
-                        <div className="max-w-xl">
-                            <h2 className="text-4xl sm:text-6xl font-black tracking-tighter uppercase mb-6">Core <span className="text-medical-700">Sectors</span></h2>
-                            <p className="text-slate-500 text-lg">Engineered for surgical excellence and uncompromising safety.</p>
-                        </div>
-                        <Link to="/products" className="text-xs font-black uppercase tracking-widest text-medical-700 border-b-2 border-medical-100 pb-1 hover:border-medical-700 transition-all">
-                            View All Categories
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="max-w-xl"
+                        >
+                            <h2 className="text-5xl sm:text-7xl font-black tracking-tighter uppercase mb-6 leading-none">Clinical <br /><span className="text-medical-700">Specialties</span></h2>
+                            <p className="text-slate-500 text-xl font-light">Engineered for surgical excellence and uncompromising safety across every medical discipline.</p>
+                        </motion.div>
+                        <Link to="/products" className="text-xs font-black uppercase tracking-widest text-medical-700 border-b-2 border-medical-100 pb-2 hover:border-medical-700 transition-all flex items-center gap-2 group">
+                            Full Capability Catalog <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                         </Link>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                        {categories.map((category) => (
-                            <Link
-                                key={category.name}
-                                to={category.href}
-                                className="group relative bg-white border border-slate-100 rounded-[2.5rem] p-10 hover-lift flex flex-col items-start"
-                            >
-                                <div className="w-full aspect-[4/3] rounded-3xl overflow-hidden mb-10 bg-slate-100">
-                                    <img
-                                        src={category.image}
-                                        alt={category.name}
-                                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-                                    />
-                                </div>
-                                <h3 className="text-3xl font-black uppercase tracking-tighter mb-4 group-hover:text-medical-700 transition-colors">
-                                    {category.name}
-                                </h3>
-                                <p className="text-slate-500 text-sm leading-relaxed mb-10">
-                                    {category.description}
-                                </p>
-                                <div className="mt-auto w-12 h-12 rounded-full border border-slate-200 flex items-center justify-center group-hover:bg-medical-700 group-hover:border-medical-700 transition-all">
-                                    <ArrowRightIcon className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" />
+                    <div className="grid grid-cols-1 md:grid-cols-6 grid-rows-2 gap-6 h-[800px]">
+                        {/* Major Card: Surgical Drapes */}
+                        <motion.div
+                            whileHover={{ y: -5 }}
+                            className="bento-item md:col-span-4 md:row-span-1 group"
+                        >
+                            <Link to="/category/general-surgery-drapes" className="h-full flex flex-col">
+                                <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors z-10"></div>
+                                <img
+                                    src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200"
+                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                                    alt="Surgical Drapes"
+                                />
+                                <div className="relative z-20 mt-auto p-4">
+                                    <h3 className="text-4xl font-black text-white uppercase tracking-tighter mb-2">Surgical Drapes</h3>
+                                    <p className="text-white/80 text-sm max-w-md">Precision-engineered procedure packs for high-complexity surgical environments.</p>
                                 </div>
                             </Link>
-                        ))}
+                        </motion.div>
+
+                        {/* Side Card: Surgeon Gowns */}
+                        <motion.div
+                            whileHover={{ y: -5 }}
+                            className="bento-item md:col-span-2 md:row-span-1 group bg-slate-900 border-none"
+                        >
+                            <Link to="/category/surgeon-gowns" className="h-full flex flex-col justify-between">
+                                <div className="elite-glow"></div>
+                                <div className="relative z-20">
+                                    <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-6">
+                                        <ShieldCheckIcon className="w-6 h-6 text-medical-400" />
+                                    </div>
+                                    <h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-4">Clinical Apparel</h3>
+                                    <p className="text-slate-400 text-xs tracking-widest uppercase">AAMI Level 3 & 4 Protection</p>
+                                </div>
+                                <div className="relative z-20 mt-8">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=400"
+                                        className="w-full h-32 object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all"
+                                        alt="Gowns"
+                                    />
+                                </div>
+                            </Link>
+                        </motion.div>
+
+                        {/* Mid Card: Wraps */}
+                        <motion.div
+                            whileHover={{ y: -5 }}
+                            className="bento-item md:col-span-3 md:row-span-1 group"
+                        >
+                            <Link to="/category/wrapping-sheets" className="h-full flex items-center gap-8">
+                                <div className="w-1/2">
+                                    <h3 className="text-3xl font-black text-slate-900 uppercase tracking-tighter mb-4">Sterile Wraps</h3>
+                                    <p className="text-slate-500 text-sm">High-performance SMS barrier technology for tray protection.</p>
+                                </div>
+                                <div className="w-1/2 h-full py-4">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=400"
+                                        className="w-full h-full object-cover rounded-[2rem] shadow-2xl"
+                                        alt="Wraps"
+                                    />
+                                </div>
+                            </Link>
+                        </motion.div>
+
+                        {/* Last Card: Sustainability */}
+                        <motion.div
+                            whileHover={{ y: -5 }}
+                            className="bento-item md:col-span-3 md:row-span-1 group bg-medical-50 border-medical-100"
+                        >
+                            <Link to="/quality" className="h-full flex flex-col justify-center">
+                                <div className="flex items-center gap-4 mb-6">
+                                    <div className="px-4 py-2 bg-white rounded-full text-[10px] font-black uppercase tracking-widest text-medical-700 shadow-sm">Certified Manufacturing</div>
+                                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                </div>
+                                <h3 className="text-4xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-6">Uncompromising <br /><span className="text-medical-700">Sterility.</span></h3>
+                                <div className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-400 group-hover:text-medical-700 transition-colors">
+                                    Audit our Cleanrooms <ArrowRightIcon className="w-4 h-4" />
+                                </div>
+                            </Link>
+                        </motion.div>
                     </div>
                 </div>
             </div>
 
             {/* Why KRG - High Aesthetic Layout */}
-            <div className="py-32 bg-slate-900 rounded-[4rem] mx-6 mb-32 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-medical-900 rounded-full blur-[150px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
+            <div className="py-48 bg-slate-900 rounded-[5rem] mx-6 mb-32 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-medical-900 rounded-full blur-[200px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
+                <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-brand-red/10 rounded-full blur-[150px] opacity-10 -translate-x-1/2"></div>
 
-                <div className="mx-auto max-w-7xl px-8 lg:px-16 lg:flex items-center gap-24 relative z-10">
-                    <div className="lg:w-1/2 mb-20 lg:mb-0">
-                        <h2 className="text-5xl lg:text-7xl font-black text-white uppercase tracking-tighter mb-10">
-                            The <span className="text-medical-400">KRG</span> <br />Standard
-                        </h2>
-                        <div className="grid grid-cols-1 gap-10">
-                            <div className="flex gap-6">
-                                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
-                                    <ShieldCheckIcon className="w-7 h-7 text-medical-400" />
+                <div className="mx-auto max-w-7xl px-8 lg:px-16 relative z-10">
+                    <div className="flex flex-col lg:flex-row items-center gap-32">
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="lg:w-1/2"
+                        >
+                            <div className="flex items-center gap-4 mb-10">
+                                <span className="h-0.5 w-12 bg-medical-400"></span>
+                                <span className="text-[12px] font-black uppercase tracking-[0.6em] text-medical-400">The KRG Standard</span>
+                            </div>
+                            <h2 className="text-6xl lg:text-9xl font-black text-white uppercase tracking-tighter mb-12 leading-[0.85]">
+                                Engineered <br />
+                                <span className="text-medical-400">Sterility.</span>
+                            </h2>
+                            <div className="space-y-12">
+                                <div className="flex gap-8 group">
+                                    <div className="w-16 h-16 rounded-3xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-medical-400/20 group-hover:border-medical-400/50 transition-all duration-500">
+                                        <ShieldCheckIcon className="w-8 h-8 text-medical-400" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-2xl font-black text-white uppercase tracking-tight mb-3">Cleanroom Precision</h4>
+                                        <p className="text-slate-400 text-lg leading-relaxed font-light">Class 100,000 ISO-certified manufacturing environments ensuring absolute zero-contamination.</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 className="text-xl font-black text-white uppercase mb-2">Military-Grade Hygiene</h4>
-                                    <p className="text-slate-400 leading-relaxed">Advanced ETO sterilization and Class 100,000 cleanroom manufacturing.</p>
+                                <div className="flex gap-8 group">
+                                    <div className="w-16 h-16 rounded-3xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-medical-400/20 group-hover:border-medical-400/50 transition-all duration-500">
+                                        <BeakerIcon className="w-8 h-8 text-medical-400" />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-2xl font-black text-white uppercase tracking-tight mb-3">Material Innovation</h4>
+                                        <p className="text-slate-400 text-lg leading-relaxed font-light">Advanced SMS trilaminate fabrics providing AAMI Level 4 fluid barrier and peak breathability.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="flex gap-6">
-                                <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
-                                    <BeakerIcon className="w-7 h-7 text-medical-400" />
-                                </div>
-                                <div>
-                                    <h4 className="text-xl font-black text-white uppercase mb-2">Technical Textures</h4>
-                                    <p className="text-slate-400 leading-relaxed">Multi-layer SMS and Spunlace fabrics engineered for fluid repellency.</p>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            className="lg:w-1/2"
+                        >
+                            <div className="relative p-4">
+                                <div className="absolute inset-0 bg-gradient-to-tr from-medical-500/20 to-transparent blur-3xl"></div>
+                                <img
+                                    src="https://images.unsplash.com/photo-1576091160550-2173bdd99602?auto=format&fit=crop&q=80&w=1200"
+                                    alt="Medical precision"
+                                    className="w-full rounded-[4rem] shadow-4xl grayscale hover:grayscale-0 transition-all duration-1000 relative z-10"
+                                />
+                                <div className="absolute -bottom-12 -right-12 glass-dark py-12 px-14 rounded-[3.5rem] z-20 shadow-2xl animate-float">
+                                    <p className="text-6xl font-black text-white mb-2 leading-none">100%</p>
+                                    <p className="text-[12px] font-black uppercase tracking-[0.4em] text-medical-400">Sterility Assurance</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="lg:w-1/2">
-                        <div className="relative group">
-                            <img
-                                src="https://images.unsplash.com/photo-1576091160550-2173bdd99602?auto=format&fit=crop&q=80&w=800"
-                                alt="Medical precision"
-                                className="w-full rounded-[3rem] shadow-4xl grayscale hover:grayscale-0 transition-all duration-1000"
-                            />
-                            <div className="absolute -bottom-10 right-10 glass-dark py-10 px-12 rounded-[2.5rem]">
-                                <p className="text-4xl font-black text-white mb-1">100%</p>
-                                <p className="text-[10px] font-black uppercase tracking-widest text-medical-400">Sterility Assurance</p>
-                            </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

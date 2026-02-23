@@ -91,7 +91,7 @@ export function KRGAssist() {
         e.preventDefault();
         setIsTyping(true);
         // Mock API call
-        console.log('[CHAT LEAD CAPTURE]:', leadForm);
+
         await new Promise(r => setTimeout(r, 1000));
 
         const botMessage = {

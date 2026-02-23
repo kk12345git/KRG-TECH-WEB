@@ -364,7 +364,8 @@
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
         "customizable": true,
-        "moq": "100 Packs"
+        "moq": "100 Packs",
+        "image": "https://placehold.co/800x600/f1f5f9/334155?text=Anglo%20Drape%20Packs"
     },
     {
         "id": "lavh-drape-kit",
@@ -374,7 +375,8 @@
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
         "customizable": true,
-        "moq": "100 Packs"
+        "moq": "100 Packs",
+        "image": "https://placehold.co/800x600/f1f5f9/334155?text=LAVH%20Drape%20Kit"
     },
     {
         "id": "renal-transplant-packs",
@@ -384,7 +386,8 @@
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
         "customizable": true,
-        "moq": "50 Packs"
+        "moq": "50 Packs",
+        "image": "https://placehold.co/800x600/f1f5f9/334155?text=Renal%20Transplant%20Packs"
     },
     {
         "id": "cystoscopy-drape-packs",
@@ -394,7 +397,8 @@
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
         "customizable": true,
-        "moq": "150 Packs"
+        "moq": "150 Packs",
+        "image": "https://placehold.co/800x600/f1f5f9/334155?text=Cystoscopy%20Drape%20Packs"
     },
     {
         "id": "embryo-transplant-packs",
@@ -404,7 +408,8 @@
         "size": "Compact",
         "sterilization": "Sterile (ETO)",
         "customizable": true,
-        "moq": "100 Packs"
+        "moq": "100 Packs",
+        "image": "https://placehold.co/800x600/f1f5f9/334155?text=Embryo%20Transplant%20Packs"
     },
     {
         "id": "egg-collection-packs",
@@ -414,7 +419,8 @@
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
         "customizable": true,
-        "moq": "100 Packs"
+        "moq": "100 Packs",
+        "image": "https://placehold.co/800x600/f1f5f9/334155?text=Egg%20Collection%20Packs"
     },
     {
         "id": "ivf-drape-packs",
@@ -424,7 +430,8 @@
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
         "customizable": true,
-        "moq": "100 Packs"
+        "moq": "100 Packs",
+        "image": "https://placehold.co/800x600/f1f5f9/334155?text=IVF%20Drape%20Packs"
     },
     {
         "id": "ocr-et-packs",
@@ -434,7 +441,8 @@
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
         "customizable": true,
-        "moq": "100 Packs"
+        "moq": "100 Packs",
+        "image": "https://placehold.co/800x600/f1f5f9/334155?text=OCR%20-ET%20Packs"
     },
     {
         "id": "laparoscopy-drape-packs",
@@ -444,7 +452,8 @@
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
         "customizable": true,
-        "moq": "200 Packs"
+        "moq": "200 Packs",
+        "image": "https://placehold.co/800x600/f1f5f9/334155?text=Laparoscopy%20Drape%20Packs"
     },
     {
         "id": "pcnl-drape",
@@ -454,7 +463,8 @@
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
         "customizable": true,
-        "moq": "150 Units"
+        "moq": "150 Units",
+        "image": "https://placehold.co/800x600/f1f5f9/334155?text=PCNL%20Drape"
     },
     {
         "id": "turp-drape",
@@ -464,7 +474,8 @@
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
         "customizable": true,
-        "moq": "150 Units"
+        "moq": "150 Units",
+        "image": "https://placehold.co/800x600/f1f5f9/334155?text=TURP%20Drape"
     },
     {
         "id": "bed-sheet-sms-pillow",
