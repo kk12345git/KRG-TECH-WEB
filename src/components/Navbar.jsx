@@ -23,6 +23,10 @@ export default function Navbar() {
     const navigate = useNavigate();
     const location = useLocation();
 
+    // Theme Engine: Identify pages with dark backgrounds (heroes)
+    const darkPages = ['/about', '/case-studies', '/customization', '/academy'];
+    const isDarkPage = darkPages.includes(location.pathname);
+
     const { scrollY } = useScroll();
 
     useMotionValueEvent(scrollY, "change", (latest) => {
@@ -71,7 +75,10 @@ export default function Navbar() {
                 <div className="flex lg:hidden">
                     <button
                         type="button"
-                        className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 ${isScrolled ? 'text-slate-700' : 'text-white'}`}
+                        className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 transition-colors ${isScrolled
+                                ? 'text-slate-700'
+                                : isDarkPage ? 'text-white' : 'text-slate-900'
+                            }`}
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
@@ -87,14 +94,20 @@ export default function Navbar() {
                                 key={item.name}
                                 to={item.href}
                                 onMouseEnter={() => setHoveredLink(item.name)}
-                                className={`text-[10px] font-black uppercase tracking-widest transition-all relative px-3 py-2 group ${isScrolled ? 'text-slate-600' : 'text-white/80 hover:text-white'
+                                className={`text-[10px] font-black uppercase tracking-widest transition-all relative px-3 py-2 group ${isScrolled
+                                        ? 'text-slate-600 hover:text-medical-700'
+                                        : isDarkPage
+                                            ? 'text-white/80 hover:text-white'
+                                            : 'text-slate-900/80 hover:text-slate-900'
                                     }`}
                             >
                                 <span className="relative z-10">{item.name}</span>
                                 {(hoveredLink === item.name || isActive) && (
                                     <motion.span
                                         layoutId="nav-pill"
-                                        className={`absolute inset-0 rounded-lg -z-0 ${isScrolled ? 'bg-slate-100' : 'bg-white/10'
+                                        className={`absolute inset-0 rounded-lg -z-0 ${isScrolled
+                                                ? 'bg-slate-100'
+                                                : isDarkPage ? 'bg-white/10' : 'bg-slate-900/10'
                                             }`}
                                         transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                                     />
@@ -122,7 +135,9 @@ export default function Navbar() {
                     ) : (
                         <Link
                             to="/login"
-                            className={`text-[10px] font-black uppercase tracking-widest transition-colors ${isScrolled ? 'text-slate-400 hover:text-medical-700' : 'text-white/40 hover:text-white'
+                            className={`text-[10px] font-black uppercase tracking-widest transition-colors ${isScrolled
+                                    ? 'text-slate-400 hover:text-medical-700'
+                                    : isDarkPage ? 'text-white/40 hover:text-white' : 'text-slate-900/40 hover:text-slate-900'
                                 }`}
                         >
                             Client Login
@@ -134,7 +149,7 @@ export default function Navbar() {
                     {isAuthenticated && (
                         <button
                             onClick={handleLogout}
-                            className="p-2 text-gray-400 hover:text-red-600 transition-colors"
+                            className={`p-2 transition-colors ${isScrolled || !isDarkPage ? 'text-gray-400 hover:text-red-600' : 'text-white/40 hover:text-red-400'}`}
                             title="Sign Out"
                         >
                             <ArrowRightOnRectangleIcon className="w-5 h-5" />
@@ -240,4 +255,3 @@ export default function Navbar() {
         </header>
     );
 }
-
