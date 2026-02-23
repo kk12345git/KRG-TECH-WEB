@@ -59,7 +59,7 @@ export default function Navbar() {
                         <Link
                             key={item.name}
                             to={item.href}
-                            className={`text-[10px] font-black uppercase tracking-widest transition-all relative group ${isScrolled ? 'text-slate-600' : 'text-slate-500 hover:text-white'}`}
+                            className={`text-[10px] font-black uppercase tracking-widest transition-all relative group ${isScrolled ? 'text-slate-600' : 'text-white/80 hover:text-white'}`}
                         >
                             {item.name}
                             <motion.span

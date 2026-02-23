@@ -157,7 +157,7 @@ export default function Careers() {
                                             <item.icon className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold uppercase tracking-widest text-[11px] mb-2">{item.title}</h4>
+                                            <h4 className="font-bold uppercase tracking-widest text-[11px] mb-2 text-white">{item.title}</h4>
                                             <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
                                         </div>
                                     </div>

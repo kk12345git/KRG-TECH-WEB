@@ -68,8 +68,6 @@ body {
   h5,
   h6 {
     @apply font-black text-slate-900 tracking-tighter;
-    color: #0f172a;
-    /* Force dark slate for headings */
   }
 }
 

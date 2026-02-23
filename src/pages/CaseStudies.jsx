@@ -61,8 +61,8 @@ export default function CaseStudies() {
                 <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
                     <div className="max-w-2xl">
                         <h2 className="text-medical-400 font-bold uppercase tracking-widest text-sm mb-4">Case Studies</h2>
-                        <h1 className="text-4xl font-black sm:text-6xl tracking-tighter uppercase mb-6">Clinical <br /><span className="text-medical-500">Outcomes</span></h1>
-                        <p className="text-lg text-slate-400 leading-relaxed">
+                        <h1 className="text-4xl font-black sm:text-6xl tracking-tighter uppercase mb-6 text-white">Clinical <br /><span className="text-medical-400">Outcomes</span></h1>
+                        <p className="text-lg text-slate-300 leading-relaxed font-medium">
                             We go beyond supplying products. We partner with hospitals to solve clinical challenges and optimize operational surgical workflows.
                         </p>
                     </div>
