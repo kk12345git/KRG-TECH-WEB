@@ -69,7 +69,7 @@ export default function Home() {
                                 <span className="h-0.5 w-12 bg-medical-700"></span>
                                 <span className="text-[12px] font-black uppercase tracking-[0.5em] text-medical-700">Enterprise Standard 2026</span>
                             </div>
-                            <h1 className="text-7xl sm:text-9xl font-black text-slate-900 leading-[0.85] uppercase tracking-tighter mb-10">
+                            <h1 className="text-5xl sm:text-7xl lg:text-9xl font-black text-slate-900 leading-[0.85] uppercase tracking-tighter mb-10">
                                 Clinical <br />
                                 <span className="text-gradient">Authority.</span>
                             </h1>
@@ -232,16 +232,16 @@ export default function Home() {
                             <h2 className="text-5xl sm:text-7xl font-black tracking-tighter uppercase mb-6 leading-none">Clinical <br /><span className="text-medical-700">Specialties</span></h2>
                             <p className="text-slate-500 text-xl font-light">Engineered for surgical excellence and uncompromising safety across every medical discipline.</p>
                         </motion.div>
-                        <Link to="/products" className="text-xs font-black uppercase tracking-widest text-medical-700 border-b-2 border-medical-100 pb-2 hover:border-medical-700 transition-all flex items-center gap-2 group">
+                        <Link to="/products" className="text-xs font-black uppercase tracking-widest text-medical-700 border-b-2 border-medical-100 pb-2 hover:border-medical-700 transition-all flex items-center gap-2 group whitespace-nowrap">
                             Full Capability Catalog <ArrowRightIcon className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                         </Link>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-6 grid-rows-2 gap-6 h-[800px]">
+                    <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-2 gap-6 md:h-[800px]">
                         {/* Major Card: Surgical Drapes */}
                         <motion.div
                             whileHover={{ y: -5 }}
-                            className="bento-item md:col-span-4 md:row-span-1 group"
+                            className="bento-item md:col-span-4 md:row-span-1 group min-h-[350px]"
                         >
                             <Link to="/category/general-surgery-drapes" className="h-full flex flex-col">
                                 <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors z-10"></div>
@@ -260,7 +260,7 @@ export default function Home() {
                         {/* Side Card: Surgeon Gowns */}
                         <motion.div
                             whileHover={{ y: -5 }}
-                            className="bento-item md:col-span-2 md:row-span-1 group bg-slate-900 border-none"
+                            className="bento-item md:col-span-2 md:row-span-1 group bg-slate-900 border-none min-h-[350px]"
                         >
                             <Link to="/category/surgeon-gowns" className="h-full flex flex-col justify-between">
                                 <div className="elite-glow"></div>
@@ -284,14 +284,14 @@ export default function Home() {
                         {/* Mid Card: Wraps */}
                         <motion.div
                             whileHover={{ y: -5 }}
-                            className="bento-item md:col-span-3 md:row-span-1 group"
+                            className="bento-item md:col-span-3 md:row-span-1 group min-h-[350px]"
                         >
-                            <Link to="/category/wrapping-sheets" className="h-full flex items-center gap-8">
-                                <div className="w-1/2">
+                            <Link to="/category/wrapping-sheets" className="h-full flex flex-col md:flex-row md:items-center gap-8">
+                                <div className="md:w-1/2">
                                     <h3 className="text-3xl font-black text-slate-900 uppercase tracking-tighter mb-4">Sterile Wraps</h3>
                                     <p className="text-slate-500 text-sm">High-performance SMS barrier technology for tray protection.</p>
                                 </div>
-                                <div className="w-1/2 h-full py-4">
+                                <div className="md:w-1/2 h-48 md:h-full py-4">
                                     <img
                                         src="https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=400"
                                         className="w-full h-full object-cover rounded-[2rem] shadow-2xl"
@@ -322,12 +322,12 @@ export default function Home() {
             </div>
 
             {/* Why KRG - High Aesthetic Layout */}
-            <div className="py-48 bg-slate-900 rounded-[5rem] mx-6 mb-32 relative overflow-hidden">
+            <div className="py-24 md:py-48 bg-slate-900 rounded-[3rem] md:rounded-[5rem] mx-4 md:mx-6 mb-32 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-medical-900 rounded-full blur-[200px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
                 <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-brand-red/10 rounded-full blur-[150px] opacity-10 -translate-x-1/2"></div>
 
                 <div className="mx-auto max-w-7xl px-8 lg:px-16 relative z-10">
-                    <div className="flex flex-col lg:flex-row items-center gap-32">
+                    <div className="flex flex-col lg:flex-row items-center gap-24 lg:gap-32">
                         <motion.div
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
@@ -338,12 +338,12 @@ export default function Home() {
                                 <span className="h-0.5 w-12 bg-medical-400"></span>
                                 <span className="text-[12px] font-black uppercase tracking-[0.6em] text-medical-400">The KRG Standard</span>
                             </div>
-                            <h2 className="text-6xl lg:text-9xl font-black text-white uppercase tracking-tighter mb-12 leading-[0.85]">
+                            <h2 className="text-5xl lg:text-9xl font-black text-white uppercase tracking-tighter mb-12 leading-[0.85]">
                                 Engineered <br />
                                 <span className="text-medical-400">Sterility.</span>
                             </h2>
                             <div className="space-y-12">
-                                <div className="flex gap-8 group">
+                                <div className="flex flex-col sm:flex-row gap-8 group">
                                     <div className="w-16 h-16 rounded-3xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-medical-400/20 group-hover:border-medical-400/50 transition-all duration-500">
                                         <ShieldCheckIcon className="w-8 h-8 text-medical-400" />
                                     </div>
@@ -352,7 +352,7 @@ export default function Home() {
                                         <p className="text-slate-400 text-lg leading-relaxed font-light">Class 100,000 ISO-certified manufacturing environments ensuring absolute zero-contamination.</p>
                                     </div>
                                 </div>
-                                <div className="flex gap-8 group">
+                                <div className="flex flex-col sm:flex-row gap-8 group">
                                     <div className="w-16 h-16 rounded-3xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-medical-400/20 group-hover:border-medical-400/50 transition-all duration-500">
                                         <BeakerIcon className="w-8 h-8 text-medical-400" />
                                     </div>
@@ -368,18 +368,18 @@ export default function Home() {
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
-                            className="lg:w-1/2"
+                            className="lg:w-1/2 w-full"
                         >
                             <div className="relative p-4">
                                 <div className="absolute inset-0 bg-gradient-to-tr from-medical-500/20 to-transparent blur-3xl"></div>
                                 <img
                                     src="https://images.unsplash.com/photo-1576091160550-2173bdd99602?auto=format&fit=crop&q=80&w=1200"
                                     alt="Medical precision"
-                                    className="w-full rounded-[4rem] shadow-4xl grayscale hover:grayscale-0 transition-all duration-1000 relative z-10"
+                                    className="w-full rounded-[3rem] md:rounded-[4rem] shadow-4xl grayscale hover:grayscale-0 transition-all duration-1000 relative z-10"
                                 />
-                                <div className="absolute -bottom-12 -right-12 glass-dark py-12 px-14 rounded-[3.5rem] z-20 shadow-2xl animate-float">
-                                    <p className="text-6xl font-black text-white mb-2 leading-none">100%</p>
-                                    <p className="text-[12px] font-black uppercase tracking-[0.4em] text-medical-400">Sterility Assurance</p>
+                                <div className="relative mt-8 md:mt-0 md:absolute md:-bottom-12 md:-right-12 bg-slate-900 md:glass-dark py-8 md:py-12 px-10 md:px-14 rounded-3xl md:rounded-[3.5rem] z-20 shadow-2xl md:animate-float">
+                                    <p className="text-5xl md:text-6xl font-black text-white mb-2 leading-none">100%</p>
+                                    <p className="text-[10px] md:text-[12px] font-black uppercase tracking-[0.4em] text-medical-400">Sterility Assurance</p>
                                 </div>
                             </div>
                         </motion.div>

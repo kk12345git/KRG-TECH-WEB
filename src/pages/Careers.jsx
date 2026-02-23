@@ -131,22 +131,22 @@ export default function Careers() {
                         <span className="h-px w-10 bg-medical-700"></span>
                         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-medical-700">Join the Elite Hub</span>
                     </div>
-                    <h1 className="text-6xl sm:text-8xl font-black tracking-tighter uppercase leading-[0.9] mb-8 text-slate-900">
+                    <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-[0.9] mb-8 text-slate-900">
                         Solve for <br /><span className="text-gradient">Life.</span>
                     </h1>
-                    <p className="text-xl text-slate-500 leading-relaxed font-medium">
+                    <p className="text-lg md:text-xl text-slate-500 leading-relaxed font-medium">
                         KRG Medifabb isn't a factory; it's a sterile R&D frontier. We solve for the 1% margin that saves lives. Are you disciplined enough to join us?
                     </p>
                 </div>
             </div>
 
             {/* Curiosity Section: The DNA of KRG */}
-            <div className="py-32 bg-slate-900 text-white overflow-hidden relative">
+            <div className="py-24 md:py-32 bg-slate-900 text-white overflow-hidden relative">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-32 items-center">
                         <div className="relative">
-                            <h2 className="text-5xl font-black uppercase tracking-tighter text-medical-400 mb-8 italic">The Clinical <br />Dossier</h2>
-                            <div className="space-y-12">
+                            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-medical-400 mb-8 italic">The Clinical <br />Dossier</h2>
+                            <div className="space-y-8 md:space-y-12">
                                 {[
                                     { icon: CpuChipIcon, title: 'Precision Obsession', desc: 'Our looms operate in 12-hour surgical sync' },
                                     { icon: GlobeAltIcon, title: 'Global Impact Hub', desc: 'Dubai to Chennai: One sterile standard' },
@@ -166,10 +166,10 @@ export default function Careers() {
                         </div>
                         <div className="relative group cursor-pointer" onClick={() => document.getElementById('positions').scrollIntoView({ behavior: 'smooth' })}>
                             <div className="absolute inset-0 bg-medical-500/20 blur-[100px] rounded-full group-hover:bg-medical-500/40 transition-all"></div>
-                            <div className="bg-white/5 border border-white/10 p-12 rounded-[4rem] backdrop-blur-xl relative z-10 hover:border-medical-500/50 transition-all text-center">
-                                <SparklesIcon className="w-20 h-20 text-medical-400 mx-auto mb-8 animate-pulse" />
-                                <h3 className="text-3xl font-black uppercase tracking-tighter mb-4">Discover Your <br />Clinical Frontier</h3>
-                                <p className="text-slate-400 mb-10 italic">Identify your role in our sterile revolution.</p>
+                            <div className="bg-white/5 border border-white/10 p-10 md:p-12 rounded-[2.5rem] md:rounded-[4rem] backdrop-blur-xl relative z-10 hover:border-medical-500/50 transition-all text-center">
+                                <SparklesIcon className="w-12 h-12 md:w-20 md:h-20 text-medical-400 mx-auto mb-6 md:mb-8 animate-pulse" />
+                                <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter mb-4">Discover Your <br />Clinical Frontier</h3>
+                                <p className="text-slate-400 mb-8 md:mb-10 italic text-sm">Identify your role in our sterile revolution.</p>
                                 <div className="inline-flex h-14 px-8 bg-medical-600 rounded-2xl items-center justify-center font-black text-xs uppercase tracking-widest hover:bg-medical-400 hover:text-slate-900 transition-all">
                                     Analyze Open Units
                                 </div>
@@ -180,9 +180,9 @@ export default function Careers() {
             </div>
 
             {/* Open Positions */}
-            <div id="positions" className="py-32 bg-slate-50">
+            <div id="positions" className="py-24 md:py-32 bg-slate-50">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
+                    <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-24 gap-8">
                         <div>
                             <h2 className="text-4xl sm:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4 underline decoration-medical-200 decoration-8 underline-offset-4">Sector Vacancies</h2>
                             <p className="text-slate-500 font-medium italic">High-performance roles for outlier candidates.</p>
@@ -193,12 +193,12 @@ export default function Careers() {
                         {jobs.map((job) => (
                             <div
                                 key={job.id}
-                                className="bg-white p-8 md:p-12 rounded-[3.5rem] border border-slate-100 hover:border-medical-200 transition-all group relative overflow-hidden"
+                                className="bg-white p-8 md:p-12 rounded-[2.5rem] md:rounded-[3.5rem] border border-slate-100 hover:border-medical-200 transition-all group relative overflow-hidden"
                             >
-                                <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 relative z-10">
-                                    <div className="flex items-center gap-8">
-                                        <div className="w-20 h-20 bg-slate-50 rounded-3xl flex items-center justify-center text-slate-400 group-hover:text-medical-600 group-hover:bg-medical-50 transition-all duration-700 transform group-hover:rotate-[360deg]">
-                                            <BriefcaseIcon className="w-10 h-10" />
+                                <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 relative z-10 text-left">
+                                    <div className="flex items-center gap-6 md:gap-8">
+                                        <div className="w-16 h-16 md:w-20 md:h-20 bg-slate-50 rounded-2xl md:rounded-3xl flex items-center justify-center text-slate-400 group-hover:text-medical-600 group-hover:bg-medical-50 transition-all duration-700 transform group-hover:rotate-[360deg]">
+                                            <BriefcaseIcon className="w-8 h-8 md:w-10 md:h-10" />
                                         </div>
                                         <div>
                                             <div className="flex gap-2 mb-3">
@@ -206,7 +206,7 @@ export default function Careers() {
                                                     <span key={tag} className="text-[8px] font-black uppercase tracking-widest px-2 py-1 bg-slate-50 text-slate-400 rounded-md group-hover:bg-medical-50 group-hover:text-medical-600">#{tag}</span>
                                                 ))}
                                             </div>
-                                            <h4 className="text-2xl font-black text-slate-900 uppercase tracking-tight mb-2">{job.title}</h4>
+                                            <h4 className="text-xl md:text-2xl font-black text-slate-900 uppercase tracking-tight mb-2">{job.title}</h4>
                                             <div className="flex flex-wrap gap-4 text-[10px] font-black uppercase tracking-widest text-slate-400">
                                                 <span className="flex items-center gap-1.5"><GlobeAltIcon className="w-3 h-3" /> {job.location}</span>
                                                 <span className="text-slate-200">/</span>
@@ -218,7 +218,7 @@ export default function Careers() {
                                     </div>
                                     <button
                                         onClick={() => setSelectedJob(job)}
-                                        className="h-16 px-10 bg-slate-900 text-white rounded-[2rem] font-black text-xs uppercase tracking-widest hover:bg-medical-700 hover:scale-105 transition-all flex items-center justify-center gap-3 active:scale-95 shadow-lg shadow-slate-900/10"
+                                        className="h-14 md:h-16 px-8 md:px-10 bg-slate-900 text-white rounded-2xl md:rounded-[2rem] font-black text-xs uppercase tracking-widest hover:bg-medical-700 hover:scale-105 transition-all flex items-center justify-center gap-3 active:scale-95 shadow-lg shadow-slate-900/10"
                                     >
                                         Accept Challenge <BoltIcon className="w-5 h-5 text-medical-400" />
                                     </button>
@@ -237,7 +237,7 @@ export default function Careers() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-[200] flex items-center justify-center p-6"
+                        className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-6"
                     >
                         <div className="absolute inset-0 bg-slate-950/90 backdrop-blur-xl" onClick={resetForm}></div>
 
@@ -245,7 +245,7 @@ export default function Careers() {
                             initial={{ y: 50, opacity: 0, scale: 0.95 }}
                             animate={{ y: 0, opacity: 1, scale: 1 }}
                             exit={{ y: 50, opacity: 0, scale: 0.95 }}
-                            className="bg-white w-full max-w-2xl rounded-[4rem] relative z-10 shadow-[0_0_100px_rgba(0,0,0,0.5)] overflow-hidden flex flex-col max-h-[90vh] border border-white/20"
+                            className="bg-white w-full max-w-2xl rounded-3xl md:rounded-[4rem] relative z-10 shadow-[0_0_100px_rgba(0,0,0,0.5)] overflow-hidden flex flex-col max-h-[90vh] border border-white/20"
                         >
                             {isScanning && (
                                 <div className="absolute inset-0 z-[210] pointer-events-none flex flex-col items-center justify-center bg-white/60 backdrop-blur-md">
