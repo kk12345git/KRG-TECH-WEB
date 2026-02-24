@@ -6,8 +6,10 @@
   "/(frontend)/category/[id]/page": "app/(frontend)/category/[id]/page.js",
   "/(frontend)/contact/page": "app/(frontend)/contact/page.js",
   "/(frontend)/customization/page": "app/(frontend)/customization/page.js",
+  "/(frontend)/login/page": "app/(frontend)/login/page.js",
   "/(frontend)/page": "app/(frontend)/page.js",
   "/(frontend)/product/[id]/page": "app/(frontend)/product/[id]/page.js",
   "/(frontend)/products/page": "app/(frontend)/products/page.js",
-  "/(frontend)/quality/page": "app/(frontend)/quality/page.js"
+  "/(frontend)/quality/page": "app/(frontend)/quality/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }
