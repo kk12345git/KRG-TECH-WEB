@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+"use client";
+
+import Link from 'next/link';
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
-// import logo from '../assets/logo.png';
 
 export default function Footer() {
     return (
@@ -12,7 +13,7 @@ export default function Footer() {
             <div className="mx-auto max-w-7xl px-8 lg:px-16 pt-32 pb-16 relative z-10">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-24">
                     <div className="space-y-12">
-                        <Link to="/" className="flex items-center gap-2 group">
+                        <Link href="/" className="flex items-center gap-2 group">
                             <div className="flex flex-col leading-[0.7] items-start">
                                 <span className="text-3xl font-semibold tracking-tighter text-brand-red uppercase font-brand">KRG</span>
                                 <span className="text-[22px] font-semibold tracking-tight text-brand-green font-medifabb">Medifabb</span>
@@ -27,18 +28,19 @@ export default function Footer() {
                             <div>
                                 <h3 className="text-[11px] font-black uppercase tracking-[0.3em] text-medical-400 mb-8">Solutions</h3>
                                 <ul role="list" className="space-y-4">
-                                    <li><Link to="/category/general-surgery-drapes" className="text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-white transition-colors">General Surgery</Link></li>
-                                    <li><Link to="/category/ortho-surgery-drapes" className="text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-white transition-colors">Ortho Surgery</Link></li>
-                                    <li><Link to="/category/gynae-surgery-drapes" className="text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-white transition-colors">Gynae Surgery</Link></li>
-                                    <li><Link to="/customization" className="text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-white transition-colors">Custom Packs</Link></li>
+                                    <li><Link href="/category/general-surgery-drapes" className="text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-white transition-colors">General Surgery</Link></li>
+                                    <li><Link href="/category/ortho-surgery-drapes" className="text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-white transition-colors">Ortho Surgery</Link></li>
+                                    <li><Link href="/category/gynae-surgery-drapes" className="text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-white transition-colors">Gynae Surgery</Link></li>
+                                    <li><Link href="/customization" className="text-[10px] font-black uppercase tracking-widest text-slate-500 hover:text-white transition-colors">Custom Packs</Link></li>
                                 </ul>
                             </div>
                             <div className="mt-12 md:mt-0">
                                 <h3 className="text-[11px] font-black uppercase tracking-[0.3em] text-medical-400 mb-8">Ecosystem</h3>
                                 <ul role="list" className="space-y-4">
-                                    <li><Link to="/insights" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Tech Insights</Link></li>
-                                    <li><Link to="/careers" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Life at KRG</Link></li>
-                                    <li><Link to="/quality" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Quality Labs</Link></li>
+                                    <li><Link href="/support" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Help Center</Link></li>
+                                    <li><Link href="/academy" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Academy</Link></li>
+                                    <li><Link href="/careers" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Life at KRG</Link></li>
+                                    <li><Link href="/quality" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-white transition-colors">Quality Labs</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -64,8 +66,8 @@ export default function Footer() {
                         &copy; {new Date().getFullYear()} KRG MEDIFABB PVT LTD. ALL RIGHTS RESERVED.
                     </p>
                     <div className="flex gap-8">
-                        <Link to="/privacy" className="text-[9px] font-black text-slate-600 hover:text-white uppercase tracking-widest">Privacy Protocol</Link>
-                        <Link to="/terms" className="text-[9px] font-black text-slate-600 hover:text-white uppercase tracking-widest">Global Terms</Link>
+                        <Link href="/privacy" className="text-[9px] font-black text-slate-600 hover:text-white uppercase tracking-widest">Privacy Protocol</Link>
+                        <Link href="/terms" className="text-[9px] font-black text-slate-600 hover:text-white uppercase tracking-widest">Global Terms</Link>
                     </div>
                 </div>
             </div>

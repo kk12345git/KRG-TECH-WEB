@@ -1,5 +1,8 @@
+"use client";
+
 import { useState, useEffect } from 'react';
 import { MessageSquare, Phone, Mail, X, ArrowUp } from 'lucide-react';
+
 import { motion, AnimatePresence } from 'framer-motion';
 
 export function FloatingActions() {

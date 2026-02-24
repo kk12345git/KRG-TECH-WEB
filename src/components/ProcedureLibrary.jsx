@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 import {
     PlayIcon,
     AcademicCapIcon,
@@ -55,7 +56,12 @@ export function ProcedureLibrary() {
                         className="bg-white rounded-[2.5rem] border border-slate-100 overflow-hidden shadow-sm hover:shadow-xl transition-all group"
                     >
                         <div className="relative aspect-video">
-                            <img src={procedure.thumbnail} alt={procedure.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                            <Image
+                                src={procedure.thumbnail}
+                                alt={procedure.title}
+                                fill
+                                className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                            />
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
                                 <button
                                     onClick={() => setSelectedProcedure(procedure)}

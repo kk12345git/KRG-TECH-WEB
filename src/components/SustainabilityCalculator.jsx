@@ -1,4 +1,6 @@
-import { useState } from 'react';
+"use client";
+
+import { useState, useEffect } from 'react';
 import { Leaf, Info, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 

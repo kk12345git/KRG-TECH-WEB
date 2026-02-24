@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -29,7 +31,7 @@ export function KRGAssist() {
     const [messages, setMessages] = useState([INITIAL_MESSAGE]);
     const [input, setInput] = useState('');
     const [isTyping, setIsTyping] = useState(false);
-    const [leadMode, setLeadMode] = useState(false); // New state for lead capture
+    const [leadMode, setLeadMode] = useState(false);
     const [leadForm, setLeadForm] = useState({ name: '', email: '', org: '' });
     const scrollRef = useRef(null);
 
@@ -54,7 +56,6 @@ export function KRGAssist() {
         setInput('');
         setIsTyping(true);
 
-        // Simulated AI Logic
         setTimeout(() => {
             let botResponse = "";
             const lowerText = userText.toLowerCase();
@@ -90,8 +91,6 @@ export function KRGAssist() {
     const handleLeadSubmit = async (e) => {
         e.preventDefault();
         setIsTyping(true);
-        // Mock API call
-
         await new Promise(r => setTimeout(r, 1000));
 
         const botMessage = {
@@ -107,11 +106,10 @@ export function KRGAssist() {
     };
 
     return (
-        <>
-            {/* Floating Toggle Button */}
+        <div className="relative z-[200]">
             <button
                 onClick={() => setIsOpen(true)}
-                className={`fixed bottom-24 right-8 z-[150] w-16 h-16 bg-medical-700 rounded-2xl flex items-center justify-center text-white shadow-2xl shadow-medical-700/30 hover:scale-110 active:scale-95 transition-all group ${isOpen ? 'scale-0' : 'scale-100'}`}
+                className={`fixed bottom-24 right-8 z-[200] w-16 h-16 bg-medical-700 rounded-2xl flex items-center justify-center text-white shadow-2xl shadow-medical-700/30 hover:scale-110 active:scale-95 transition-all group ${isOpen ? 'scale-0' : 'scale-100'}`}
             >
                 <SparklesIcon className="w-8 h-8" />
                 <span className="absolute -top-2 -right-2 w-5 h-5 bg-red-500 rounded-full border-2 border-white animate-pulse" />
@@ -125,7 +123,6 @@ export function KRGAssist() {
                         exit={{ opacity: 0, scale: 0.9, y: 20 }}
                         className="fixed bottom-8 right-8 z-[200] w-[400px] h-[600px] bg-white rounded-[2.5rem] shadow-2xl border border-slate-100 overflow-hidden flex flex-col"
                     >
-                        {/* Header */}
                         <div className="bg-medical-700 p-6 text-white flex items-center justify-between">
                             <div className="flex items-center gap-3">
                                 <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
@@ -144,7 +141,6 @@ export function KRGAssist() {
                             </button>
                         </div>
 
-                        {/* Messages */}
                         <div
                             ref={scrollRef}
                             className="flex-grow p-6 overflow-y-auto space-y-6 scroll-smooth"
@@ -218,7 +214,6 @@ export function KRGAssist() {
                             )}
                         </div>
 
-                        {/* Suggestions */}
                         {messages.length < 3 && (
                             <div className="p-4 bg-slate-50/50 border-t border-slate-50">
                                 <div className="flex flex-wrap gap-2">
@@ -236,7 +231,6 @@ export function KRGAssist() {
                             </div>
                         )}
 
-                        {/* Input */}
                         <div className="p-4 border-t border-slate-100">
                             <form
                                 className="relative"
@@ -263,6 +257,6 @@ export function KRGAssist() {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </>
+        </div>
     );
 }

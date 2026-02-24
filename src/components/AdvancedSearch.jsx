@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { MagnifyingGlassIcon, FunnelIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export function AdvancedSearch({ products, onFilterChange }) {
     const [searchTerm, setSearchTerm] = useState('');
@@ -223,7 +223,7 @@ export function SearchSuggestions({ query, products }) {
             {suggestions.map(product => (
                 <Link
                     key={product.id}
-                    to={`/product/${product.id}`}
+                    href={`/product/${product.id}`}
                     className="flex items-center gap-4 p-4 hover:bg-slate-50 transition-colors border-b last:border-0"
                 >
                     <div className="w-12 h-12 bg-slate-100 rounded-lg"></div>

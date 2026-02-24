@@ -1,6 +1,9 @@
-import { useState, useEffect } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
+"use client";
+
+import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
+import { useRouter, usePathname } from 'next/navigation';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Bars3Icon, XMarkIcon, UserCircleIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline';
 import { useAuth } from '../context/AuthContext';
 
@@ -20,28 +23,39 @@ export default function Navbar() {
     const [isVisible, setIsVisible] = useState(true);
     const [hoveredLink, setHoveredLink] = useState(null);
     const { user, logout, isAuthenticated } = useAuth();
-    const navigate = useNavigate();
-    const location = useLocation();
+    const router = useRouter();
+    const pathname = usePathname();
 
     // Theme Engine: Identify pages with dark backgrounds (heroes)
-    const darkPages = ['/about', '/case-studies', '/customization', '/academy'];
-    const isDarkPage = darkPages.includes(location.pathname);
+    const darkPages = ['/about', '/customization'];
+    const isDarkPage = darkPages.includes(pathname);
 
-    const { scrollY } = useScroll();
+    const lastScrollY = useRef(0);
 
-    useMotionValueEvent(scrollY, "change", (latest) => {
-        const previous = scrollY.getPrevious();
-        if (latest > previous && latest > 150) {
-            setIsVisible(false);
-        } else {
-            setIsVisible(true);
-        }
-        setIsScrolled(latest > 20);
-    });
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentY = window.scrollY;
+            const diff = currentY - lastScrollY.current;
+
+            setIsScrolled(currentY > 20);
+
+            // Only hide after scrolling down more than 80px continuously
+            if (diff > 80 && currentY > 300) {
+                setIsVisible(false);
+            } else if (diff < -30) {
+                setIsVisible(true);
+            }
+
+            lastScrollY.current = currentY;
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const handleLogout = () => {
         logout();
-        navigate('/');
+        router.push('/');
     };
 
     return (
@@ -49,19 +63,18 @@ export default function Navbar() {
             <motion.nav
                 initial={{ y: -100, opacity: 0 }}
                 animate={{
-                    y: isVisible ? 0 : -100,
+                    y: isVisible ? 0 : -120,
                     opacity: isVisible ? 1 : 0,
-                    scale: isVisible ? 1 : 0.95
                 }}
-                transition={{ duration: 0.4, ease: [0.23, 1, 0.32, 1] }}
+                style={{ willChange: 'transform, opacity' }}
                 className={`mx-auto max-w-7xl h-16 rounded-2xl flex items-center justify-between px-6 pointer-events-auto transition-all duration-500 ${isScrolled
-                        ? 'glass-2 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.1)] border border-white/20'
-                        : 'bg-transparent'
+                    ? 'glass-2 py-2 shadow-[0_8px_32px_rgba(0,0,0,0.1)] border border-white/20'
+                    : 'bg-transparent'
                     }`}
                 aria-label="Global"
             >
                 <div className="flex lg:flex-1">
-                    <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-2 group">
+                    <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 group">
                         <motion.div
                             className="flex flex-col leading-[0.7] items-start"
                             whileHover={{ scale: 1.02 }}
@@ -76,8 +89,8 @@ export default function Navbar() {
                     <button
                         type="button"
                         className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 transition-colors ${isScrolled
-                                ? 'text-slate-700'
-                                : isDarkPage ? 'text-white' : 'text-slate-900'
+                            ? 'text-slate-700'
+                            : isDarkPage ? 'text-white' : 'text-slate-900'
                             }`}
                         onClick={() => setMobileMenuOpen(true)}
                     >
@@ -88,17 +101,17 @@ export default function Navbar() {
 
                 <div className="hidden lg:flex lg:gap-x-8 items-center pt-1" onMouseLeave={() => setHoveredLink(null)}>
                     {navigation.map((item) => {
-                        const isActive = location.pathname === item.href;
+                        const isActive = pathname === item.href;
                         return (
                             <Link
                                 key={item.name}
-                                to={item.href}
+                                href={item.href}
                                 onMouseEnter={() => setHoveredLink(item.name)}
                                 className={`text-[10px] font-black uppercase tracking-widest transition-all relative px-3 py-2 group ${isScrolled
-                                        ? 'text-slate-600 hover:text-medical-700'
-                                        : isDarkPage
-                                            ? 'text-white/80 hover:text-white'
-                                            : 'text-slate-900/80 hover:text-slate-900'
+                                    ? 'text-slate-600 hover:text-medical-700'
+                                    : isDarkPage
+                                        ? 'text-white/80 hover:text-white'
+                                        : 'text-slate-900/80 hover:text-slate-900'
                                     }`}
                             >
                                 <span className="relative z-10">{item.name}</span>
@@ -106,8 +119,8 @@ export default function Navbar() {
                                     <motion.span
                                         layoutId="nav-pill"
                                         className={`absolute inset-0 rounded-lg -z-0 ${isScrolled
-                                                ? 'bg-slate-100'
-                                                : isDarkPage ? 'bg-white/10' : 'bg-slate-900/10'
+                                            ? 'bg-slate-100'
+                                            : isDarkPage ? 'bg-white/10' : 'bg-slate-900/10'
                                             }`}
                                         transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                                     />
@@ -126,7 +139,7 @@ export default function Navbar() {
 
                     {isAuthenticated ? (
                         <Link
-                            to="/procurement"
+                            href="/procurement"
                             className="text-[10px] font-black uppercase tracking-widest text-medical-700 flex items-center gap-2 hover:scale-105 transition-transform"
                         >
                             <UserCircleIcon className="w-5 h-5" />
@@ -134,10 +147,10 @@ export default function Navbar() {
                         </Link>
                     ) : (
                         <Link
-                            to="/login"
+                            href="/login"
                             className={`text-[10px] font-black uppercase tracking-widest transition-colors ${isScrolled
-                                    ? 'text-slate-400 hover:text-medical-700'
-                                    : isDarkPage ? 'text-white/40 hover:text-white' : 'text-slate-900/40 hover:text-slate-900'
+                                ? 'text-slate-400 hover:text-medical-700'
+                                : isDarkPage ? 'text-white/40 hover:text-white' : 'text-slate-900/40 hover:text-slate-900'
                                 }`}
                         >
                             Client Login
@@ -156,7 +169,7 @@ export default function Navbar() {
                         </button>
                     )}
                     <Link
-                        to="/contact"
+                        href="/contact"
                         className="hot-cta bg-medical-700 px-6 py-2.5 rounded-xl text-xs font-black text-white uppercase tracking-widest hover:bg-medical-900 shadow-lg shadow-medical-700/20 transition-all hover:ring-2 hover:ring-medical-400/50 hover:scale-105 active:scale-95"
                     >
                         Get Quote
@@ -173,7 +186,7 @@ export default function Navbar() {
                         exit={{ opacity: 0 }}
                         className="lg:hidden fixed inset-0 z-[200] p-4 pointer-events-auto"
                     >
-                        <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-md" onClick={() => setMobileMenuOpen(false)}></div>
+                        <div className="absolute inset-0 bg-slate-950/90" onClick={() => setMobileMenuOpen(false)}></div>
                         <motion.div
                             initial={{ x: '100%' }}
                             animate={{ x: 0 }}
@@ -182,7 +195,7 @@ export default function Navbar() {
                             className="relative glass-dark h-full rounded-[2.5rem] p-8 flex flex-col border border-white/10"
                         >
                             <div className="flex items-center justify-between mb-12">
-                                <Link to="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
+                                <Link href="/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
                                     <div className="flex flex-col leading-[0.7] items-start">
                                         <span className="text-3xl font-semibold tracking-tighter text-brand-red uppercase font-brand">KRG</span>
                                         <span className="text-[22px] font-semibold tracking-tight text-brand-green font-medifabb">Medifabb</span>
@@ -205,8 +218,8 @@ export default function Navbar() {
                                         transition={{ delay: idx * 0.05 }}
                                     >
                                         <Link
-                                            to={item.href}
-                                            className={`text-3xl font-black transition-colors ${location.pathname === item.href ? 'text-medical-400' : 'text-white/70 hover:text-white'
+                                            href={item.href}
+                                            className={`text-3xl font-black transition-colors ${pathname === item.href ? 'text-medical-400' : 'text-white/70 hover:text-white'
                                                 }`}
                                             onClick={() => setMobileMenuOpen(false)}
                                         >
@@ -220,7 +233,7 @@ export default function Navbar() {
                                     transition={{ delay: navigation.length * 0.05 }}
                                 >
                                     <Link
-                                        to={isAuthenticated ? "/procurement" : "/login"}
+                                        href={isAuthenticated ? "/procurement" : "/login"}
                                         className="text-3xl font-black text-medical-400 hover:text-medical-300 transition-colors"
                                         onClick={() => setMobileMenuOpen(false)}
                                     >
@@ -241,7 +254,7 @@ export default function Navbar() {
                                     </button>
                                 )}
                                 <Link
-                                    to="/contact"
+                                    href="/contact"
                                     className="block w-full text-center py-5 bg-medical-600 rounded-2xl text-white font-black uppercase tracking-widest shadow-xl active:scale-95 transition-transform"
                                     onClick={() => setMobileMenuOpen(false)}
                                 >

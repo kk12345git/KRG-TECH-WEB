@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import { GlobeAmericasIcon, CheckBadgeIcon } from '@heroicons/react/24/outline';
 

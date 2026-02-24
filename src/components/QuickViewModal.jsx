@@ -1,6 +1,6 @@
 import { useState, Fragment } from 'react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 // Simplified modal without @headlessui/react
 export function QuickViewModal({ product, isOpen, onClose, addToCompare }) {
@@ -92,7 +92,7 @@ export function QuickViewModal({ product, isOpen, onClose, addToCompare }) {
                             {/* Actions */}
                             <div className="flex gap-3">
                                 <Link
-                                    to={`/product/${product.id}`}
+                                    href={`/product/${product.id}`}
                                     className="flex-1 text-center bg-medical-700 text-white py-3 rounded-xl font-bold hover:bg-medical-900 transition-colors"
                                     onClick={onClose}
                                 >
