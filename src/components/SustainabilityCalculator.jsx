@@ -29,7 +29,7 @@ export function SustainabilityCalculator() {
     };
 
     return (
-        <div className="bg-slate-50 border border-slate-200 rounded-[2.5rem] p-8 lg:p-12 overflow-hidden relative">
+        <div className="bg-slate-50 border border-slate-200 rounded-[2.5rem] p-6 lg:p-12 overflow-hidden relative">
             <div className="absolute top-0 right-0 w-64 h-64 bg-green-100/30 blur-[100px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
 
             <div className="relative z-10">
@@ -112,7 +112,7 @@ export function SustainabilityCalculator() {
                                     animate={{ opacity: 1, scale: 1 }}
                                     className="space-y-8"
                                 >
-                                    <div className="grid grid-cols-2 gap-4">
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                         <div className="p-6 bg-green-50 rounded-2xl border border-green-100">
                                             <p className="text-[10px] font-black uppercase tracking-widest text-green-700 mb-1">Plastic Reduction</p>
                                             <p className="text-2xl font-black text-slate-900">{results.plastic} <span className="text-xs">kg/yr</span></p>

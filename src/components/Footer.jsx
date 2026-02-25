@@ -10,7 +10,7 @@ export default function Footer() {
 
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-medical-900/10 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
 
-            <div className="mx-auto max-w-7xl px-8 lg:px-16 pt-32 pb-16 relative z-10">
+            <div className="mx-auto max-w-7xl px-8 lg:px-16 pt-20 lg:pt-32 pb-16 relative z-10">
                 <div className="xl:grid xl:grid-cols-3 xl:gap-24">
                     <div className="space-y-12">
                         <Link href="/" className="flex items-center gap-2 group">

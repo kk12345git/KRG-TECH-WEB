@@ -219,7 +219,7 @@ export default function Navbar() {
                                     >
                                         <Link
                                             href={item.href}
-                                            className={`text-3xl font-black transition-colors ${pathname === item.href ? 'text-medical-400' : 'text-white/70 hover:text-white'
+                                            className={`text-2xl sm:text-3xl font-black transition-colors ${pathname === item.href ? 'text-medical-400' : 'text-white/70 hover:text-white'
                                                 }`}
                                             onClick={() => setMobileMenuOpen(false)}
                                         >
@@ -234,7 +234,7 @@ export default function Navbar() {
                                 >
                                     <Link
                                         href={isAuthenticated ? "/procurement" : "/login"}
-                                        className="text-3xl font-black text-medical-400 hover:text-medical-300 transition-colors"
+                                        className="text-2xl sm:text-3xl font-black text-medical-400 hover:text-medical-300 transition-colors"
                                         onClick={() => setMobileMenuOpen(false)}
                                     >
                                         {isAuthenticated ? "Buyer Portal" : "Client login"}

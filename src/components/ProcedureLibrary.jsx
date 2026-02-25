@@ -136,7 +136,7 @@ export function ProcedureLibrary() {
                                 </button>
                             </div>
 
-                            <div className="lg:w-1/3 p-12 overflow-y-auto">
+                            <div className="lg:w-1/3 p-6 lg:p-12 overflow-y-auto">
                                 <div className="flex items-center gap-3 mb-6">
                                     <span className="px-2 py-0.5 rounded bg-medical-500 text-white text-[8px] font-black uppercase tracking-[0.2em]">{selectedProcedure.category}</span>
                                     <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">{selectedProcedure.duration}</span>

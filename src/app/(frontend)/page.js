@@ -53,7 +53,7 @@ export default function Home() {
                 description="KRG Medifabb is an ISO 13485:2016 certified manufacturer of premium surgical drapes, customized packs, and medical disposables. Serving global hospital networks with clinical excellence."
             />
             {/* Minimalist Hero Section */}
-            <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-white flex items-center">
+            <div className="relative pt-24 pb-16 lg:pt-48 lg:pb-32 bg-white flex items-center">
 
                 <div className="mx-auto max-w-7xl px-6 relative z-10 w-full">
                     <div className="lg:flex lg:items-center lg:gap-24">
@@ -67,7 +67,7 @@ export default function Home() {
                                 <span className="h-0.5 w-12 bg-medical-700"></span>
                                 <span className="text-[12px] font-black uppercase tracking-[0.5em] text-medical-700">Enterprise Standard 2026</span>
                             </div>
-                            <h1 className="text-5xl sm:text-7xl lg:text-9xl font-black text-slate-900 leading-[0.85] uppercase tracking-tighter mb-10">
+                            <h1 className="text-4xl sm:text-7xl lg:text-9xl font-black text-slate-900 leading-[0.85] uppercase tracking-tighter mb-10">
                                 Clinical <br />
                                 <span className="text-gradient">Authority.</span>
                             </h1>

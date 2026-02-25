@@ -84,12 +84,20 @@
     overflow-x: hidden;
     /* Hardware-accelerated scroll for smoother scrolling */
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  /* Custom Selection Branding */
+  ::selection {
+    @apply bg-medical-500/20 text-medical-900;
   }
 
   img {
     /* Prevent image repaints during scroll */
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
+    @apply max-w-full h-auto;
   }
 
   h1,
@@ -98,7 +106,8 @@
   h4,
   h5,
   h6 {
-    @apply font-black tracking-tighter uppercase leading-none;
+    @apply font-black tracking-tighter uppercase;
+    line-height: 0.95;
   }
 }
 

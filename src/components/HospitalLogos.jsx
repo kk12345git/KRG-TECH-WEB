@@ -48,8 +48,8 @@ export default function HospitalLogos() {
                 </div>
 
                 {/* Gradient Masks */}
-                <div className="absolute inset-y-0 left-0 w-48 bg-gradient-to-r from-white to-transparent z-10"></div>
-                <div className="absolute inset-y-0 right-0 w-48 bg-gradient-to-l from-white to-transparent z-10"></div>
+                <div className="absolute inset-y-0 left-0 w-20 lg:w-48 bg-gradient-to-r from-white to-transparent z-10"></div>
+                <div className="absolute inset-y-0 right-0 w-20 lg:w-48 bg-gradient-to-l from-white to-transparent z-10"></div>
             </div>
 
             <div className="mx-auto max-w-7xl px-6 mt-20 text-center">
