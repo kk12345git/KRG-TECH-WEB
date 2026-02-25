@@ -14,22 +14,33 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const initialCategories = [
-    { id: 1, name: 'Surgical Drapes', slug: 'surgical-drapes', productCount: 42, status: 'active', lastUpdated: '2026-02-20' },
-    { id: 2, name: 'Surgeon Gowns', slug: 'surgeon-gowns', productCount: 28, status: 'active', lastUpdated: '2026-02-22' },
-    { id: 3, name: 'Procedure Packs', slug: 'procedure-packs', productCount: 15, status: 'active', lastUpdated: '2026-02-18' },
-    { id: 4, name: 'Protective Apparel', slug: 'protective-apparel', productCount: 34, status: 'active', lastUpdated: '2026-02-24' },
-    { id: 5, name: 'Sterile Wraps', slug: 'sterile-wraps', productCount: 12, status: 'draft', lastUpdated: '2026-02-15' },
-    { id: 6, name: 'Ancillary Products', slug: 'ancillary-products', productCount: 56, status: 'active', lastUpdated: '2026-02-25' },
-];
+import initialCategories from '@/data/categories.json';
+import { updateCategories } from '@/lib/actions';
 
 export default function CategoriesPage() {
     const [categories, setCategories] = useState(initialCategories);
     const [searchTerm, setSearchTerm] = useState('');
+    const [isSaving, setIsSaving] = useState(false);
 
     const filteredCategories = categories.filter(cat =>
         cat.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+    const handleDelete = async (id) => {
+        if (!confirm('Are you sure you want to delete this category? This will affect product listings.')) return;
+
+        const updated = categories.filter(cat => cat.id !== id);
+        setCategories(updated);
+
+        setIsSaving(true);
+        const result = await updateCategories(updated);
+        setIsSaving(false);
+
+        if (!result.success) {
+            alert('Failed to save changes to the live site.');
+            setCategories(categories); // Rollback
+        }
+    };
 
     return (
         <div className="space-y-12">
@@ -113,7 +124,11 @@ export default function CategoriesPage() {
                                             <button className="p-2 hover:bg-white hover:shadow-md rounded-lg transition-all text-slate-400 hover:text-medical-600">
                                                 <Edit2Icon className="w-4 h-4" />
                                             </button>
-                                            <button className="p-2 hover:bg-white hover:shadow-md rounded-lg transition-all text-slate-400 hover:text-red-600">
+                                            <button
+                                                onClick={() => handleDelete(cat.id)}
+                                                disabled={isSaving}
+                                                className="p-2 hover:bg-white hover:shadow-md rounded-lg transition-all text-slate-400 hover:text-red-600 disabled:opacity-50"
+                                            >
                                                 <Trash2Icon className="w-4 h-4" />
                                             </button>
                                         </div>

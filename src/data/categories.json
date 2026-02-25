@@ -3,6 +3,7 @@
         "id": "general-surgery-drapes",
         "name": "General Surgery Drapes",
         "description": "Essential sterile packs for general surgical interventions, featuring SMS Standard and Reinforced options.",
+        "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800",
         "longDescription": "Our general surgery drape packs are engineered for maximum fluid control and sterile field integrity. Includes Universal, Mini, and Specialized sagging packs to meet diverse clinical requirements.",
         "seo": {
             "title": "General Surgery Drape Packs Manufacturer | KRG Medifabb",
@@ -13,6 +14,7 @@
         "id": "ortho-surgery-drapes",
         "name": "Orthopedic Surgery Drapes",
         "description": "Heavy-duty reinforced drapes and packs for major bone surgery, including TKR and THR sets.",
+        "image": "https://images.unsplash.com/photo-1581595224492-38411d82fc07?auto=format&fit=crop&q=80&w=800",
         "longDescription": "Designed for high-fluid and high-mechanical stress procedures. Our Ortho drapes feature reinforced adhesive zones, limb sleeves, and integrated fluid collection pouches for Knee, Hip, and Shoulder surgeries.",
         "seo": {
             "title": "Orthopedic Surgical Drapes & Packs | TKR THR Drapes India",
@@ -23,6 +25,7 @@
         "id": "gynae-surgery-drapes",
         "name": "Gynecology Surgery Drapes",
         "description": "Specialized OBG solutions for LSCS, normal delivery, and laparoscopic gynecology procedures.",
+        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800",
         "longDescription": "Our gynecology range features amniotic-control SMS fabrics, integrated incise films, and super-absorbent maternity pads. Optimized for patient dignity and clinical efficiency in delivery rooms.",
         "seo": {
             "title": "Gynecology & Obstetric Drape Packs | LSCS Delivery Kits",
@@ -33,6 +36,7 @@
         "id": "other-surgery-drapes",
         "name": "Other Surgery Drapes",
         "description": "Dedicated packs for Cardiovascular, Urology, Neurology, and IVF procedures.",
+        "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800",
         "longDescription": "Comprehensive range of specialized drapes for niche surgical sectors. From CABG cardiac packs to Neurology craniotomy drapes and IVF procedure kits, we provide total sterile solutions for advanced specialties.",
         "seo": {
             "title": "Specialized Surgical Packs | Cardiac Urology Neuro Drapes",
@@ -43,6 +47,7 @@
         "id": "bed-sheets",
         "name": "Disposable Bed Sheets & Covering",
         "description": "Premium SMS & PP Spun Bond solutions for hospital beds, examination couches, and clinical covering.",
+        "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800",
         "longDescription": "Our disposable bed sheets and covering sheets provide a superior moisture barrier and hygiene. Made from premium SMS and PP Spunbond fabrics as per international clinical standards.",
         "seo": {
             "title": "Disposable Hospital Bed Sheets & Covering Sheets | KRG Medifabb",
@@ -53,6 +58,7 @@
         "id": "surgeon-gowns",
         "name": "Disposable Surgeon Gowns",
         "description": "High-performance protective apparel for surgical teams, featuring SMS Standard and Reinforced options.",
+        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800",
         "longDescription": "From SMS Standard to Wrap-around Reinforced protection, our surgeon gowns are designed for maximum safety in the OR. Available in various GSMs including poly aprons and isolation gowns.",
         "seo": {
             "title": "Sterile Surgeon Gowns Manufacturer | Surgical Gowns India",
@@ -63,6 +69,7 @@
         "id": "patient-gowns",
         "name": "Disposable Patient Gowns/Kits",
         "description": "Full range of patient apparel including standard, full-sleeve, and sleeveless designs, plus pre-operative kits.",
+        "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800",
         "longDescription": "Our patient gowns are lightweight, breathable, and provide excellent coverage. Available in various sleeve lengths and complete kits including bouffant caps, shoe covers, and patient towels.",
         "seo": {
             "title": "Disposable Patient Gowns & Pre-Operative Kits | KRG Medifabb",
@@ -73,6 +80,7 @@
         "id": "wrapping-sheets",
         "name": "Sterilization Wrapping Sheets",
         "description": "Clinical-grade SMS barrier sheets for instrument tray sterilization, available in standard and custom sizes.",
+        "image": "https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800",
         "longDescription": "Made from high-performance SMS fabric (43/50 GSM), our wrapping sheets provide an effective microbial barrier. Available in multiple standard dimensions and customized sizes in packs of 25 and 50.",
         "seo": {
             "title": "Medical Sterilization Wrapping Sheets | SMS Fabric Wraps India",
@@ -83,6 +91,7 @@
         "id": "ancillary-disposables",
         "name": "Ancillary Surgical Disposables",
         "description": "Essential protective covers and clinical accessories including C-Arm covers, Mayo covers, and protective sheeting.",
+        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800",
         "longDescription": "Our ancillary range provides complete sterile protection for clinical equipment and surgical staff. From specialized C-Arm and Camera covers to fluid-resistant leggings and shoe covers, we ensure a 360-degree sterile environment.",
         "seo": {
             "title": "Ancillary Surgical Disposables | Mayo C-Arm Camera Covers",

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Main Hero Reconstruction",
+        "placement": "Homepage Hero",
+        "type": "Clinical",
+        "status": "active",
+        "size": "Desktop/Mobile",
+        "preview": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200",
+        "link": "/products"
+    },
+    {
+        "id": 2,
+        "title": "Bespoke Pack Spotlight",
+        "placement": "Customization Page",
+        "type": "Product",
+        "status": "active",
+        "size": "Responsive",
+        "preview": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200",
+        "link": "/customization"
+    }
+]

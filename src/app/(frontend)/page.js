@@ -17,33 +17,13 @@ import { TrustBadges } from '../../components/TrustBadges';
 import { SustainabilityCalculator } from '../../components/SustainabilityCalculator';
 import HospitalLogos from '../../components/HospitalLogos';
 
-const stats = [
-    { id: 1, name: 'Years of Experience', value: '10+' },
-    { id: 2, name: 'Hospitals Served', value: '500+' },
-    { id: 3, name: 'Product SKUs', value: '100+' },
-    { id: 4, name: 'Certifications', value: 'ISO & CE' },
-];
+import bannerData from '@/data/banners.json';
+import statsData from '@/data/stats.json';
+import categoriesData from '@/data/categories.json';
 
-const categories = [
-    {
-        name: 'Surgical Drapes & Packs',
-        description: 'High-barrier, sterile drapes and customized procedure packs for all surgical specialties.',
-        image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800',
-        href: '/category/general-surgery-drapes',
-    },
-    {
-        name: 'Disposable Surgeon Gowns',
-        description: 'AAMI Level 3 & 4 protection with reinforced zones for maximum clinical safety.',
-        image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800',
-        href: '/category/surgeon-gowns',
-    },
-    {
-        name: 'Sterilization Wraps',
-        description: 'Premium SMS barrier wrapping for high-performance instrument tray sterilization.',
-        image: 'https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800',
-        href: '/category/wrapping-sheets',
-    },
-];
+const stats = statsData;
+const heroBanner = bannerData.find(b => b.placement === "Homepage Hero") || bannerData[0];
+const specialties = categoriesData.slice(0, 3);
 
 export default function Home() {
     return (
@@ -95,8 +75,8 @@ export default function Home() {
                                 <div className="absolute -inset-4 bg-gradient-to-tr from-medical-500/10 to-transparent blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                 <div className="relative w-full lg:w-[32rem] h-[22rem] lg:h-[26rem] rounded-[2rem] overflow-hidden shadow-2xl z-10">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200"
-                                        alt="Medical manufacturing facility"
+                                        src={heroBanner.preview}
+                                        alt={heroBanner.title}
                                         fill
                                         priority
                                         className="object-cover"
@@ -245,16 +225,16 @@ export default function Home() {
                             whileHover={{ y: -5 }}
                             className="bento-item md:col-span-4 md:row-span-1 group min-h-[350px]"
                         >
-                            <Link href="/category/general-surgery-drapes" className="h-full flex flex-col">
+                            <Link href={`/category/${specialties[0]?.id}`} className="h-full flex flex-col">
                                 <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors z-10"></div>
                                 <img
-                                    src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200"
+                                    src={specialties[0]?.image || "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200"}
                                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                                    alt="Surgical Drapes"
+                                    alt={specialties[0]?.name}
                                 />
                                 <div className="relative z-20 mt-auto p-4">
-                                    <h3 className="text-4xl font-black text-white uppercase tracking-tighter mb-2">Surgical Drapes</h3>
-                                    <p className="text-white/80 text-sm max-w-md">Precision-engineered procedure packs for high-complexity surgical environments.</p>
+                                    <h3 className="text-4xl font-black text-white uppercase tracking-tighter mb-2">{specialties[0]?.name}</h3>
+                                    <p className="text-white/80 text-sm max-w-md">{specialties[0]?.description}</p>
                                 </div>
                             </Link>
                         </motion.div>
@@ -264,20 +244,20 @@ export default function Home() {
                             whileHover={{ y: -5 }}
                             className="bento-item md:col-span-2 md:row-span-1 group bg-slate-900 border-none min-h-[350px]"
                         >
-                            <Link href="/category/surgeon-gowns" className="h-full flex flex-col justify-between">
+                            <Link href={`/category/${specialties[1]?.id}`} className="h-full flex flex-col justify-between">
                                 <div className="elite-glow"></div>
                                 <div className="relative z-20">
                                     <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center mb-6">
                                         <ShieldCheckIcon className="w-6 h-6 text-medical-400" />
                                     </div>
-                                    <h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-4">Clinical Apparel</h3>
-                                    <p className="text-slate-400 text-xs tracking-widest uppercase">AAMI Level 3 & 4 Protection</p>
+                                    <h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-4">{specialties[1]?.name}</h3>
+                                    <p className="text-slate-400 text-xs tracking-widest uppercase">{specialties[1]?.description?.substring(0, 40)}...</p>
                                 </div>
                                 <div className="relative z-20 mt-8">
                                     <img
-                                        src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=400"
+                                        src={specialties[1]?.image || "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=400"}
                                         className="w-full h-32 object-cover rounded-2xl grayscale group-hover:grayscale-0 transition-all"
-                                        alt="Gowns"
+                                        alt={specialties[1]?.name}
                                     />
                                 </div>
                             </Link>
@@ -288,16 +268,16 @@ export default function Home() {
                             whileHover={{ y: -5 }}
                             className="bento-item md:col-span-3 md:row-span-1 group min-h-[350px]"
                         >
-                            <Link href="/category/wrapping-sheets" className="h-full flex flex-col md:flex-row md:items-center gap-8">
+                            <Link href={`/category/${specialties[2]?.id}`} className="h-full flex flex-col md:flex-row md:items-center gap-8">
                                 <div className="md:w-1/2">
-                                    <h3 className="text-3xl font-black text-slate-900 uppercase tracking-tighter mb-4">Sterile Wraps</h3>
-                                    <p className="text-slate-500 text-sm">High-performance SMS barrier technology for tray protection.</p>
+                                    <h3 className="text-3xl font-black text-slate-900 uppercase tracking-tighter mb-4">{specialties[2]?.name}</h3>
+                                    <p className="text-slate-500 text-sm">{specialties[2]?.description}</p>
                                 </div>
                                 <div className="md:w-1/2 h-48 md:h-full py-4">
                                     <img
-                                        src="https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=400"
+                                        src={specialties[2]?.image || "https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=400"}
                                         className="w-full h-full object-cover rounded-[2rem] shadow-2xl"
-                                        alt="Wraps"
+                                        alt={specialties[2]?.name}
                                     />
                                 </div>
                             </Link>

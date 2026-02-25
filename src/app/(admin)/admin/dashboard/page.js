@@ -10,14 +10,15 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 
-const stats = [
-    { label: 'Total Products', value: '142', icon: PackageIcon, color: 'text-blue-600', bg: 'bg-blue-50' },
-    { label: 'Recent Orders', value: '64', icon: ShoppingCartIcon, color: 'text-emerald-600', bg: 'bg-emerald-50' },
-    { label: 'Revenue (MTD)', value: '$12k', icon: TrendingUpIcon, color: 'text-medical-600', bg: 'bg-medical-50' },
-    { label: 'Low Stock', value: '14', icon: AlertCircleIcon, color: 'text-rose-600', bg: 'bg-rose-50' },
-];
+import productsData from '@/data/products.json';
 
 export default function DashboardPage() {
+    const stats = [
+        { label: 'Total Products', value: productsData.length.toString(), icon: PackageIcon, color: 'text-blue-600', bg: 'bg-blue-50' },
+        { label: 'Recent Orders', value: '0', icon: ShoppingCartIcon, color: 'text-emerald-600', bg: 'bg-emerald-50' },
+        { label: 'Revenue (MTD)', value: '₹0', icon: TrendingUpIcon, color: 'text-medical-600', bg: 'bg-medical-50' },
+        { label: 'Active Leads', value: '42', icon: AlertCircleIcon, color: 'text-rose-600', bg: 'bg-rose-50' },
+    ];
     return (
         <div className="space-y-12">
             <div>

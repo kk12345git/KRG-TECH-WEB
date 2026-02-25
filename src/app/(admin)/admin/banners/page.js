@@ -18,21 +18,34 @@ import {
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
-const initialBanners = [
-    { id: 1, title: 'Main Hero Reconstruction', placement: 'Homepage Hero', type: 'Clinical', status: 'active', size: 'Desktop/Mobile', preview: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=400' },
-    { id: 2, title: 'Bespoke Pack Spotlight', placement: 'Customization Page', type: 'Product', status: 'active', size: 'Responsive', preview: 'https://images.unsplash.com/photo-1581595224492-38411d82fc07?auto=format&fit=crop&q=80&w=400' },
-    { id: 3, title: 'Quality Assurance Banner', placement: 'Quality Page', type: 'Corporate', status: 'active', lastUpdated: '2026-02-18', preview: 'https://images.unsplash.com/photo-1576086213369-97a306dca665?auto=format&fit=crop&q=80&w=400' },
-    { id: 4, title: 'Career Opportunities', placement: 'Careers Hub', type: 'Internal', status: 'draft', size: 'Full Width', preview: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=400' },
-];
+import initialBanners from '@/data/banners.json';
+import { updateBanners } from '@/lib/actions';
 
 export default function BannersPage() {
     const [banners, setBanners] = useState(initialBanners);
     const [searchTerm, setSearchTerm] = useState('');
+    const [isSaving, setIsSaving] = useState(false);
 
     const filteredBanners = banners.filter(banner =>
         banner.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         banner.placement.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+    const handleDelete = async (id) => {
+        if (!confirm('Are you sure you want to delete this banner?')) return;
+
+        const updated = banners.filter(b => b.id !== id);
+        setBanners(updated);
+
+        setIsSaving(true);
+        const result = await updateBanners(updated);
+        setIsSaving(false);
+
+        if (!result.success) {
+            alert('Failed to save changes.');
+            setBanners(banners); // Rollback
+        }
+    };
 
     return (
         <div className="space-y-12">
@@ -100,7 +113,11 @@ export default function BannersPage() {
                                         <button className="p-2 hover:bg-slate-50 rounded-lg transition-all text-slate-300 hover:text-medical-600">
                                             <Edit2Icon className="w-4 h-4" />
                                         </button>
-                                        <button className="p-2 hover:bg-slate-50 rounded-lg transition-all text-slate-300 hover:text-red-500">
+                                        <button
+                                            onClick={() => handleDelete(banner.id)}
+                                            disabled={isSaving}
+                                            className="p-2 hover:bg-slate-50 rounded-lg transition-all text-slate-300 hover:text-red-500 disabled:opacity-50"
+                                        >
                                             <Trash2Icon className="w-4 h-4" />
                                         </button>
                                     </div>

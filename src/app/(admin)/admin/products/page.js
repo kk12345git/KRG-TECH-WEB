@@ -16,11 +16,14 @@ import { useState, useMemo } from 'react';
 import productsData from '@/data/products.json';
 import categoriesData from '@/data/categories.json';
 
+import { updateProducts } from '@/lib/actions';
+
 export default function AdminProductsPage() {
     const [products, setProducts] = useState(productsData);
     const [searchTerm, setSearchTerm] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [editingProduct, setEditingProduct] = useState(null);
+    const [isSaving, setIsSaving] = useState(false);
 
     const filteredProducts = useMemo(() => {
         return products.filter(p =>
@@ -43,22 +46,44 @@ export default function AdminProductsPage() {
         setIsModalOpen(true);
     };
 
-    const handleSave = (e) => {
+    const handleSave = async (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData.entries());
 
+        let updated;
         if (editingProduct?.id && products.some(p => p.id === editingProduct.id)) {
-            setProducts(products.map(p => p.id === editingProduct.id ? { ...p, ...data } : p));
+            updated = products.map(p => p.id === editingProduct.id ? { ...p, ...data } : p);
         } else {
-            setProducts([{ ...data, id: data.id || `prod-${Date.now()}` }, ...products]);
+            updated = [{ ...data, id: data.id || `prod-${Date.now()}` }, ...products];
         }
-        setIsModalOpen(false);
+
+        setProducts(updated);
+        setIsSaving(true);
+        const result = await updateProducts(updated);
+        setIsSaving(false);
+
+        if (result.success) {
+            setIsModalOpen(false);
+        } else {
+            alert('Failed to save product to database.');
+            setProducts(productsData); // Rollback
+        }
     };
 
-    const handleDelete = (id) => {
+    const handleDelete = async (id) => {
         if (confirm('Are you sure you want to delete this product?')) {
-            setProducts(products.filter(p => p.id !== id));
+            const updated = products.filter(p => p.id !== id);
+            setProducts(updated);
+
+            setIsSaving(true);
+            const result = await updateProducts(updated);
+            setIsSaving(false);
+
+            if (!result.success) {
+                alert('Failed to delete product.');
+                setProducts(productsData); // Rollback
+            }
         }
     };
 
@@ -144,13 +169,15 @@ export default function AdminProductsPage() {
                                     <div className="flex items-center justify-end gap-2">
                                         <button
                                             onClick={() => handleOpenModal(product)}
-                                            className="p-2.5 rounded-lg text-slate-400 hover:text-medical-600 hover:bg-medical-50 transition-all"
+                                            disabled={isSaving}
+                                            className="p-2.5 rounded-lg text-slate-400 hover:text-medical-600 hover:bg-medical-50 transition-all disabled:opacity-50"
                                         >
                                             <PencilIcon className="w-5 h-5" />
                                         </button>
                                         <button
                                             onClick={() => handleDelete(product.id)}
-                                            className="p-2.5 rounded-lg text-slate-400 hover:text-red-500 hover:bg-red-50 transition-all"
+                                            disabled={isSaving}
+                                            className="p-2.5 rounded-lg text-slate-400 hover:text-red-500 hover:bg-red-50 transition-all disabled:opacity-50"
                                         >
                                             <Trash2Icon className="w-5 h-5" />
                                         </button>

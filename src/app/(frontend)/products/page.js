@@ -42,7 +42,7 @@ export default function ProductsPage() {
                                 className="w-full aspect-[16/11] rounded-[2.5rem] overflow-hidden bg-slate-100 mb-8 border border-slate-100 relative shadow-sm hover:shadow-xl transition-all duration-500"
                             >
                                 <Image
-                                    src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
+                                    src={category.image || "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"}
                                     alt={category.name}
                                     fill
                                     className="object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0"
