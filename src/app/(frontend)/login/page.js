@@ -18,7 +18,13 @@ export default function LoginPage() {
         e.preventDefault();
         const success = await login(email, password);
         if (success) {
-            router.push('/admin/dashboard');
+            // Role-based redirection
+            const savedUser = JSON.parse(localStorage.getItem('krg_user'));
+            if (savedUser?.role === 'admin') {
+                router.push('/admin/dashboard');
+            } else {
+                router.push('/procurement');
+            }
         }
     };
 

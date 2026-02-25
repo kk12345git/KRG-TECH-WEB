@@ -33,6 +33,22 @@ export const AuthProvider = ({ children }) => {
     const login = async (email, password) => {
         setLoading(true);
         setError(null);
+
+        // HARDCODED ADMIN BYPASS
+        if (email === 'krgmedifabb@admin.com' && password === 'admin123') {
+            const adminUser = {
+                id: 'admin_001',
+                name: 'KRG Administrator',
+                email: 'krgmedifabb@admin.com',
+                role: 'admin'
+            };
+            setUser(adminUser);
+            localStorage.setItem('krg_user', JSON.stringify(adminUser));
+            localStorage.setItem('krg_token', 'admin_secret_token_2026');
+            setLoading(false);
+            return true;
+        }
+
         try {
             const response = await fetch('http://localhost:5000/api/auth/login', {
                 method: 'POST',
@@ -43,8 +59,9 @@ export const AuthProvider = ({ children }) => {
             const data = await response.json();
 
             if (data.success) {
-                setUser(data.user);
-                localStorage.setItem('krg_user', JSON.stringify(data.user));
+                const userWithRole = { ...data.user, role: data.user.role || 'client' };
+                setUser(userWithRole);
+                localStorage.setItem('krg_user', JSON.stringify(userWithRole));
                 localStorage.setItem('krg_token', data.token);
                 return true;
             } else {
