@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.cdnfonts.com/css/acens');
+@import url('https://fonts.cdnfonts.com/css/uni-sans');
 
 @theme {
   /* Medical Brand Colors */
@@ -21,8 +22,8 @@
 
   /* Premium Fonts */
   --font-sans: "Outfit", "Inter", "system-ui", "sans-serif";
-  --font-brand: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  --font-medifabb: "Acens", "Lexend", "Outfit", "Space Grotesk", sans-serif;
+  --font-brand: "Uni Sans", "Lucida Sans", "Lucida Sans Regular", sans-serif;
+  --font-medifabb: "Acens", "Lexend", "Outfit", sans-serif;
 
   /* Animations */
   --animate-marquee: marquee 35s linear infinite;
