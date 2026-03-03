@@ -20,12 +20,20 @@ export default function ProductsPage() {
                         <span className="h-px w-10 bg-medical-700"></span>
                         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-medical-700">Clinical Excellence</span>
                     </div>
-                    <h1 className="text-5xl sm:text-7xl font-black tracking-tighter uppercase leading-[0.9] mb-6">
-                        Global <br /><span className="text-gradient">Catalog.</span>
-                    </h1>
-                    <p className="text-lg text-slate-500 leading-relaxed">
-                        Every product in our portfolio is engineered for sterile perfection and hospital-wide efficiency.
-                    </p>
+                    <div className="flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-10 mb-8">
+                        <div className="flex flex-col leading-[0.7] items-start shrink-0">
+                            <span className="text-5xl sm:text-6xl font-semibold tracking-tighter text-brand-red uppercase font-brand">KRG</span>
+                            <span className="text-[34px] sm:text-[42px] font-semibold tracking-tight text-brand-green font-medifabb">Medifabb</span>
+                        </div>
+                        <div className="h-16 w-px bg-slate-200 hidden lg:block pb-2"></div>
+                        <h1 className="text-5xl sm:text-7xl font-black tracking-tighter uppercase leading-[0.8] mb-1">
+                            Global <br /><span className="text-gradient">Catalog.</span>
+                        </h1>
+                    </div>
+                    <div className="flex flex-col gap-1 text-lg text-slate-500 leading-relaxed font-medium tracking-wide">
+                        <p>SURGICAL DRAPPING SOLUTIONS</p>
+                        <p>CUSTOMIZED DRAPPING NEEDS IN OPERATION THEATRES</p>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-32">

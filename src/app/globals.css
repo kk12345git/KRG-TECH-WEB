@@ -23,6 +23,19 @@
   --font-sans: "Outfit", "Inter", "system-ui", "sans-serif";
   --font-brand: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   --font-medifabb: "Acens", "Lexend", "Outfit", "Space Grotesk", sans-serif;
+
+  /* Animations */
+  --animate-marquee: marquee 35s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 img {
