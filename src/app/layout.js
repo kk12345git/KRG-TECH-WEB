@@ -1,18 +1,8 @@
-import { Outfit, Space_Grotesk, Lexend } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
   variable: "--font-sans",
-  subsets: ["latin"],
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-brand",
-  subsets: ["latin"],
-});
-
-const lexend = Lexend({
-  variable: "--font-medifabb",
   subsets: ["latin"],
 });
 
@@ -59,7 +49,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} ${spaceGrotesk.variable} ${lexend.variable} antialiased`}
+        className={`${outfit.variable} antialiased`}
       >
         {children}
       </body>

@@ -24,3 +24,15 @@
   --font-brand: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   --font-medifabb: "Acens", "Lexend", "Outfit", "Space Grotesk", sans-serif;
 }
+
+img {
+  @apply max-w-full h-auto;
+}
+
+.bento-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 1px solid rgb(241 245 249);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
