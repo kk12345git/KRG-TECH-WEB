@@ -2,7 +2,7 @@
     {
         "id": "gen-surgical-drape-pack",
         "name": "General Surgical Drape Pack",
-        "category": "general-surgery-drapes",
+        "category": "ot-sheets",
         "material": "SMS 45 GSM",
         "size": "Standard Set",
         "sterilization": "Sterile (ETO)",
@@ -19,7 +19,7 @@
     {
         "id": "mini-drape-pack",
         "name": "Mini Drape Pack",
-        "category": "general-surgery-drapes",
+        "category": "ot-sheets",
         "material": "SMS / Spunbond",
         "size": "Compact Set",
         "sterilization": "Sterile (ETO)",
@@ -36,7 +36,7 @@
     {
         "id": "universal-drape-pack",
         "name": "Universal Drape Pack",
-        "category": "general-surgery-drapes",
+        "category": "ot-sheets",
         "material": "High-Performance SMS",
         "size": "Comprehensive Set",
         "sterilization": "Sterile (ETO)",
@@ -53,7 +53,7 @@
     {
         "id": "hb-sag-drape-pack",
         "name": "Hb SAG Drape Pack",
-        "category": "general-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Specialized SMS",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -70,7 +70,7 @@
     {
         "id": "hiv-protection-drape-kit",
         "name": "HIV Protection Drape kit",
-        "category": "general-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Reinforced Impermeable",
         "size": "Standard Kit",
         "sterilization": "Sterile (ETO)",
@@ -87,7 +87,7 @@
     {
         "id": "ortho-drape-pack",
         "name": "Ortho Drape pack (with 5 gown & 3 gown)",
-        "category": "ortho-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Reinforced SMS",
         "size": "Large Set",
         "sterilization": "Sterile (ETO)",
@@ -104,7 +104,7 @@
     {
         "id": "knee-o-drape",
         "name": "Knee O Drape",
-        "category": "ortho-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Flexible SMS",
         "size": "Dedicated Knee",
         "sterilization": "Sterile (ETO)",
@@ -121,7 +121,7 @@
     {
         "id": "hip-u-drape",
         "name": "Hip U Drape",
-        "category": "ortho-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Heavy-duty SMS",
         "size": "Dedicated Hip",
         "sterilization": "Sterile (ETO)",
@@ -138,7 +138,7 @@
     {
         "id": "tkr-drape-pack",
         "name": "TKR - Total Knee Replacement Drape Pack",
-        "category": "ortho-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Maximum Protection SMS",
         "size": "Full Procedure Set",
         "sterilization": "Sterile (ETO)",
@@ -155,7 +155,7 @@
     {
         "id": "thr-drape-pack",
         "name": "THR - Total Hip Replacement Drape Pack",
-        "category": "ortho-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Maximum Protection SMS",
         "size": "Full Procedure Set",
         "sterilization": "Sterile (ETO)",
@@ -172,7 +172,7 @@
     {
         "id": "knee-arthroscopy",
         "name": "Knee Arthroscopy",
-        "category": "ortho-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Fluid-Control SMS",
         "size": "Single Drape",
         "sterilization": "Sterile (ETO)",
@@ -189,7 +189,7 @@
     {
         "id": "shoulder-arthroscopy",
         "name": "Shoulder Arthroscopy",
-        "category": "ortho-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Fluid-Control SMS",
         "size": "Single Drape",
         "sterilization": "Sterile (ETO)",
@@ -206,7 +206,7 @@
     {
         "id": "lscs-drape-pack",
         "name": "LSCS Drape pack",
-        "category": "gynae-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Amniotic-Control SMS",
         "size": "Full OBG Set",
         "sterilization": "Sterile (ETO)",
@@ -223,7 +223,7 @@
     {
         "id": "delivery-drape-pack",
         "name": "Delivery Drape pack",
-        "category": "gynae-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Highly Absorbent Spunbond",
         "size": "Hospital Standard",
         "sterilization": "Sterile (ETO)",
@@ -240,7 +240,7 @@
     {
         "id": "dnc-drape-kit",
         "name": "DNC Drape kit",
-        "category": "gynae-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Lightweight SMS",
         "size": "Compact Kit",
         "sterilization": "Sterile (ETO)",
@@ -257,7 +257,7 @@
     {
         "id": "hystro-lap-pouch",
         "name": "Hystro lap pouch",
-        "category": "gynae-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Impermeable Film/SMS",
         "size": "Dedicated Drape",
         "sterilization": "Sterile (ETO)",
@@ -274,7 +274,7 @@
     {
         "id": "perineal-drape-kit",
         "name": "Perineal Drape kit",
-        "category": "gynae-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Barrier SMS",
         "size": "Standard Kit",
         "sterilization": "Sterile (ETO)",
@@ -291,7 +291,7 @@
     {
         "id": "maternity-mat",
         "name": "Maternity Mat",
-        "category": "gynae-surgery-drapes",
+        "category": "ot-sheets",
         "material": "Super Absorbent Core",
         "size": "Standard",
         "sterilization": "Non-Sterile / Sterile",
@@ -308,7 +308,7 @@
     {
         "id": "cabg-drape-packs",
         "name": "CABG Drape Packs",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "Cardio-Reinforced SMS",
         "size": "Large Set",
         "sterilization": "Sterile (ETO)",
@@ -325,7 +325,7 @@
     {
         "id": "urology-drape-packs",
         "name": "Urology Drape Packs",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "Fluid-Barrier SMS",
         "size": "Standard Set",
         "sterilization": "Sterile (ETO)",
@@ -342,7 +342,7 @@
     {
         "id": "neurology-drape-packs",
         "name": "Neurology Drape Packs",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "Precision SMS",
         "size": "Dedicated Neuro",
         "sterilization": "Sterile (ETO)",
@@ -359,7 +359,7 @@
     {
         "id": "anglo-drape-packs",
         "name": "Anglo Drape Packs",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "Barrier SMS",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -370,7 +370,7 @@
     {
         "id": "lavh-drape-kit",
         "name": "LAVH Drape Kit",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "Specialized SMS",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -381,7 +381,7 @@
     {
         "id": "renal-transplant-packs",
         "name": "Renal Transplant Packs",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "High-Barrier SMS",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -392,7 +392,7 @@
     {
         "id": "cystoscopy-drape-packs",
         "name": "Cystoscopy Drape Packs",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "SMS",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -403,7 +403,7 @@
     {
         "id": "embryo-transplant-packs",
         "name": "Embryo Transplant Packs",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "Soft Spunbond",
         "size": "Compact",
         "sterilization": "Sterile (ETO)",
@@ -414,7 +414,7 @@
     {
         "id": "egg-collection-packs",
         "name": "Egg Collection Packs",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "Soft Spunbond",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -425,7 +425,7 @@
     {
         "id": "ivf-drape-packs",
         "name": "IVF Drape Packs",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "Medical Grade SMS",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -436,7 +436,7 @@
     {
         "id": "ocr-et-packs",
         "name": "OCR -ET Packs",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "SMS",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -447,7 +447,7 @@
     {
         "id": "laparoscopy-drape-packs",
         "name": "Laparoscopy Drape Packs",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "Impermeable SMS",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -458,7 +458,7 @@
     {
         "id": "pcnl-drape",
         "name": "PCNL Drape",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "Fluid-Control SMS",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -469,7 +469,7 @@
     {
         "id": "turp-drape",
         "name": "TURP Drape",
-        "category": "other-surgery-drapes",
+        "category": "customized-packs",
         "material": "UID-Fluid Barrier",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -548,7 +548,7 @@
     {
         "id": "large-sheet",
         "name": "Large Sheet",
-        "category": "ancillary-disposables",
+        "category": "general-disposables",
         "material": "SMS 45 GSM",
         "size": "150 x 200 cm",
         "sterilization": "Sterile (ETO)",
@@ -559,7 +559,7 @@
     {
         "id": "center-hole-sheet",
         "name": "Center Hole Sheet",
-        "category": "ancillary-disposables",
+        "category": "general-disposables",
         "material": "SMS / Spunbond",
         "size": "90 x 120 cm",
         "sterilization": "Sterile (ETO)",
@@ -570,7 +570,7 @@
     {
         "id": "mayo-cover",
         "name": "Mayo Cover",
-        "category": "ancillary-disposables",
+        "category": "general-disposables",
         "material": "Poly-Lined SMS",
         "size": "Standard",
         "sterilization": "Sterile (ETO)",
@@ -581,7 +581,7 @@
     {
         "id": "c-arm-cover",
         "name": "C-Arm Cover",
-        "category": "ancillary-disposables",
+        "category": "general-disposables",
         "material": "Clear Polyethylene",
         "size": "Universal Fit",
         "sterilization": "Sterile (ETO)",
@@ -592,7 +592,7 @@
     {
         "id": "leggings",
         "name": "Leggings",
-        "category": "ancillary-disposables",
+        "category": "general-disposables",
         "material": "SMS",
         "size": "Pair (Standard)",
         "sterilization": "Sterile (ETO)",
@@ -603,7 +603,7 @@
     {
         "id": "camera-cover",
         "name": "Camera Cover",
-        "category": "ancillary-disposables",
+        "category": "general-disposables",
         "material": "HDPE Film",
         "size": "15 x 250 cm",
         "sterilization": "Sterile (ETO)",
@@ -614,7 +614,7 @@
     {
         "id": "shoe-cover",
         "name": "Shoe Cover",
-        "category": "ancillary-disposables",
+        "category": "general-disposables",
         "material": "CPE / Non-Woven",
         "size": "Universal",
         "sterilization": "Non-Sterile",
@@ -625,7 +625,7 @@
     {
         "id": "trolley-sheet",
         "name": "Trolley Sheet",
-        "category": "ancillary-disposables",
+        "category": "general-disposables",
         "material": "Spunbond PP",
         "size": "120 x 210 cm",
         "sterilization": "Non-Sterile / Sterile",
@@ -636,7 +636,7 @@
     {
         "id": "poly-apron",
         "name": "Apron",
-        "category": "ancillary-disposables",
+        "category": "general-disposables",
         "material": "LDPE / Poly",
         "size": "Standard Pack",
         "sterilization": "Non-Sterile",
@@ -647,7 +647,7 @@
     {
         "id": "under-pad",
         "name": "Under Pad",
-        "category": "ancillary-disposables",
+        "category": "general-disposables",
         "material": "SAP Absorbent Core",
         "size": "60 x 90 cm",
         "sterilization": "Non-Sterile",
