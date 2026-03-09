@@ -23,11 +23,13 @@ const navigation = [
         name: 'Products',
         href: '/products',
         dropdown: [
-            { name: 'Surgical Drapes', href: '/category/surgical-drapes' },
-            { name: 'Surgeon Gowns', href: '/category/surgeon-gowns' },
-            { name: 'Surgical Packs & Sets', href: '/category/surgical-packs' },
-            { name: 'Equipment Covers', href: '/category/equipment-covers' },
-            { name: 'Protective Apparels', href: '/category/protective-apparel' },
+            { name: 'Disposable Surgeon Gowns & Isolation Gowns', href: '/category/surgeon-gowns' },
+            { name: 'Disposable Patient Gowns and Patient Wears', href: '/category/patient-wears' },
+            { name: 'Disposable Bed Sheets, Covering Sheets and Pillow Covers', href: '/category/bed-sheets' },
+            { name: 'Disposable Operation Theatre Sheets', href: '/category/ot-sheets' },
+            { name: 'Disposable Sterilization Wrapping Sheets', href: '/category/sterilization-wraps' },
+            { name: 'General Disposable Items', href: '/category/general-disposables' },
+            { name: 'Specific Customized Disposable Surgical Drape Packs & Kits', href: '/category/customized-packs' },
             { name: 'View Entire Catalog', href: '/products' }
         ]
     },
@@ -227,8 +229,8 @@ export default function Navbar() {
                             href="/pdf/KRG_Medifabb_Catalog.pdf"
                             target="_blank"
                             className={`flex items-center gap-2 px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all shadow-lg hover:scale-105 active:scale-95 border ${!isScrolled && isDarkPage
-                                    ? 'bg-white text-medical-800 border-white hover:bg-slate-100 shadow-white/20'
-                                    : 'bg-medical-700 text-white border-medical-700 hover:bg-medical-800 shadow-medical-700/20'
+                                ? 'bg-white text-medical-800 border-white hover:bg-slate-100 shadow-white/20'
+                                : 'bg-medical-700 text-white border-medical-700 hover:bg-medical-800 shadow-medical-700/20'
                                 }`}
                         >
                             <DocumentArrowDownIcon className="w-4 h-4" />
