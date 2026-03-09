@@ -29,7 +29,7 @@ const navigation = [
             { name: 'Disposable Operation Theatre Sheets', href: '/category/ot-sheets' },
             { name: 'Disposable Sterilization Wrapping Sheets', href: '/category/sterilization-wraps' },
             { name: 'General Disposable Items', href: '/category/general-disposables' },
-            { name: 'Customized Disposable Surgical Drape Packs & Kits', href: '/category/customized-packs' },
+            { name: 'Disposable Surgical Drape Packs & Kits', href: '/category/customized-packs' },
             { name: 'View Entire Catalog', href: '/products' }
         ]
     },
