@@ -1,0 +1,3 @@
+module.exports=[77712,a=>{"use strict";var b=a.i(88322);a.s([],59051),a.i(59051),a.s(["001548182182c339db6cf35d68331e83649b332df3",()=>b.getStats,"00287072af181fc9f7f6dab2a6cc947f98a30ade10",()=>b.getCategories,"006439055881fb70623a9c30164e4a36b16740e644",()=>b.getBanners,"00f470aa0a53450c80b3ba9a11fd9599ecd4343741",()=>b.getProducts,"40166b8104f1cdf09a4ebcbad0d6815a6a127bd7aa",()=>b.updateStats,"405c6d6601c5713a20ff5f4390883f19baf6403ad0",()=>b.updateBanners,"408128ac2feed5c9499a8340763a16848d55a3998e",()=>b.updateCategories,"40ecfb921b71dbc7c208e9a9be53b7ae404e922691",()=>b.updateProducts],77712)}];
+
+//# sourceMappingURL=_next-internal_server_app_%28frontend%29_products_page_actions_089bd817.js.map

@@ -1,0 +1,469 @@
+{
+  "node": {
+    "405c6d6601c5713a20ff5f4390883f19baf6403ad0": {
+      "workers": {
+        "app/(admin)/admin/banners/page": {
+          "moduleId": 59498,
+          "async": false,
+          "exportedName": "updateBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/categories/page": {
+          "moduleId": 82832,
+          "async": false,
+          "exportedName": "updateBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/dashboard/page": {
+          "moduleId": 30158,
+          "async": false,
+          "exportedName": "updateBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/products/page": {
+          "moduleId": 2143,
+          "async": false,
+          "exportedName": "updateBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/category/[id]/page": {
+          "moduleId": 69808,
+          "async": false,
+          "exportedName": "updateBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/page": {
+          "moduleId": 13147,
+          "async": false,
+          "exportedName": "updateBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/product/[id]/page": {
+          "moduleId": 84168,
+          "async": false,
+          "exportedName": "updateBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/products/page": {
+          "moduleId": 77712,
+          "async": false,
+          "exportedName": "updateBanners",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/banners/page": "action-browser",
+        "app/(admin)/admin/categories/page": "rsc",
+        "app/(admin)/admin/dashboard/page": "rsc",
+        "app/(admin)/admin/products/page": "rsc",
+        "app/(frontend)/category/[id]/page": "rsc",
+        "app/(frontend)/page": "rsc",
+        "app/(frontend)/product/[id]/page": "rsc",
+        "app/(frontend)/products/page": "rsc"
+      },
+      "filename": "src/lib/actions.js",
+      "exportedName": "updateBanners"
+    },
+    "001548182182c339db6cf35d68331e83649b332df3": {
+      "workers": {
+        "app/(admin)/admin/categories/page": {
+          "moduleId": 82832,
+          "async": false,
+          "exportedName": "getStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/dashboard/page": {
+          "moduleId": 30158,
+          "async": false,
+          "exportedName": "getStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/products/page": {
+          "moduleId": 2143,
+          "async": false,
+          "exportedName": "getStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/category/[id]/page": {
+          "moduleId": 69808,
+          "async": false,
+          "exportedName": "getStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/page": {
+          "moduleId": 13147,
+          "async": false,
+          "exportedName": "getStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/product/[id]/page": {
+          "moduleId": 84168,
+          "async": false,
+          "exportedName": "getStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/products/page": {
+          "moduleId": 77712,
+          "async": false,
+          "exportedName": "getStats",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/categories/page": "rsc",
+        "app/(admin)/admin/dashboard/page": "rsc",
+        "app/(admin)/admin/products/page": "rsc",
+        "app/(frontend)/category/[id]/page": "rsc",
+        "app/(frontend)/page": "rsc",
+        "app/(frontend)/product/[id]/page": "rsc",
+        "app/(frontend)/products/page": "rsc"
+      },
+      "filename": "src/lib/actions.js",
+      "exportedName": "getStats"
+    },
+    "00287072af181fc9f7f6dab2a6cc947f98a30ade10": {
+      "workers": {
+        "app/(admin)/admin/categories/page": {
+          "moduleId": 82832,
+          "async": false,
+          "exportedName": "getCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/dashboard/page": {
+          "moduleId": 30158,
+          "async": false,
+          "exportedName": "getCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/products/page": {
+          "moduleId": 2143,
+          "async": false,
+          "exportedName": "getCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/category/[id]/page": {
+          "moduleId": 69808,
+          "async": false,
+          "exportedName": "getCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/page": {
+          "moduleId": 13147,
+          "async": false,
+          "exportedName": "getCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/product/[id]/page": {
+          "moduleId": 84168,
+          "async": false,
+          "exportedName": "getCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/products/page": {
+          "moduleId": 77712,
+          "async": false,
+          "exportedName": "getCategories",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/categories/page": "rsc",
+        "app/(admin)/admin/dashboard/page": "rsc",
+        "app/(admin)/admin/products/page": "rsc",
+        "app/(frontend)/category/[id]/page": "rsc",
+        "app/(frontend)/page": "rsc",
+        "app/(frontend)/product/[id]/page": "rsc",
+        "app/(frontend)/products/page": "rsc"
+      },
+      "filename": "src/lib/actions.js",
+      "exportedName": "getCategories"
+    },
+    "006439055881fb70623a9c30164e4a36b16740e644": {
+      "workers": {
+        "app/(admin)/admin/categories/page": {
+          "moduleId": 82832,
+          "async": false,
+          "exportedName": "getBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/dashboard/page": {
+          "moduleId": 30158,
+          "async": false,
+          "exportedName": "getBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/products/page": {
+          "moduleId": 2143,
+          "async": false,
+          "exportedName": "getBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/category/[id]/page": {
+          "moduleId": 69808,
+          "async": false,
+          "exportedName": "getBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/page": {
+          "moduleId": 13147,
+          "async": false,
+          "exportedName": "getBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/product/[id]/page": {
+          "moduleId": 84168,
+          "async": false,
+          "exportedName": "getBanners",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/products/page": {
+          "moduleId": 77712,
+          "async": false,
+          "exportedName": "getBanners",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/categories/page": "rsc",
+        "app/(admin)/admin/dashboard/page": "rsc",
+        "app/(admin)/admin/products/page": "rsc",
+        "app/(frontend)/category/[id]/page": "rsc",
+        "app/(frontend)/page": "rsc",
+        "app/(frontend)/product/[id]/page": "rsc",
+        "app/(frontend)/products/page": "rsc"
+      },
+      "filename": "src/lib/actions.js",
+      "exportedName": "getBanners"
+    },
+    "00f470aa0a53450c80b3ba9a11fd9599ecd4343741": {
+      "workers": {
+        "app/(admin)/admin/categories/page": {
+          "moduleId": 82832,
+          "async": false,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/dashboard/page": {
+          "moduleId": 30158,
+          "async": false,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/products/page": {
+          "moduleId": 2143,
+          "async": false,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/category/[id]/page": {
+          "moduleId": 69808,
+          "async": false,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/page": {
+          "moduleId": 13147,
+          "async": false,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/product/[id]/page": {
+          "moduleId": 84168,
+          "async": false,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/products/page": {
+          "moduleId": 77712,
+          "async": false,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/categories/page": "rsc",
+        "app/(admin)/admin/dashboard/page": "rsc",
+        "app/(admin)/admin/products/page": "rsc",
+        "app/(frontend)/category/[id]/page": "rsc",
+        "app/(frontend)/page": "rsc",
+        "app/(frontend)/product/[id]/page": "rsc",
+        "app/(frontend)/products/page": "rsc"
+      },
+      "filename": "src/lib/actions.js",
+      "exportedName": "getProducts"
+    },
+    "40166b8104f1cdf09a4ebcbad0d6815a6a127bd7aa": {
+      "workers": {
+        "app/(admin)/admin/categories/page": {
+          "moduleId": 82832,
+          "async": false,
+          "exportedName": "updateStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/dashboard/page": {
+          "moduleId": 30158,
+          "async": false,
+          "exportedName": "updateStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/products/page": {
+          "moduleId": 2143,
+          "async": false,
+          "exportedName": "updateStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/category/[id]/page": {
+          "moduleId": 69808,
+          "async": false,
+          "exportedName": "updateStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/page": {
+          "moduleId": 13147,
+          "async": false,
+          "exportedName": "updateStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/product/[id]/page": {
+          "moduleId": 84168,
+          "async": false,
+          "exportedName": "updateStats",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/products/page": {
+          "moduleId": 77712,
+          "async": false,
+          "exportedName": "updateStats",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/categories/page": "rsc",
+        "app/(admin)/admin/dashboard/page": "rsc",
+        "app/(admin)/admin/products/page": "rsc",
+        "app/(frontend)/category/[id]/page": "rsc",
+        "app/(frontend)/page": "rsc",
+        "app/(frontend)/product/[id]/page": "rsc",
+        "app/(frontend)/products/page": "rsc"
+      },
+      "filename": "src/lib/actions.js",
+      "exportedName": "updateStats"
+    },
+    "408128ac2feed5c9499a8340763a16848d55a3998e": {
+      "workers": {
+        "app/(admin)/admin/categories/page": {
+          "moduleId": 82832,
+          "async": false,
+          "exportedName": "updateCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/dashboard/page": {
+          "moduleId": 30158,
+          "async": false,
+          "exportedName": "updateCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/products/page": {
+          "moduleId": 2143,
+          "async": false,
+          "exportedName": "updateCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/category/[id]/page": {
+          "moduleId": 69808,
+          "async": false,
+          "exportedName": "updateCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/page": {
+          "moduleId": 13147,
+          "async": false,
+          "exportedName": "updateCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/product/[id]/page": {
+          "moduleId": 84168,
+          "async": false,
+          "exportedName": "updateCategories",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/products/page": {
+          "moduleId": 77712,
+          "async": false,
+          "exportedName": "updateCategories",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/categories/page": "action-browser",
+        "app/(admin)/admin/dashboard/page": "rsc",
+        "app/(admin)/admin/products/page": "rsc",
+        "app/(frontend)/category/[id]/page": "rsc",
+        "app/(frontend)/page": "rsc",
+        "app/(frontend)/product/[id]/page": "rsc",
+        "app/(frontend)/products/page": "rsc"
+      },
+      "filename": "src/lib/actions.js",
+      "exportedName": "updateCategories"
+    },
+    "40ecfb921b71dbc7c208e9a9be53b7ae404e922691": {
+      "workers": {
+        "app/(admin)/admin/categories/page": {
+          "moduleId": 82832,
+          "async": false,
+          "exportedName": "updateProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/dashboard/page": {
+          "moduleId": 30158,
+          "async": false,
+          "exportedName": "updateProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(admin)/admin/products/page": {
+          "moduleId": 2143,
+          "async": false,
+          "exportedName": "updateProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/category/[id]/page": {
+          "moduleId": 69808,
+          "async": false,
+          "exportedName": "updateProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/page": {
+          "moduleId": 13147,
+          "async": false,
+          "exportedName": "updateProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/product/[id]/page": {
+          "moduleId": 84168,
+          "async": false,
+          "exportedName": "updateProducts",
+          "filename": "src/lib/actions.js"
+        },
+        "app/(frontend)/products/page": {
+          "moduleId": 77712,
+          "async": false,
+          "exportedName": "updateProducts",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/categories/page": "rsc",
+        "app/(admin)/admin/dashboard/page": "rsc",
+        "app/(admin)/admin/products/page": "action-browser",
+        "app/(frontend)/category/[id]/page": "rsc",
+        "app/(frontend)/page": "rsc",
+        "app/(frontend)/product/[id]/page": "rsc",
+        "app/(frontend)/products/page": "rsc"
+      },
+      "filename": "src/lib/actions.js",
+      "exportedName": "updateProducts"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "lga8JwHXJX/FhKliNaUkhQRd0xpIAs1RFhABfKQNy4s="
+}

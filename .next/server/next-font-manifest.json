@@ -1,0 +1,70 @@
+{
+  "app": {
+    "[project]/src/app/(admin)/admin/banners/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(admin)/admin/categories/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(admin)/admin/dashboard/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(admin)/admin/leads/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(admin)/admin/orders/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(admin)/admin/products/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/about/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/academy/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/careers/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/case-studies/[id]/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/case-studies/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/category/[id]/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/contact/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/customization/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/login/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/product/[id]/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/products/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/quality/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/(frontend)/support/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ],
+    "[project]/src/app/_not-found/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

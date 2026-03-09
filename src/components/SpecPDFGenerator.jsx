@@ -1,5 +1,4 @@
-import productsData from '../data/products.json';
-
+// Cleaned up unused JSON import
 export default function SpecPDFGenerator() {
     const downloadPDF = (product) => {
         // In a real app, we'd use jspdf or a backend service.

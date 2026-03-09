@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { XMarkIcon, ScaleIcon, ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
-import productsData from '../data/products.json';
+// Custom hook approach
 
 // Simple global-like state using a custom event or a shared hook
 // For this standalone demo, we'll use a custom hook approach

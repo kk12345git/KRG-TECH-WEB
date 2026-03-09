@@ -7,6 +7,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://krgmedifabb.com"),
   title: {
     default: "KRG Medifabb | Clinical Excellence eCommerce",
     template: "%s | KRG Medifabb"
