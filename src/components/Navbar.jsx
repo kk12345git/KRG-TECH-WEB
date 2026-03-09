@@ -100,8 +100,8 @@ export default function Navbar() {
                         <a href="mailto:info@krgmedifabb.com" className="hover:text-white transition-colors flex items-center gap-2">
                             <EnvelopeIcon className="w-4 h-4 text-slate-400" /> info@krgmedifabb.com
                         </a>
-                        <Link href={isAuthenticated ? "/procurement" : "/login"} className="flex items-center gap-2 text-medical-400 hover:text-medical-300 transition-colors">
-                            <UserCircleIcon className="w-4 h-4" /> {isAuthenticated ? "Portal" : "Client Login"}
+                        <Link href={isAuthenticated ? "/admin/dashboard" : "/admin/login"} className="flex items-center gap-2 text-medical-400 hover:text-medical-300 transition-colors">
+                            <UserCircleIcon className="w-4 h-4" /> {isAuthenticated ? "Portal" : "Portal Login"}
                         </Link>
                     </div>
                 </div>
