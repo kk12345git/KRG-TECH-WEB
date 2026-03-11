@@ -1,6 +1,6 @@
-@import "tailwindcss";
 @import url('https://fonts.cdnfonts.com/css/acens');
 @import url('https://fonts.cdnfonts.com/css/uni-sans');
+@import "tailwindcss";
 
 @theme {
   /* Medical Brand Colors */

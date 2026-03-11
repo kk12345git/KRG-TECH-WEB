@@ -273,7 +273,7 @@ export default function Navbar() {
                                 </button>
                             </div>
 
-                            <div className="flex flex-col gap-8 overflow-y-auto pb-8">
+                            <div className="flex-1 flex flex-col gap-8 overflow-y-auto pb-8 pr-2">
                                 {navigation.map((item, idx) => (
                                     <motion.div key={item.name} initial={{ x: 20, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: idx * 0.05 }}>
                                         <Link
