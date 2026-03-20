@@ -58,6 +58,34 @@ export default function QualityClient() {
                             </div>
                         ))}
                     </div>
+
+                    {/* Manufacturing Licence Block */}
+                    <div className="mt-16 bg-[#f0f7ff] border border-[#1e3a5f] rounded-3xl p-10 md:p-12 shadow-sm">
+                        <div className="flex items-center gap-4 mb-6">
+                            <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-[#1e3a5f] shadow-sm border border-slate-100">
+                                <ShieldCheckIcon className="w-6 h-6" />
+                            </div>
+                            <h3 className="text-2xl font-black text-[#1e3a5f] uppercase tracking-tight">Manufacturing Licence</h3>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+                            <div className="space-y-4">
+                                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px]">Licence Number</p>
+                                <p className="text-xl font-black text-slate-900 leading-none">MFG/MD/2025/000064</p>
+                            </div>
+                            <div className="space-y-4">
+                                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px]">Issued By</p>
+                                <p className="text-slate-700 font-bold leading-tight">Central Drugs Standard Control Organisation (CDSCO)</p>
+                            </div>
+                            <div className="space-y-4">
+                                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px]">Company</p>
+                                <p className="text-slate-700 font-bold leading-tight uppercase">KRG Medifabb Private Limited</p>
+                            </div>
+                            <div className="space-y-4">
+                                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px]">Registered Address</p>
+                                <p className="text-slate-500 font-medium italic text-xs">#50, Shanthi Nagar, Korattur, Chennai - 600050</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

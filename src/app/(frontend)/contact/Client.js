@@ -131,6 +131,21 @@ export default function ContactClient() {
                                 <a href="https://wa.me/919176468297" className="text-xs font-black uppercase tracking-widest text-slate-900 border-b-2 border-green-500 hover:text-green-600 transition-colors pb-1">Open Connection</a>
                             </div>
                         </div>
+
+                        {/* Google Maps Embed */}
+                        <div className="mt-12 rounded-[2.5rem] overflow-hidden border border-slate-200 shadow-xl group">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.0!2d80.1957!3d13.1245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKorattur%2C+Chennai!5e0!3m2!1sen!2sin!4v1"
+                                width="100%"
+                                height="300"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="KRG Medifabb Factory Location"
+                                className="grayscale hover:grayscale-0 transition-all duration-1000"
+                            />
+                        </div>
                     </div>
 
                     {/* Interactive Form Area */}
