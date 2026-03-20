@@ -53,6 +53,17 @@ export default function RootLayout({ children }) {
         className={`${outfit.variable} antialiased`}
       >
         {children}
+        
+        {/* Floating WhatsApp Widget */}
+        <a
+          href="https://wa.me/919176468297"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-8 right-8 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl z-[9999] shadow-2xl hover:scale-110 active:scale-95 transition-all"
+          title="Chat on WhatsApp"
+        >
+          💬
+        </a>
       </body>
     </html>
   );

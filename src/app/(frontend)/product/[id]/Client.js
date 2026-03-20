@@ -154,7 +154,7 @@ export default function ProductDetailClient({ product, productsData }) {
                             ))}
                         </div>
 
-                        <div className="flex flex-col sm:flex-row gap-8 mb-16">
+                        <div className="flex flex-col sm:flex-row gap-8 mb-6">
                             <button 
                                 onClick={() => addToCart(product)}
                                 className="flex-1 bg-medical-700 text-white text-center py-8 rounded-[2rem] font-black uppercase shadow-2xl hover:bg-medical-900 transition-all tracking-[0.2em] text-[11px] leading-none flex items-center justify-center gap-3"
@@ -162,10 +162,22 @@ export default function ProductDetailClient({ product, productsData }) {
                                 <ShoppingBagIcon className="w-5 h-5" />
                                 Add to Selection
                             </button>
-                            <Link href="/contact" className="flex-1 border-2 border-slate-900 text-slate-900 py-8 rounded-[2rem] font-black transition-all uppercase tracking-[0.2em] text-[11px] hover:bg-slate-900 hover:text-white leading-none text-center">
+                            <Link href="/contact" className="flex-1 border-2 border-slate-900 text-slate-900 py-8 rounded-[2rem] font-black transition-all uppercase tracking-[0.2em] text-[11px] hover:bg-slate-900 hover:text-white leading-none text-center font-bold">
                                 Direct Inquiry
                             </Link>
                         </div>
+
+                        {/* WhatsApp Request Quote Button */}
+                        <a
+                            href={`https://wa.me/919176468297?text=${encodeURIComponent(
+                                `Hi KRG Medifabb, I need a quote for:\n\nProduct: ${product.title || product.name}\nProduct Code: KRG-${product.id.toUpperCase()}\n\nPlease share pricing and availability.`
+                            )}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full bg-[#25D366] text-white py-6 rounded-[2rem] font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center gap-3 hover:bg-[#128c7e] transition-all shadow-xl mb-16"
+                        >
+                            📲 Request Quote via WhatsApp
+                        </a>
 
                         <button
                             onClick={() => downloadPDF(product)}
