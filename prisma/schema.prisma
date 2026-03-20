@@ -558,7 +558,7 @@ model Banner {
 
 model Stat {
   id        String   @id @default(uuid())
-  name      String
+  name      String   @unique
   value     String
   order     Int      @default(0)
   createdAt DateTime @default(now())

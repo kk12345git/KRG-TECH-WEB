@@ -71,15 +71,20 @@ async function main() {
     }
 
     // Banners and Stats (Defaults for the DB)
-    await prisma.stat.createMany({
-        data: [
-            { name: 'Surgical End-Users', value: '450+', order: 1 },
-            { name: 'Countries Exported', value: '14+', order: 2 },
-            { name: 'Quality Certifications', value: '7', order: 3 },
-            { name: 'Manufacturing Area', value: '25,000 sq ft', order: 4 }
-        ],
-        skipDuplicates: true
-    });
+    const statsData = [
+        { name: 'Surgical End-Users', value: '450+', order: 1 },
+        { name: 'Countries Exported', value: '14+', order: 2 },
+        { name: 'Quality Certifications', value: '7', order: 3 },
+        { name: 'Manufacturing Area', value: '25,000 sq ft', order: 4 }
+    ];
+
+    for (const stat of statsData) {
+        await prisma.stat.upsert({
+            where: { name: stat.name },
+            update: { value: stat.value, order: stat.order },
+            create: stat
+        });
+    }
 
     console.log('Seed completed successfully.');
 }
