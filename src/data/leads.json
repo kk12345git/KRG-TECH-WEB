@@ -1,0 +1,35 @@
+[
+    {
+        "id": "lead_1",
+        "fullName": "Dr. Sarah Chen",
+        "organization": "Apollo Specialty Hospitals",
+        "email": "sarah.chen@apollo.com",
+        "specialty": "ortho",
+        "volume": "Annual Tender",
+        "message": "Interested in a customized ortho-pack for high-volume knee replacements. Need focus on fluid management.",
+        "status": "new",
+        "timestamp": "2026-02-24T10:30:00Z"
+    },
+    {
+        "id": "lead_2",
+        "fullName": "James Wilson",
+        "organization": "Global Health Network",
+        "email": "j.wilson@ghn.ae",
+        "specialty": "general",
+        "volume": "Monthly Contract",
+        "message": "Looking for private labeling options for our Dubai facilities. Standard laparoscopy kits.",
+        "status": "pending",
+        "timestamp": "2026-02-24T09:15:00Z"
+    },
+    {
+        "id": "lead_3",
+        "fullName": "Maria Garcia",
+        "organization": "St. Mary's Medical Center",
+        "email": "m.garcia@stmarys.uk",
+        "specialty": "ancillary",
+        "volume": "Single Batch",
+        "message": "Requesting samples of the Level 4 surgical gowns. High priority for upcoming audit.",
+        "status": "contacted",
+        "timestamp": "2026-02-23T15:45:00Z"
+    }
+]

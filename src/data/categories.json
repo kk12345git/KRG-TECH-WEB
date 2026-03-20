@@ -1,0 +1,51 @@
+[
+    {
+        "id": "surgeon-gowns",
+        "name": "DISPOSABLE SURGEON GOWNS & ISOLATION GOWNS",
+        "description": "High-performance protective apparel for surgical teams.",
+        "image": "/images/categories/surgeon-gowns.png",
+        "longDescription": "From SMS Standard to Wrap-around Reinforced protection, our surgeon gowns are designed for maximum safety in the OR."
+    },
+    {
+        "id": "patient-wears",
+        "name": "DISPOSABLE PATIENT GOWNS AND PATIENT WEARS",
+        "description": "Full range of patient apparel including standard, full-sleeve, and sleeveless designs.",
+        "image": "/images/categories/patient-wears.png",
+        "longDescription": "Our patient gowns are lightweight, breathable, and provide excellent coverage."
+    },
+    {
+        "id": "bed-sheets",
+        "name": "DISPOSABLE BED SHEETS, COVERING SHEETS AND PILLOW COVERS",
+        "description": "Premium SMS & PP Spun Bond solutions for hospital beds, examination couches.",
+        "image": "/images/categories/bed-sheets.png",
+        "longDescription": "Our disposable bed sheets and covering sheets provide a superior moisture barrier and hygiene."
+    },
+    {
+        "id": "ot-sheets",
+        "name": "DISPOSABLE OPERATION THEATRE SHEETS",
+        "description": "Essential sterile packs and drapes for general surgical interventions.",
+        "image": "/images/categories/ot-sheets.png",
+        "longDescription": "Engineered for maximum fluid control and sterile field integrity."
+    },
+    {
+        "id": "sterilization-wraps",
+        "name": "DISPOSABLE STERILIZATION WRAPPING SHEETS",
+        "description": "Clinical-grade SMS barrier sheets for instrument tray sterilization.",
+        "image": "/images/categories/sterilization-wraps.png",
+        "longDescription": "Made from high-performance SMS fabric, our wrapping sheets provide an effective microbial barrier."
+    },
+    {
+        "id": "general-disposables",
+        "name": "GENERAL DISPOSABLE ITEMS",
+        "description": "Essential protective covers and clinical accessories.",
+        "image": "/images/categories/general-disposables.png",
+        "longDescription": "Provides complete sterile protection for clinical equipment and surgical staff."
+    },
+    {
+        "id": "customized-packs",
+        "name": "DISPOSABLE SURGICAL DRAPE PACKS & KITS",
+        "description": "Dedicated custom packs for Cardiovascular, Urology, Neurology, and specialized procedures.",
+        "image": "/images/categories/customized-packs.png",
+        "longDescription": "Comprehensive range of specialized drape packs tailored to surgical requirements."
+    }
+]

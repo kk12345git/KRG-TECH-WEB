@@ -1,0 +1,35 @@
+{
+  "node": {
+    "00a9e81ed99a24ae3444b4df8f739e0af86f1c8993": {
+      "workers": {
+        "app/(admin)/admin/leads/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/admin/leads/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getLeads",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/leads/page": "action-browser"
+      },
+      "exportedName": "getLeads",
+      "filename": "src/lib/actions.js"
+    },
+    "60864846af01fe5bd73bec65192cd0f263a6e4171e": {
+      "workers": {
+        "app/(admin)/admin/leads/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/admin/leads/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateLeadStatus",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/leads/page": "action-browser"
+      },
+      "exportedName": "updateLeadStatus",
+      "filename": "src/lib/actions.js"
+    }
+  },
+  "edge": {}
+}

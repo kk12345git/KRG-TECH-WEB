@@ -1,0 +1,218 @@
+[
+    {
+        "id": 1,
+        "title": "Reducing SSI Rates in Orthopedic Surgery",
+        "hospital": "Apollo Specialty Hospitals",
+        "location": "Chennai, India",
+        "objective": "To evaluate the impact of KRG Customized Orthopedic Packs on Surgical Site Infection (SSI) rates and intraoperative fluid management during Total Knee Replacement (TKR) procedures.",
+        "methodology": "A retrospective study compared 120 TKR procedures using standard hospital-assembled kits with 120 procedures using KRG Medifabb's reinforced customized packs over a 12-month period.",
+        "metrics": [
+            {
+                "label": "SSI Rate (Standard)",
+                "val": "2.8%",
+                "color": "slate"
+            },
+            {
+                "label": "SSI Rate (KRG Pack)",
+                "val": "2.2%",
+                "color": "brand-green"
+            },
+            {
+                "label": "Setup Time Reduction",
+                "val": "14 mins",
+                "color": "brand-red"
+            }
+        ],
+        "outcomes": [
+            "Achieved a 22% overall reduction in post-operative infection rates.",
+            "Eliminated intraoperative drape failure caused by fluid saturation through KRG's Heavy-Duty Fluid Collection Pouches.",
+            "Reduced OR setup personnel fatigue by consolidating 14 individual components into a single sterile barrier."
+        ],
+        "protocol": [
+            {
+                "step": "Pre-Op Audit",
+                "desc": "Mapping existing theater workflow and component waste analysis."
+            },
+            {
+                "step": "Custom Pack Design",
+                "desc": "Reinforced fluid collection pouches integrated for high-volume arthroplasty."
+            },
+            {
+                "step": "Clinical Trials",
+                "desc": "Phase-1 implementation across senior surgical teams."
+            },
+            {
+                "step": "Full Adoption",
+                "desc": "Standardization of TKR packs across the orthopedic wing."
+            }
+        ],
+        "benchmarks": [
+            {
+                "feature": "Fabric Hydrostatic Head",
+                "standard": "35 cm H2O",
+                "krg": "55 cm H2O"
+            },
+            {
+                "feature": "Absorbent Capacity",
+                "standard": "250 ml",
+                "krg": "600 ml"
+            },
+            {
+                "feature": "Linting Category",
+                "standard": "Class 2",
+                "krg": "Class 1 (Cleanroom Certified)"
+            }
+        ],
+        "roiAnalysis": {
+            "annualSavings": "₹42,00,000",
+            "paybackPeriod": "3 Months",
+            "efficiencyGain": "18%"
+        },
+        "economicImpact": "Estimated annual savings of ₹42,00,000 through reduced theater time and infection-related readmission costs.",
+        "categoryId": "ortho-surgery-drapes"
+    },
+    {
+        "id": 2,
+        "title": "Optimizing OR Turnover with Custom Packs",
+        "hospital": "Global Health Network",
+        "location": "Dubai, UAE",
+        "objective": "Assessing the efficiency of 'Ready-to-Use' bespoke surgical packs in high-volume cardiac surgery theaters to increase daily procedure capacity.",
+        "methodology": "Time-and-motion analysis of OR turnover phases across 5 departmental theaters over 6 months.",
+        "metrics": [
+            {
+                "label": "Avg Turnover Time",
+                "val": "-18 mins",
+                "color": "brand-red"
+            },
+            {
+                "label": "Daily Capacity",
+                "val": "+1 Case",
+                "color": "brand-green"
+            },
+            {
+                "label": "Waste Packaging",
+                "val": "-30%",
+                "color": "slate"
+            }
+        ],
+        "outcomes": [
+            "Saved average of 18 minutes per setup by eliminating individual component peeling.",
+            "Standardized sterile field preparation across different surgical teams.",
+            "Significant reduction in 'Wait Time' for anesthesia induction due to faster tray preparation."
+        ],
+        "protocol": [
+            {
+                "step": "Workflow Audit",
+                "desc": "Identifying time-bottlenecks in manual tray preparation."
+            },
+            {
+                "step": "Component Extraction",
+                "desc": "Removing redundant secondary packaging from core drapes."
+            },
+            {
+                "step": "Just-In-Time Delivery",
+                "desc": "Syncing sterile supply chain with surgical schedules."
+            },
+            {
+                "step": "Theater Training",
+                "desc": "Rapid-setup walkthroughs for nursing and scrub staff."
+            }
+        ],
+        "benchmarks": [
+            {
+                "feature": "Component Count",
+                "standard": "22 items (separate)",
+                "krg": "1 unit (Bespoke Pack)"
+            },
+            {
+                "feature": "Peeling Time",
+                "standard": "12 mins",
+                "krg": "2 mins"
+            },
+            {
+                "feature": "Sterile Field Confidence",
+                "standard": "Moderate",
+                "krg": "Ultra (Single Barrier)"
+            }
+        ],
+        "roiAnalysis": {
+            "annualSavings": "$180,000",
+            "paybackPeriod": "Immediate",
+            "efficiencyGain": "25%"
+        },
+        "economicImpact": "Additional revenue generation through one extra high-value cardiac procedure per day per theater.",
+        "categoryId": "surgeon-gowns"
+    },
+    {
+        "id": 3,
+        "title": "Sustainability in Disposable Management",
+        "hospital": "St. Mary’s Medical Center",
+        "location": "London, UK",
+        "objective": "Reducing the environmental footprint of laparotomy procedures by optimizing component selection and material weight without compromising clinical safety.",
+        "methodology": "Component auditing of standard lap-packs to identify redundant materials and high-volume waste items.",
+        "metrics": [
+            {
+                "label": "Weight Reduction",
+                "val": "1.2 kg",
+                "color": "brand-green"
+            },
+            {
+                "label": "Annual Waste Save",
+                "val": "30%",
+                "color": "brand-red"
+            },
+            {
+                "label": "Inventory SKUs",
+                "val": "5 to 1",
+                "color": "slate"
+            }
+        ],
+        "outcomes": [
+            "Removed 4 redundant components previously included by legacy suppliers.",
+            "Switched to KRG's recycled-core polypropylene for non-critical barrier zones.",
+            "Reduced medical waste disposal costs by 28% year-on-year."
+        ],
+        "protocol": [
+            {
+                "step": "Waste Characterization",
+                "desc": "Categorizing surgical waste by weight and material type."
+            },
+            {
+                "step": "Material Engineering",
+                "desc": "Designing high-strength, low-weight barrier textiles."
+            },
+            {
+                "step": "Supply Consolidation",
+                "desc": "Replacing multiple SKUs with a single streamlined solution."
+            },
+            {
+                "step": "Impact Reporting",
+                "desc": "Monthly ESG benchmarks provided to hospital board."
+            }
+        ],
+        "benchmarks": [
+            {
+                "feature": "Total Pack Weight",
+                "standard": "4.2 kg",
+                "krg": "3.0 kg"
+            },
+            {
+                "feature": "Non-Recyclable Plastics",
+                "standard": "1.8 kg",
+                "krg": "0.4 kg"
+            },
+            {
+                "feature": "Carbon Footprint",
+                "standard": "Base",
+                "krg": "24% Reduction"
+            }
+        ],
+        "roiAnalysis": {
+            "annualSavings": "£55,000",
+            "paybackPeriod": "6 Months",
+            "efficiencyGain": "12%"
+        },
+        "economicImpact": "Documented reduction in clinical waste incineration costs and improved ESG rating for the hospital group.",
+        "categoryId": "general-surgery-drapes"
+    }
+]

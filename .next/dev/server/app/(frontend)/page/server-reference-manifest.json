@@ -1,0 +1,170 @@
+{
+  "node": {
+    "001306d586ba277bf711fd3430eadf74c61b8142ab": {
+      "workers": {
+        "app/(frontend)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getBanners",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/page": "rsc"
+      },
+      "exportedName": "getBanners",
+      "filename": "src/lib/actions.js"
+    },
+    "005425da4bd57661644cb27525cd4248b9ea786478": {
+      "workers": {
+        "app/(frontend)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/page": "rsc"
+      },
+      "exportedName": "getProducts",
+      "filename": "src/lib/actions.js"
+    },
+    "008b5fd52888c040b10543da6e930f660cd3f314a6": {
+      "workers": {
+        "app/(frontend)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getStats",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/page": "rsc"
+      },
+      "exportedName": "getStats",
+      "filename": "src/lib/actions.js"
+    },
+    "00a9e81ed99a24ae3444b4df8f739e0af86f1c8993": {
+      "workers": {
+        "app/(frontend)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getLeads",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/page": "rsc"
+      },
+      "exportedName": "getLeads",
+      "filename": "src/lib/actions.js"
+    },
+    "00f138983531c853cdacc5061b7b2401f63ab09c9b": {
+      "workers": {
+        "app/(frontend)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getCategories",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/page": "rsc"
+      },
+      "exportedName": "getCategories",
+      "filename": "src/lib/actions.js"
+    },
+    "4039f02b3b3e6266966365e66e6677087905552c0e": {
+      "workers": {
+        "app/(frontend)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "submitLeads",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/page": "rsc"
+      },
+      "exportedName": "submitLeads",
+      "filename": "src/lib/actions.js"
+    },
+    "4043a73085d321215884354ea55deda734393c36d9": {
+      "workers": {
+        "app/(frontend)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateStats",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/page": "rsc"
+      },
+      "exportedName": "updateStats",
+      "filename": "src/lib/actions.js"
+    },
+    "40caf72f1ef02d0b2c3e78b9f91508f5bf8169f867": {
+      "workers": {
+        "app/(frontend)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateProducts",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/page": "rsc"
+      },
+      "exportedName": "updateProducts",
+      "filename": "src/lib/actions.js"
+    },
+    "40d43e87e2649925a28e35349b47382de9b67d2c6f": {
+      "workers": {
+        "app/(frontend)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateBanners",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/page": "rsc"
+      },
+      "exportedName": "updateBanners",
+      "filename": "src/lib/actions.js"
+    },
+    "40e8a16985deaadf3859b2438b252c667bd5b2d992": {
+      "workers": {
+        "app/(frontend)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateCategories",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/page": "rsc"
+      },
+      "exportedName": "updateCategories",
+      "filename": "src/lib/actions.js"
+    },
+    "60864846af01fe5bd73bec65192cd0f263a6e4171e": {
+      "workers": {
+        "app/(frontend)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateLeadStatus",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/page": "rsc"
+      },
+      "exportedName": "updateLeadStatus",
+      "filename": "src/lib/actions.js"
+    }
+  },
+  "edge": {}
+}

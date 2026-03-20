@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Category {
+  id              String    @id
+  name            String
+  description     String
+  image           String?
+  longDescription String?
+  seoTitle        String?
+  seoDescription  String?
+  products        Product[]
+}
+
+model Product {
+  id            String   @id
+  name          String
+  category      Category @relation(fields: [categoryId], references: [id])
+  categoryId    String
+  material      String?
+  size          String?
+  sterilization String?
+  customizable  Boolean  @default(false)
+  moq           String?
+  features      String[]
+  description   String?
+  image         String?
+}
+
+model Banner {
+  id        Int     @id @default(autoincrement())
+  title     String
+  placement String
+  type      String
+  status    String
+  size      String
+  preview   String
+  link      String
+}
+
+model Stat {
+  id    Int    @id @default(autoincrement())
+  name  String
+  value String
+}
