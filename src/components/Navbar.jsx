@@ -95,13 +95,13 @@ export default function Navbar() {
                         <span className="flex items-center gap-2 text-medical-400">
                             <CheckBadgeIcon className="w-4 h-4" /> ISO 13485:2016 Certified
                         </span>
-                        <a href="tel:+919820021460" className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer">
-                            <PhoneIcon className="w-4 h-4 text-slate-400" /> +91 98200 21460
+                        <a href="tel:+919176468297" className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer">
+                            <PhoneIcon className="w-4 h-4 text-slate-400" /> +91 91764 68297 / 98410 98184
                         </a>
                     </div>
                     <div className="flex items-center justify-between w-full md:w-auto gap-4 md:gap-6">
-                        <a href="mailto:info@krgmedifabb.com" className="hover:text-white transition-colors flex items-center gap-2">
-                            <EnvelopeIcon className="w-4 h-4 text-slate-400" /> info@krgmedifabb.com
+                        <a href="mailto:krgmedifabb@gmail.com" className="hover:text-white transition-colors flex items-center gap-2">
+                            <EnvelopeIcon className="w-4 h-4 text-slate-400" /> krgmedifabb@gmail.com
                         </a>
                         <Link href={isAuthenticated ? "/admin/dashboard" : "/admin/login"} className="flex items-center gap-2 text-medical-400 hover:text-medical-300 transition-colors">
                             <UserCircleIcon className="w-4 h-4" /> {isAuthenticated ? "Portal" : "Portal Login"}
