@@ -49,12 +49,16 @@ export default function Footer() {
                                 <h3 className="text-[11px] font-black uppercase tracking-[0.3em] text-medical-400 mb-8">Contact</h3>
                                 <div className="space-y-6">
                                     <div>
-                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">Global H.Q.</p>
-                                        <p className="text-[10px] font-black text-white leading-relaxed uppercase">No.50, Shanthi Nagar, Korattur,<br />Chennai - 600 050, TN, INDIA</p>
+                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">Registered Office</p>
+                                        <p className="text-[10px] font-black text-white leading-relaxed uppercase">No. 50, Shanthi Nagar, Korattur,<br />Chennai - 600 050, India</p>
+                                    </div>
+                                    <div>
+                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">Factory</p>
+                                        <p className="text-[10px] font-black text-white leading-relaxed uppercase">No.265-D, 11th Street, SIDCO Industrial Estate,<br />Pattaravakkam, Chennai - 600 098, India</p>
                                     </div>
                                     <div>
                                         <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">Direct Line</p>
-                                        <p className="text-[10px] font-black text-white uppercase">+91 91764 68297</p>
+                                        <p className="text-[10px] font-black text-white uppercase">+91 91764 68297 / 98410 98184</p>
                                     </div>
                                 </div>
                             </div>

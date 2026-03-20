@@ -74,7 +74,7 @@ export default function QualityPage() {
                         <div>
                             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">State-of-the-Art Manufacturing</h2>
                             <p className="mt-6 text-lg text-medical-100">
-                                Our facility in Chennai is designed for high-efficiency, sterile medical production. We maintain rigorous standards for infection control.
+                                Our manufacturing facility at SIDCO Industrial Estate, Chennai is designed for high-efficiency, sterile medical production. We maintain rigorous standards for infection control.
                             </p>
                             <div className="mt-10 space-y-6">
                                 <div className="flex gap-4">
