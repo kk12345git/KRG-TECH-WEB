@@ -28,14 +28,12 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$ShieldCheckIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheckIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/ShieldCheckIcon.js [app-client] (ecmascript) <export default as ShieldCheckIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$BeakerIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BeakerIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/BeakerIcon.js [app-client] (ecmascript) <export default as BeakerIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$GlobeAsiaAustraliaIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GlobeAsiaAustraliaIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/GlobeAsiaAustraliaIcon.js [app-client] (ecmascript) <export default as GlobeAsiaAustraliaIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$outline$2f$esm$2f$TrophyIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TrophyIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/outline/esm/TrophyIcon.js [app-client] (ecmascript) <export default as TrophyIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$SEO$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/SEO.jsx [app-client] (ecmascript)");
 "use client";
-;
 ;
 ;
 ;
@@ -89,7 +87,7 @@ function AboutPage() {
                 description: "Learn about KRG Medifabb's journey from a local manufacturer to a global leader in surgical disposables and sterile medical textiles."
             }, void 0, false, {
                 fileName: "[project]/src/app/(frontend)/about/page.js",
-                lineNumber: 41,
+                lineNumber: 40,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -105,17 +103,17 @@ function AboutPage() {
                                     className: "border-r border-b border-white/20"
                                 }, i, false, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 51,
+                                    lineNumber: 50,
                                     columnNumber: 29
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                            lineNumber: 49,
+                            lineNumber: 48,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/(frontend)/about/page.js",
-                        lineNumber: 48,
+                        lineNumber: 47,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -136,7 +134,7 @@ function AboutPage() {
                                     children: "Our Legacy"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 61,
+                                    lineNumber: 60,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -145,7 +143,7 @@ function AboutPage() {
                                         "Defining the ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                                            lineNumber: 63,
+                                            lineNumber: 62,
                                             columnNumber: 42
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -153,13 +151,13 @@ function AboutPage() {
                                             children: "Sterile Standard."
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                                            lineNumber: 63,
+                                            lineNumber: 62,
                                             columnNumber: 48
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 62,
+                                    lineNumber: 61,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -167,24 +165,24 @@ function AboutPage() {
                                     children: "Founded in 2012, KRG Medifabb has evolved from a specialized textile unit into a global powerhouse for surgical disposables."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 65,
+                                    lineNumber: 64,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                            lineNumber: 56,
+                            lineNumber: 55,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/(frontend)/about/page.js",
-                        lineNumber: 55,
+                        lineNumber: 54,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/(frontend)/about/page.js",
-                lineNumber: 47,
+                lineNumber: 46,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -210,7 +208,7 @@ function AboutPage() {
                                     children: stat.value
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 83,
+                                    lineNumber: 82,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -218,23 +216,23 @@ function AboutPage() {
                                     children: stat.label
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 84,
+                                    lineNumber: 83,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, i, true, {
                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                            lineNumber: 76,
+                            lineNumber: 75,
                             columnNumber: 25
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                    lineNumber: 74,
+                    lineNumber: 73,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(frontend)/about/page.js",
-                lineNumber: 73,
+                lineNumber: 72,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -253,7 +251,7 @@ function AboutPage() {
                                             children: "M"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                                            lineNumber: 95,
+                                            lineNumber: 94,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -261,7 +259,7 @@ function AboutPage() {
                                             children: "Our Mission"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                                            lineNumber: 96,
+                                            lineNumber: 95,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -269,13 +267,13 @@ function AboutPage() {
                                             children: '"To empower clinical teams worldwide with high-performance disposables that ensure absolute safety, enabling them to focus on what matters most—saving lives."'
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                                            lineNumber: 97,
+                                            lineNumber: 96,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 94,
+                                    lineNumber: 93,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -286,7 +284,7 @@ function AboutPage() {
                                             children: "V"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                                            lineNumber: 102,
+                                            lineNumber: 101,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -294,7 +292,7 @@ function AboutPage() {
                                             children: "Our Vision"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                                            lineNumber: 103,
+                                            lineNumber: 102,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -302,19 +300,19 @@ function AboutPage() {
                                             children: "To become the world's most trusted partner for customized surgical packs, driving innovation in medical fabric science for a safer tomorrow."
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                                            lineNumber: 104,
+                                            lineNumber: 103,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 101,
+                                    lineNumber: 100,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                            lineNumber: 93,
+                            lineNumber: 92,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -326,7 +324,7 @@ function AboutPage() {
                                             className: "w-10 h-10 text-medical-600 mb-6"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                                            lineNumber: 112,
+                                            lineNumber: 111,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -334,7 +332,7 @@ function AboutPage() {
                                             children: value.title
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                                            lineNumber: 113,
+                                            lineNumber: 112,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -342,29 +340,29 @@ function AboutPage() {
                                             children: value.desc
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                                            lineNumber: 114,
+                                            lineNumber: 113,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, i, true, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 111,
+                                    lineNumber: 110,
                                     columnNumber: 29
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                            lineNumber: 109,
+                            lineNumber: 108,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                    lineNumber: 92,
+                    lineNumber: 91,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(frontend)/about/page.js",
-                lineNumber: 91,
+                lineNumber: 90,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -377,7 +375,7 @@ function AboutPage() {
                             children: "A Global Legacy in Motion"
                         }, void 0, false, {
                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                            lineNumber: 124,
+                            lineNumber: 123,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -385,27 +383,26 @@ function AboutPage() {
                             children: "From our state-of-the-art manufacturing hub in India, we ship to over 50 countries, maintaining 100% sterile compliance every single time."
                         }, void 0, false, {
                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                            lineNumber: 125,
+                            lineNumber: 124,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "aspect-video bg-slate-200 rounded-[3rem] overflow-hidden relative shadow-2xl",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                     src: "https://images.unsplash.com/photo-1581578731522-aa2e3347ca3e?auto=format&fit=crop&q=80&w=1200",
-                                    fill: true,
-                                    className: "object-cover grayscale hover:grayscale-0 transition-all duration-1000",
+                                    className: "absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000",
                                     alt: "Manufacturing Excellence"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 129,
+                                    lineNumber: 128,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 135,
+                                    lineNumber: 133,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -416,42 +413,42 @@ function AboutPage() {
                                             "Manufactured for ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/src/app/(frontend)/about/page.js",
-                                                lineNumber: 137,
+                                                lineNumber: 135,
                                                 columnNumber: 119
                                             }, this),
                                             "the Future."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/(frontend)/about/page.js",
-                                        lineNumber: 137,
+                                        lineNumber: 135,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                                    lineNumber: 136,
+                                    lineNumber: 134,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/(frontend)/about/page.js",
-                            lineNumber: 128,
+                            lineNumber: 127,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/(frontend)/about/page.js",
-                    lineNumber: 123,
+                    lineNumber: 122,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/(frontend)/about/page.js",
-                lineNumber: 122,
+                lineNumber: 121,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/(frontend)/about/page.js",
-        lineNumber: 40,
+        lineNumber: 39,
         columnNumber: 9
     }, this);
 }

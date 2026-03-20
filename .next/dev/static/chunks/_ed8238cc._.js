@@ -491,7 +491,7 @@ function AdvancedSearch({ products, onFilterChange }) {
         columnNumber: 9
     }, this);
 }
-_s(AdvancedSearch, "3tsZXJSeSTezNfbhzDfxhw2S5gM=");
+_s(AdvancedSearch, "u6bsCTG4qsTWVJxwHQiXLmmRpQA=");
 _c = AdvancedSearch;
 function SearchSuggestions({ query, products }) {
     if (!query || query.length < 2) return null;

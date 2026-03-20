@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(frontend)/layout,_N_T_/(frontend)/case-studies/layout,_N_T_/(frontend)/case-studies/page,_N_T_/case-studies"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KGZyb250ZW5kKQ/case-studies/__PAGE__",
+    "/!KGZyb250ZW5kKQ/case-studies",
+    "/!KGZyb250ZW5kKQ",
+    "/_index",
+    "/_head"
+  ]
+}

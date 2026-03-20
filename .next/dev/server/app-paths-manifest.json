@@ -1,9 +1,6 @@
 {
-  "/(admin)/admin/leads/page": "app/(admin)/admin/leads/page.js",
-  "/(frontend)/booking/page": "app/(frontend)/booking/page.js",
   "/(frontend)/category/[id]/page": "app/(frontend)/category/[id]/page.js",
+  "/(frontend)/customization/page": "app/(frontend)/customization/page.js",
   "/(frontend)/page": "app/(frontend)/page.js",
-  "/(frontend)/product/[id]/page": "app/(frontend)/product/[id]/page.js",
-  "/(frontend)/products/page": "app/(frontend)/products/page.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/(frontend)/products/page": "app/(frontend)/products/page.js"
 }

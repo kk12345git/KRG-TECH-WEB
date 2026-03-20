@@ -1,0 +1,20 @@
+{
+  "node": {
+    "405c6d6601c5713a20ff5f4390883f19baf6403ad0": {
+      "workers": {
+        "app/(admin)/admin/banners/page": {
+          "moduleId": 59498,
+          "async": false,
+          "exportedName": "updateBanners",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/banners/page": "action-browser"
+      },
+      "exportedName": "updateBanners",
+      "filename": "src/lib/actions.js"
+    }
+  },
+  "edge": {}
+}

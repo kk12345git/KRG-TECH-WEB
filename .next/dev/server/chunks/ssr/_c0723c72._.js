@@ -17,13 +17,11 @@ if ("TURBOPACK compile-time truthy", 1) globalThis.prismaGlobal = db;
 "[project]/src/lib/actions.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-/* __next_internal_action_entry_do_not_use__ [{"001306d586ba277bf711fd3430eadf74c61b8142ab":"getBanners","005425da4bd57661644cb27525cd4248b9ea786478":"getProducts","008b5fd52888c040b10543da6e930f660cd3f314a6":"getStats","00a9e81ed99a24ae3444b4df8f739e0af86f1c8993":"getLeads","00f138983531c853cdacc5061b7b2401f63ab09c9b":"getCategories","4039f02b3b3e6266966365e66e6677087905552c0e":"submitLeads","4043a73085d321215884354ea55deda734393c36d9":"updateStats","40caf72f1ef02d0b2c3e78b9f91508f5bf8169f867":"updateProducts","40d43e87e2649925a28e35349b47382de9b67d2c6f":"updateBanners","40e8a16985deaadf3859b2438b252c667bd5b2d992":"updateCategories","60864846af01fe5bd73bec65192cd0f263a6e4171e":"updateLeadStatus"},"",""] */ __turbopack_context__.s([
+/* __next_internal_action_entry_do_not_use__ [{"0000007e0d5ee2217a8054ef16455a985f501333ed":"getStats","002c743c5ee7fe571d9c75c0b126c034972e469642":"getBanners","00a8c7bfb4cbd9e8e0f389b1e0e0275bad47ea4c25":"getProducts","00d36aadae6ea1905226914f3ba0efc0b131dce720":"getCategories","400e5c7ac1696140c025ddac9b74ef67a7a15d4898":"updateStats","404fd345e08590183827b68cf839dc9ae6e6f110b3":"submitLeads","408560ca0546529861df24a18b17f6d6b68c4859f0":"updateBanners","4085850c1efb3f697d5b6a7792bfe662c95e2f61f8":"updateProducts","40ee45fd6e0dbd8ad34a18c0b271f67b2e3bf0a327":"updateCategories"},"",""] */ __turbopack_context__.s([
     "getBanners",
     ()=>getBanners,
     "getCategories",
     ()=>getCategories,
-    "getLeads",
-    ()=>getLeads,
     "getProducts",
     ()=>getProducts,
     "getStats",
@@ -34,8 +32,6 @@ if ("TURBOPACK compile-time truthy", 1) globalThis.prismaGlobal = db;
     ()=>updateBanners,
     "updateCategories",
     ()=>updateCategories,
-    "updateLeadStatus",
-    ()=>updateLeadStatus,
     "updateProducts",
     ()=>updateProducts,
     "updateStats",
@@ -81,34 +77,6 @@ async function getStats() {
             order: 'asc'
         }
     });
-}
-async function getLeads() {
-    return await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["db"].lead.findMany({
-        orderBy: {
-            createdAt: 'desc'
-        }
-    });
-}
-async function updateLeadStatus(id, status) {
-    try {
-        await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["db"].lead.update({
-            where: {
-                id
-            },
-            data: {
-                status
-            }
-        });
-        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/admin/leads');
-        return {
-            success: true
-        };
-    } catch (error) {
-        console.error('Failed to update lead status:', error);
-        return {
-            success: false
-        };
-    }
 }
 async function updateBanners(banners) {
     try {
@@ -270,19 +238,17 @@ async function submitLeads(data) {
     try {
         await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["db"].lead.create({
             data: {
-                fullName: data.name || data.fullName,
+                name: data.name,
                 email: data.email,
                 phone: data.phone,
-                organization: data.hospital || data.organization,
                 type: data.type || 'INQUIRY',
-                specialty: data.specialty || '',
-                volume: data.volume || '',
-                message: data.message || '',
-                items: data.items || [],
-                status: 'new'
+                metadata: {
+                    hospital: data.hospital,
+                    message: data.message,
+                    items: data.items // Store selected items in metadata for now
+                }
             }
         });
-        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["revalidatePath"])('/admin/leads');
         return {
             success: true
         };
@@ -297,25 +263,21 @@ async function submitLeads(data) {
     getProducts,
     getBanners,
     getStats,
-    getLeads,
-    updateLeadStatus,
     updateBanners,
     updateCategories,
     updateStats,
     updateProducts,
     submitLeads
 ]);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getCategories, "00f138983531c853cdacc5061b7b2401f63ab09c9b", null);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getProducts, "005425da4bd57661644cb27525cd4248b9ea786478", null);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getBanners, "001306d586ba277bf711fd3430eadf74c61b8142ab", null);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getStats, "008b5fd52888c040b10543da6e930f660cd3f314a6", null);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getLeads, "00a9e81ed99a24ae3444b4df8f739e0af86f1c8993", null);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(updateLeadStatus, "60864846af01fe5bd73bec65192cd0f263a6e4171e", null);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(updateBanners, "40d43e87e2649925a28e35349b47382de9b67d2c6f", null);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(updateCategories, "40e8a16985deaadf3859b2438b252c667bd5b2d992", null);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(updateStats, "4043a73085d321215884354ea55deda734393c36d9", null);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(updateProducts, "40caf72f1ef02d0b2c3e78b9f91508f5bf8169f867", null);
-(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(submitLeads, "4039f02b3b3e6266966365e66e6677087905552c0e", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getCategories, "00d36aadae6ea1905226914f3ba0efc0b131dce720", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getProducts, "00a8c7bfb4cbd9e8e0f389b1e0e0275bad47ea4c25", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getBanners, "002c743c5ee7fe571d9c75c0b126c034972e469642", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(getStats, "0000007e0d5ee2217a8054ef16455a985f501333ed", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(updateBanners, "408560ca0546529861df24a18b17f6d6b68c4859f0", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(updateCategories, "40ee45fd6e0dbd8ad34a18c0b271f67b2e3bf0a327", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(updateStats, "400e5c7ac1696140c025ddac9b74ef67a7a15d4898", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(updateProducts, "4085850c1efb3f697d5b6a7792bfe662c95e2f61f8", null);
+(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$webpack$2f$loaders$2f$next$2d$flight$2d$loader$2f$server$2d$reference$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["registerServerReference"])(submitLeads, "404fd345e08590183827b68cf839dc9ae6e6f110b3", null);
 }),
 "[project]/.next-internal/server/app/(frontend)/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript) <locals>", ((__turbopack_context__) => {
 "use strict";
@@ -331,35 +293,29 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js_
 ;
 ;
 ;
-;
-;
 }),
 "[project]/.next-internal/server/app/(frontend)/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
-    "001306d586ba277bf711fd3430eadf74c61b8142ab",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getBanners"],
-    "005425da4bd57661644cb27525cd4248b9ea786478",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getProducts"],
-    "008b5fd52888c040b10543da6e930f660cd3f314a6",
+    "0000007e0d5ee2217a8054ef16455a985f501333ed",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getStats"],
-    "00a9e81ed99a24ae3444b4df8f739e0af86f1c8993",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getLeads"],
-    "00f138983531c853cdacc5061b7b2401f63ab09c9b",
+    "002c743c5ee7fe571d9c75c0b126c034972e469642",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getBanners"],
+    "00a8c7bfb4cbd9e8e0f389b1e0e0275bad47ea4c25",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getProducts"],
+    "00d36aadae6ea1905226914f3ba0efc0b131dce720",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getCategories"],
-    "4039f02b3b3e6266966365e66e6677087905552c0e",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["submitLeads"],
-    "4043a73085d321215884354ea55deda734393c36d9",
+    "400e5c7ac1696140c025ddac9b74ef67a7a15d4898",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["updateStats"],
-    "40caf72f1ef02d0b2c3e78b9f91508f5bf8169f867",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["updateProducts"],
-    "40d43e87e2649925a28e35349b47382de9b67d2c6f",
+    "404fd345e08590183827b68cf839dc9ae6e6f110b3",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["submitLeads"],
+    "408560ca0546529861df24a18b17f6d6b68c4859f0",
     ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["updateBanners"],
-    "40e8a16985deaadf3859b2438b252c667bd5b2d992",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["updateCategories"],
-    "60864846af01fe5bd73bec65192cd0f263a6e4171e",
-    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["updateLeadStatus"]
+    "4085850c1efb3f697d5b6a7792bfe662c95e2f61f8",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["updateProducts"],
+    "40ee45fd6e0dbd8ad34a18c0b271f67b2e3bf0a327",
+    ()=>__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["updateCategories"]
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f2e$next$2d$internal$2f$server$2f$app$2f28$frontend$292f$products$2f$page$2f$actions$2e$js__$7b$__ACTIONS_MODULE0__$3d3e$__$225b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$2922$__$7d$__$5b$app$2d$rsc$5d$__$28$server__actions__loader$2c$__ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i('[project]/.next-internal/server/app/(frontend)/products/page/actions.js { ACTIONS_MODULE0 => "[project]/src/lib/actions.js [app-rsc] (ecmascript)" } [app-rsc] (server actions loader, ecmascript) <locals>');
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/actions.js [app-rsc] (ecmascript)");

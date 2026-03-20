@@ -1,36 +1,6 @@
 {
   "node": {
-    "001306d586ba277bf711fd3430eadf74c61b8142ab": {
-      "workers": {
-        "app/(frontend)/category/[id]/page": {
-          "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getBanners",
-          "filename": "src/lib/actions.js"
-        }
-      },
-      "layer": {
-        "app/(frontend)/category/[id]/page": "rsc"
-      },
-      "exportedName": "getBanners",
-      "filename": "src/lib/actions.js"
-    },
-    "005425da4bd57661644cb27525cd4248b9ea786478": {
-      "workers": {
-        "app/(frontend)/category/[id]/page": {
-          "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getProducts",
-          "filename": "src/lib/actions.js"
-        }
-      },
-      "layer": {
-        "app/(frontend)/category/[id]/page": "rsc"
-      },
-      "exportedName": "getProducts",
-      "filename": "src/lib/actions.js"
-    },
-    "008b5fd52888c040b10543da6e930f660cd3f314a6": {
+    "0000007e0d5ee2217a8054ef16455a985f501333ed": {
       "workers": {
         "app/(frontend)/category/[id]/page": {
           "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
@@ -45,22 +15,37 @@
       "exportedName": "getStats",
       "filename": "src/lib/actions.js"
     },
-    "00a9e81ed99a24ae3444b4df8f739e0af86f1c8993": {
+    "002c743c5ee7fe571d9c75c0b126c034972e469642": {
       "workers": {
         "app/(frontend)/category/[id]/page": {
           "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
-          "exportedName": "getLeads",
+          "exportedName": "getBanners",
           "filename": "src/lib/actions.js"
         }
       },
       "layer": {
         "app/(frontend)/category/[id]/page": "rsc"
       },
-      "exportedName": "getLeads",
+      "exportedName": "getBanners",
       "filename": "src/lib/actions.js"
     },
-    "00f138983531c853cdacc5061b7b2401f63ab09c9b": {
+    "00a8c7bfb4cbd9e8e0f389b1e0e0275bad47ea4c25": {
+      "workers": {
+        "app/(frontend)/category/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/category/[id]/page": "rsc"
+      },
+      "exportedName": "getProducts",
+      "filename": "src/lib/actions.js"
+    },
+    "00d36aadae6ea1905226914f3ba0efc0b131dce720": {
       "workers": {
         "app/(frontend)/category/[id]/page": {
           "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
@@ -75,22 +60,7 @@
       "exportedName": "getCategories",
       "filename": "src/lib/actions.js"
     },
-    "4039f02b3b3e6266966365e66e6677087905552c0e": {
-      "workers": {
-        "app/(frontend)/category/[id]/page": {
-          "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "submitLeads",
-          "filename": "src/lib/actions.js"
-        }
-      },
-      "layer": {
-        "app/(frontend)/category/[id]/page": "rsc"
-      },
-      "exportedName": "submitLeads",
-      "filename": "src/lib/actions.js"
-    },
-    "4043a73085d321215884354ea55deda734393c36d9": {
+    "400e5c7ac1696140c025ddac9b74ef67a7a15d4898": {
       "workers": {
         "app/(frontend)/category/[id]/page": {
           "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
@@ -105,22 +75,22 @@
       "exportedName": "updateStats",
       "filename": "src/lib/actions.js"
     },
-    "40caf72f1ef02d0b2c3e78b9f91508f5bf8169f867": {
+    "404fd345e08590183827b68cf839dc9ae6e6f110b3": {
       "workers": {
         "app/(frontend)/category/[id]/page": {
           "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
-          "exportedName": "updateProducts",
+          "exportedName": "submitLeads",
           "filename": "src/lib/actions.js"
         }
       },
       "layer": {
         "app/(frontend)/category/[id]/page": "rsc"
       },
-      "exportedName": "updateProducts",
+      "exportedName": "submitLeads",
       "filename": "src/lib/actions.js"
     },
-    "40d43e87e2649925a28e35349b47382de9b67d2c6f": {
+    "408560ca0546529861df24a18b17f6d6b68c4859f0": {
       "workers": {
         "app/(frontend)/category/[id]/page": {
           "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
@@ -135,7 +105,22 @@
       "exportedName": "updateBanners",
       "filename": "src/lib/actions.js"
     },
-    "40e8a16985deaadf3859b2438b252c667bd5b2d992": {
+    "4085850c1efb3f697d5b6a7792bfe662c95e2f61f8": {
+      "workers": {
+        "app/(frontend)/category/[id]/page": {
+          "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateProducts",
+          "filename": "src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/category/[id]/page": "rsc"
+      },
+      "exportedName": "updateProducts",
+      "filename": "src/lib/actions.js"
+    },
+    "40ee45fd6e0dbd8ad34a18c0b271f67b2e3bf0a327": {
       "workers": {
         "app/(frontend)/category/[id]/page": {
           "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
@@ -148,21 +133,6 @@
         "app/(frontend)/category/[id]/page": "rsc"
       },
       "exportedName": "updateCategories",
-      "filename": "src/lib/actions.js"
-    },
-    "60864846af01fe5bd73bec65192cd0f263a6e4171e": {
-      "workers": {
-        "app/(frontend)/category/[id]/page": {
-          "moduleId": "[project]/.next-internal/server/app/(frontend)/category/[id]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "updateLeadStatus",
-          "filename": "src/lib/actions.js"
-        }
-      },
-      "layer": {
-        "app/(frontend)/category/[id]/page": "rsc"
-      },
-      "exportedName": "updateLeadStatus",
       "filename": "src/lib/actions.js"
     }
   },
