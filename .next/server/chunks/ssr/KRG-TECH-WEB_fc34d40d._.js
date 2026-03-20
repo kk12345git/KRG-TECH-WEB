@@ -1,0 +1,3 @@
+module.exports=[22329,a=>{"use strict";function b({title:a,description:b,image:c="/og-image.jpg",type:d="website",children:e}){return null}a.s(["default",()=>b])},35470,a=>{"use strict";var b=a.i(10153);let c=b.forwardRef(function({title:a,titleId:c,...d},e){return b.createElement("svg",Object.assign({xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 24 24",strokeWidth:1.5,stroke:"currentColor","aria-hidden":"true","data-slot":"icon",ref:e,"aria-labelledby":c},d),a?b.createElement("title",{id:c},a):null,b.createElement("path",{strokeLinecap:"round",strokeLinejoin:"round",d:"M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"}))});a.s(["ArrowLeftIcon",0,c],35470)}];
+
+//# sourceMappingURL=KRG-TECH-WEB_fc34d40d._.js.map

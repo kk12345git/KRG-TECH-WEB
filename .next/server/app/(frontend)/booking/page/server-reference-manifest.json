@@ -1,0 +1,20 @@
+{
+  "node": {
+    "406d1b6098f3dc4b5cd820dea80c5ada786c0d7867": {
+      "workers": {
+        "app/(frontend)/booking/page": {
+          "moduleId": 39839,
+          "async": false,
+          "exportedName": "submitLeads",
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(frontend)/booking/page": "action-browser"
+      },
+      "exportedName": "submitLeads",
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
+    }
+  },
+  "edge": {}
+}

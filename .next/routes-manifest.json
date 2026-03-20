@@ -114,6 +114,12 @@
       "namedRegex": "^/admin/products(?:/)?$"
     },
     {
+      "page": "/booking",
+      "regex": "^/booking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/booking(?:/)?$"
+    },
+    {
       "page": "/careers",
       "regex": "^/careers(?:/)?$",
       "routeKeys": {},
@@ -148,6 +154,12 @@
       "regex": "^/login(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/procurement",
+      "regex": "^/procurement(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/procurement(?:/)?$"
     },
     {
       "page": "/products",

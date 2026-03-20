@@ -109,7 +109,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\KRG-DIGITAL\\Desktop\\krg website edit mode",
+    "outputFileTracingRoot": "G:\\KRG-TECH-WEB",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -302,12 +302,12 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "C:\\Users\\KRG-DIGITAL\\Desktop\\krg website edit mode"
+      "root": "G:\\KRG-TECH-WEB"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "C:\\Users\\KRG-DIGITAL\\Desktop\\krg website edit mode",
-  "relativeAppDir": "",
+  "appDir": "G:\\KRG-TECH-WEB\\KRG-TECH-WEB",
+  "relativeAppDir": "KRG-TECH-WEB",
   "files": [
     ".next\\routes-manifest.json",
     ".next\\server\\pages-manifest.json",

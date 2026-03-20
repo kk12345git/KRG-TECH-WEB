@@ -1,124 +1,169 @@
 {
   "node": {
-    "001548182182c339db6cf35d68331e83649b332df3": {
+    "000fa3c57d1537c2244e93e1176b078421a247aa5e": {
       "workers": {
         "app/(admin)/admin/products/page": {
-          "moduleId": 2143,
-          "async": false,
-          "exportedName": "getStats",
-          "filename": "src/lib/actions.js"
-        }
-      },
-      "layer": {
-        "app/(admin)/admin/products/page": "rsc"
-      },
-      "exportedName": "getStats",
-      "filename": "src/lib/actions.js"
-    },
-    "00287072af181fc9f7f6dab2a6cc947f98a30ade10": {
-      "workers": {
-        "app/(admin)/admin/products/page": {
-          "moduleId": 2143,
-          "async": false,
-          "exportedName": "getCategories",
-          "filename": "src/lib/actions.js"
-        }
-      },
-      "layer": {
-        "app/(admin)/admin/products/page": "rsc"
-      },
-      "exportedName": "getCategories",
-      "filename": "src/lib/actions.js"
-    },
-    "006439055881fb70623a9c30164e4a36b16740e644": {
-      "workers": {
-        "app/(admin)/admin/products/page": {
-          "moduleId": 2143,
-          "async": false,
-          "exportedName": "getBanners",
-          "filename": "src/lib/actions.js"
-        }
-      },
-      "layer": {
-        "app/(admin)/admin/products/page": "rsc"
-      },
-      "exportedName": "getBanners",
-      "filename": "src/lib/actions.js"
-    },
-    "00f470aa0a53450c80b3ba9a11fd9599ecd4343741": {
-      "workers": {
-        "app/(admin)/admin/products/page": {
-          "moduleId": 2143,
+          "moduleId": 33925,
           "async": false,
           "exportedName": "getProducts",
-          "filename": "src/lib/actions.js"
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
         }
       },
       "layer": {
         "app/(admin)/admin/products/page": "rsc"
       },
       "exportedName": "getProducts",
-      "filename": "src/lib/actions.js"
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
     },
-    "40166b8104f1cdf09a4ebcbad0d6815a6a127bd7aa": {
+    "0034a04cce6e8747dc88d4867c6f10b8c227908568": {
       "workers": {
         "app/(admin)/admin/products/page": {
-          "moduleId": 2143,
+          "moduleId": 33925,
           "async": false,
-          "exportedName": "updateStats",
-          "filename": "src/lib/actions.js"
+          "exportedName": "getCategories",
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
         }
       },
       "layer": {
         "app/(admin)/admin/products/page": "rsc"
       },
-      "exportedName": "updateStats",
-      "filename": "src/lib/actions.js"
+      "exportedName": "getCategories",
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
     },
-    "405c6d6601c5713a20ff5f4390883f19baf6403ad0": {
+    "005c3f1692ee67480b3baacf3a7ed1c7147b50a11d": {
       "workers": {
         "app/(admin)/admin/products/page": {
-          "moduleId": 2143,
+          "moduleId": 33925,
+          "async": false,
+          "exportedName": "getStats",
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/products/page": "rsc"
+      },
+      "exportedName": "getStats",
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
+    },
+    "00b44f7dd705cd4bd53f41347b4c50efff04e9e01b": {
+      "workers": {
+        "app/(admin)/admin/products/page": {
+          "moduleId": 33925,
+          "async": false,
+          "exportedName": "getBanners",
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/products/page": "rsc"
+      },
+      "exportedName": "getBanners",
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
+    },
+    "00c223f52be34c26ebd50c741f7f124b8c26526fb8": {
+      "workers": {
+        "app/(admin)/admin/products/page": {
+          "moduleId": 33925,
+          "async": false,
+          "exportedName": "getLeads",
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/products/page": "rsc"
+      },
+      "exportedName": "getLeads",
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
+    },
+    "4008b8e2893b47c32d60e7a4eab36c9ef175a8b88a": {
+      "workers": {
+        "app/(admin)/admin/products/page": {
+          "moduleId": 33925,
           "async": false,
           "exportedName": "updateBanners",
-          "filename": "src/lib/actions.js"
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
         }
       },
       "layer": {
         "app/(admin)/admin/products/page": "rsc"
       },
       "exportedName": "updateBanners",
-      "filename": "src/lib/actions.js"
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
     },
-    "408128ac2feed5c9499a8340763a16848d55a3998e": {
+    "40468b2a28cf4c86cf848d9a8e39caaeb3f761f613": {
       "workers": {
         "app/(admin)/admin/products/page": {
-          "moduleId": 2143,
+          "moduleId": 33925,
           "async": false,
-          "exportedName": "updateCategories",
-          "filename": "src/lib/actions.js"
+          "exportedName": "updateStats",
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
         }
       },
       "layer": {
         "app/(admin)/admin/products/page": "rsc"
       },
-      "exportedName": "updateCategories",
-      "filename": "src/lib/actions.js"
+      "exportedName": "updateStats",
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
     },
-    "40ecfb921b71dbc7c208e9a9be53b7ae404e922691": {
+    "406d1b6098f3dc4b5cd820dea80c5ada786c0d7867": {
       "workers": {
         "app/(admin)/admin/products/page": {
-          "moduleId": 2143,
+          "moduleId": 33925,
+          "async": false,
+          "exportedName": "submitLeads",
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/products/page": "rsc"
+      },
+      "exportedName": "submitLeads",
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
+    },
+    "409d605d6f6750fcac6834bc707fff0f3f4d317aa5": {
+      "workers": {
+        "app/(admin)/admin/products/page": {
+          "moduleId": 33925,
           "async": false,
           "exportedName": "updateProducts",
-          "filename": "src/lib/actions.js"
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
         }
       },
       "layer": {
         "app/(admin)/admin/products/page": "action-browser"
       },
       "exportedName": "updateProducts",
-      "filename": "src/lib/actions.js"
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
+    },
+    "40bc5bd67b66b9cd35272003cd39ae2cfbe3df6ccd": {
+      "workers": {
+        "app/(admin)/admin/products/page": {
+          "moduleId": 33925,
+          "async": false,
+          "exportedName": "updateCategories",
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/products/page": "rsc"
+      },
+      "exportedName": "updateCategories",
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
+    },
+    "60d2a95086640b21485a0702cb30d285a1298511bd": {
+      "workers": {
+        "app/(admin)/admin/products/page": {
+          "moduleId": 33925,
+          "async": false,
+          "exportedName": "updateLeadStatus",
+          "filename": "KRG-TECH-WEB/src/lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/(admin)/admin/products/page": "rsc"
+      },
+      "exportedName": "updateLeadStatus",
+      "filename": "KRG-TECH-WEB/src/lib/actions.js"
     }
   },
   "edge": {}
