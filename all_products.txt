@@ -1,0 +1,80 @@
+ID: e5513dec-949a-4792-9916-c708aa7ae12b | TITLE: Oncology Drape Pack | CAT: customized-packs | IMAGE: /images/products/oncology-drape-pack.png
+ID: 6f8b75d0-abb8-4b9e-9762-e5472ac56239 | TITLE: Plastic & Reconstructive Surgery Drape Pack | CAT: customized-packs | IMAGE: /images/products/plastic-surgery-drape-pack.png
+ID: 9bc87151-4e57-473d-96be-30186f1437eb | TITLE: Vascular Surgery Drape Pack | CAT: customized-packs | IMAGE: /images/products/vascular-surgery-drape-pack.png
+ID: sms-sterilization-wrap-blue | TITLE: SMS Sterilization Wrap (Blue) | CAT: sterilization-wraps | IMAGE: https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800
+ID: sequential-sterilization-wrap | TITLE: Sequential Sterilization Wrap (Dual Layer) | CAT: sterilization-wraps | IMAGE: https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800
+ID: patient-suit-top-bottom | TITLE: Patient Suit (Top & Bottom Set) | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1584622781564-1d9876a13d1e?auto=format&fit=crop&q=80&w=800
+ID: e225d066-f0a9-4ec2-a0a3-3a9d3a67f542 | TITLE: Knee O Drape | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1549479366-2e860bc4b92b?auto=format&fit=crop&q=80&w=800
+ID: 21dfd86b-d91f-47f3-88e2-1af66a28cbfa | TITLE: Hip U Drape | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1579684453423-f8ff34692f82?auto=format&fit=crop&q=80&w=800
+ID: 1fd217f4-5a16-4a1b-a584-5cc6a5e4ca66 | TITLE: TKR - Total Knee Replacement Drape Pack | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1584622781564-1d9876a13d1e?auto=format&fit=crop&q=80&w=800
+ID: 13e4c0d3-6089-46e2-b895-30c525e9045e | TITLE: THR - Total Hip Replacement Drape Pack | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1576091160550-2173bdd99602?auto=format&fit=crop&q=80&w=800
+ID: fa31e241-1f5c-4b52-89b6-d1bb199c3351 | TITLE: Mini Drape Pack | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1579154235828-ac01eefe3e8e?auto=format&fit=crop&q=80&w=800
+ID: 57138e74-1076-413e-836c-e12f13d31326 | TITLE: Knee Arthroscopy | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=800
+ID: 774b15a5-8f5f-4578-8b00-34497de984da | TITLE: Shoulder Arthroscopy | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800
+ID: dd9e7daa-86fd-4dbc-8993-daa9f3268a39 | TITLE: HIV Protection Drape kit | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200
+ID: 76de21b5-5b2e-4691-b572-e6da75754fd6 | TITLE: Colorectal Surgery Drape Pack | CAT: customized-packs | IMAGE: /images/products/colorectal-drape-pack.png
+ID: c70faf9e-e5ca-4018-8b2f-91fa0eec3ade | TITLE: Universal Drape Pack | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800
+ID: 423397e1-0534-47d0-a77f-a84c79bc2b73 | TITLE: Pediatric Surgery Drape Pack | CAT: customized-packs | IMAGE: /images/products/pediatric-drape-pack.png
+ID: 11d6265f-c942-4829-b4b6-76fe9bd33adc | TITLE: Bariatric Surgery Drape Pack | CAT: customized-packs | IMAGE: /images/products/bariatric-drape-pack.png
+ID: 2962a7e2-c961-4251-bf18-773c25d05f59 | TITLE: Ortho Drape pack (with 5 gown & 3 gown) | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1631815541542-e8fc9529598e?auto=format&fit=crop&q=80&w=800
+ID: cc7e8625-cae8-4bc5-b0cc-3803ee4bc535 | TITLE: Hb SAG Drape Pack | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800
+ID: 6060e8e6-8242-4fb2-bd2e-43d76c7de3ef | TITLE: DNC Drape kit | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800
+ID: abbcc0ef-5871-42d2-a856-93a15aa47de5 | TITLE: Hystro lap pouch | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1584622781564-1d9876a13d1e?auto=format&fit=crop&q=80&w=800
+ID: 2d95ab01-d2c5-46c5-8f00-b50aeee84b5f | TITLE: IVF Drape Packs | CAT: customized-packs | IMAGE: /images/products/ivf-drape-packs.png
+ID: 6a912f1a-3475-4c01-9f48-fe7cf758ea2a | TITLE: OCR -ET Packs | CAT: customized-packs | IMAGE: /images/products/ocr-et-packs.png
+ID: a9291e90-382b-46b0-9106-58f4c3197496 | TITLE: ENT Drape Pack | CAT: customized-packs | IMAGE: /images/products/ent-drape-pack.png
+ID: b28f6f95-599f-4fd7-97ff-3a071132ad83 | TITLE: Perineal Drape kit | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800
+ID: f18b2df6-0273-43d1-97e0-007f4c0bfaed | TITLE: Dental Surgery Drape Pack | CAT: customized-packs | IMAGE: /images/products/dental-drape-pack.png
+ID: c35bafe6-469a-45be-80f2-499d3c9d53b4 | TITLE: Delivery Drape pack | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1581056399312-60381aa0b5c0?auto=format&fit=crop&q=80&w=800
+ID: 89cc3a57-7403-4b49-acee-c2f154277782 | TITLE: Maternity Mat | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800
+ID: bb2a9225-d161-461b-9cbc-36f09ca092c7 | TITLE: CABG Drape Packs | CAT: customized-packs | IMAGE: https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200
+ID: b9df3491-15a2-42ff-a291-6760f7eb4d92 | TITLE: Urology Drape Packs | CAT: customized-packs | IMAGE: https://images.unsplash.com/photo-1631815541542-e8fc9529598e?auto=format&fit=crop&q=80&w=800
+ID: 2d1fa347-f9b5-42f9-8c15-cd887e9f9e58 | TITLE: Neurology Drape Packs | CAT: customized-packs | IMAGE: https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800
+ID: 7030835e-bf48-48be-b166-81400715d345 | TITLE: Anglo Drape Packs | CAT: customized-packs | IMAGE: /images/products/anglo-drape-packs.png
+ID: 4f2d7226-4d6c-44f1-9cb5-7f7257f4f44c | TITLE: LAVH Drape Kit | CAT: customized-packs | IMAGE: /images/products/lavh-drape-kit.png
+ID: 8d909c85-37ee-479f-8410-ab5de3757783 | TITLE: Renal Transplant Packs | CAT: customized-packs | IMAGE: /images/products/renal-transplant-packs.png
+ID: 22f5a749-39af-467e-8549-0c2e00db671b | TITLE: Cystoscopy Drape Packs | CAT: customized-packs | IMAGE: /images/products/cystoscopy-drape-packs.png
+ID: 7023b314-c870-4d8c-912d-e9e02c8db88e | TITLE: Embryo Transplant Packs | CAT: customized-packs | IMAGE: /images/products/embryo-transplant-packs.png
+ID: be525998-7287-4682-87ff-33c3f19e912b | TITLE: Egg Collection Packs | CAT: customized-packs | IMAGE: /images/products/egg-collection-packs.png
+ID: 8c8a39d4-53cb-47dc-93aa-3ceeb862716e | TITLE: PCNL Drape | CAT: customized-packs | IMAGE: /images/products/pcnl-drape.png
+ID: eeec4a23-6673-4d4b-97a8-967eb07c90c3 | TITLE: Surgeon Gowns - SMS Standard | CAT: surgeon-gowns | IMAGE: https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800
+ID: c4cdea62-f0e4-4d9b-bdff-93065f5a1432 | TITLE: Laparoscopy Drape Packs | CAT: customized-packs | IMAGE: /images/products/laparoscopy-drape-packs.png
+ID: e553bed9-9fda-4d0d-a16d-ab8380ab7726 | TITLE: Disposable Bed Sheets With Pillow Cover - PP SPUN BOND | CAT: bed-sheets | IMAGE: https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&q=80&w=800
+ID: a9f73b16-00e0-4b0d-857a-fa392cc23a4a | TITLE: Large Sheet | CAT: general-disposables | IMAGE: https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800
+ID: 293b998e-25bf-4bca-8f97-0a850e197774 | TITLE: Center Hole Sheet | CAT: general-disposables | IMAGE: https://images.unsplash.com/photo-1579684385127-1ef15d5f14af?auto=format&fit=crop&q=80&w=800
+ID: 75dbdd26-66cf-4a97-886e-f15a8ec2e087 | TITLE: Mayo Cover | CAT: general-disposables | IMAGE: https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800
+ID: 20543372-8344-4597-9898-6832fb483458 | TITLE: C-Arm Cover | CAT: general-disposables | IMAGE: https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200
+ID: 1a15cd51-e820-4b41-af5e-21231778fb68 | TITLE: Leggings | CAT: general-disposables | IMAGE: https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800
+ID: 6e9c1cec-a0ac-46d8-b974-66074f31343e | TITLE: Camera Cover | CAT: general-disposables | IMAGE: https://images.unsplash.com/photo-1579154235828-ac01eefe3e8e?auto=format&fit=crop&q=80&w=800
+ID: 8c3eef0e-4d72-4e47-b8a3-9a22cfe58136 | TITLE: Shoe Cover | CAT: general-disposables | IMAGE: https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800
+ID: 5c283711-2720-4be2-9a76-ba2d91c027f7 | TITLE: Trolley Sheet | CAT: general-disposables | IMAGE: https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=800
+ID: 33cb695c-c465-48b3-aa7e-fd42e6876941 | TITLE: Apron | CAT: general-disposables | IMAGE: https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=800
+ID: faad78f9-4c9c-4b9d-a40d-eb77f15303f4 | TITLE: Under Pad | CAT: general-disposables | IMAGE: https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800
+ID: c1d1674d-68ae-4018-90df-f33b72c30a19 | TITLE: TURP Drape | CAT: customized-packs | IMAGE: /images/products/turp-drape.png
+ID: 41f423f6-749f-4259-93b3-11beb1ea4b6a | TITLE: Ophthalmology Drape Pack | CAT: customized-packs | IMAGE: /images/products/ophthalmology-drape-pack.png
+ID: 827e8179-2606-4141-aed2-ee16bca6ae09 | TITLE: Surgeon Gowns - SMS - Wrap around + Reinforced | CAT: surgeon-gowns | IMAGE: https://images.unsplash.com/photo-1631815541542-e8fc9529598e?auto=format&fit=crop&q=80&w=800
+ID: 50ce0fcb-3c01-419a-8a09-eadce2bef7d6 | TITLE: Pain Management Drape Pack | CAT: customized-packs | IMAGE: /images/products/pain-management-drape-pack.png
+ID: d1a8eb8f-d3d0-481e-a093-b65b56150ba6 | TITLE: Dermatology Drape Pack | CAT: customized-packs | IMAGE: /images/products/dermatology-drape-pack.png
+ID: 8aa90a7b-1b5d-44e1-ae39-6c5abe795652 | TITLE: Radiology & Interventional Radiology Drape Pack | CAT: customized-packs | IMAGE: /images/products/radiology-drape-pack.png
+ID: f0af91df-aa92-4332-a21e-106f1d407de6 | TITLE: Disposable Bed Sheets With Pillow Cover - SMS | CAT: bed-sheets | IMAGE: https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800
+ID: disposable-patient-gown | TITLE: Disposable Patient Gown (Standard) | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800
+ID: e7f2d5a4-59fa-4a77-ba00-b76ba9f653c9 | TITLE: Patient Suit (Front Open) | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800
+ID: f5be3a76-af28-42b4-bbe1-cfe3cacc49a0 | TITLE: Patient Suit (Side Open) | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1584622781564-1d9876a13d1e?auto=format&fit=crop&q=80&w=800
+ID: 4a15f47b-162f-43a5-a853-83afa53bd18b | TITLE: Patient Suit (Nursing/Maternity) | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800
+ID: 25ca0538-ab45-4179-8a58-a83c652e9044 | TITLE: Examining Gown (Velcro) | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800
+ID: d5435aa5-f670-4a0d-a1fc-9999e72fa0dc | TITLE: Examining Gown (Ties) | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1576091160550-2173bdd99602?auto=format&fit=crop&q=80&w=800
+ID: 16e7a871-4c17-4283-86a5-ddb8764e8c3f | TITLE: Eye Surgery Gown | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800
+ID: 5580f1bd-733b-47e0-998a-8630c3b4970e | TITLE: Pediatric Patient Gown | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?auto=format&fit=crop&q=80&w=800
+ID: f679ccf2-75c8-49a7-995f-3dfa54bd5569 | TITLE: Leggings (Patient) | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800
+ID: 2f5f287f-55cb-4b50-96b2-9b4d40736007 | TITLE: Head Caps (Patient) | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800
+ID: f4b39e70-b109-4bcd-b0c9-2ba768832f6f | TITLE: Shoe Covers (Patient) | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=800
+ID: 48268dfd-68c9-455f-8387-8b92a089a730 | TITLE: Veterinary Surgery Drape Pack | CAT: customized-packs | IMAGE: /images/products/veterinary-drape-pack.png
+ID: 72f75c70-26e9-400e-94a8-27f1b96c78c2 | TITLE: Disposable Underwear | CAT: patient-wears | IMAGE: https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=800
+ID: 2fa6a108-38fe-43e3-80ca-6dad007688ac | TITLE: SMS Sterilization Wrap (Green) | CAT: sterilization-wraps | IMAGE: https://images.unsplash.com/photo-1581056399312-60381aa0b5c0?auto=format&fit=crop&q=80&w=800
+ID: 3ccd1ced-04a3-445e-a61e-dcd9c895570f | TITLE: General Surgical Drape Pack | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800
+ID: 3a6e06c5-885c-4c13-9e36-847a0037a0d3 | TITLE: LSCS Drape pack | CAT: ot-sheets | IMAGE: https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?auto=format&fit=crop&q=80&w=800
+ID: 1fbaa53a-339c-4785-92f5-fbe76dbef13d | TITLE: Podiatry Surgery Drape Pack | CAT: customized-packs | IMAGE: /images/products/podiatry-drape-pack.png
+ID: 9d4dd429-eac3-4504-851e-a296dfa9314c | TITLE: Non-Woven Wrap (Blue/Green) | CAT: sterilization-wraps | IMAGE: https://images.unsplash.com/photo-1579479366-2e860bc4b92b?auto=format&fit=crop&q=80&w=800
+ID: 2bfeb121-c4e7-413c-8506-567974f696d3 | TITLE: Crepe Paper Wrap | CAT: sterilization-wraps | IMAGE: https://images.unsplash.com/photo-1581056399312-60381aa0b5c0?auto=format&fit=crop&q=80&w=800
+ID: ce90a3c2-fcf9-40ca-93ff-0e387655c13e | TITLE: Sterilization Pouches (Self Sealing) | CAT: sterilization-wraps | IMAGE: https://images.unsplash.com/photo-1584622781564-1d9876a13d1e?auto=format&fit=crop&q=80&w=800
+ID: 3f11b5cd-715d-4c2e-a995-fd0bc81ef29b | TITLE: Sterilization Reels (Heat Sealing) | CAT: sterilization-wraps | IMAGE: https://images.unsplash.com/photo-1576091160550-2173bdd99602?auto=format&fit=crop&q=80&w=800
