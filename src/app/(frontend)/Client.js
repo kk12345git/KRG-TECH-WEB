@@ -21,7 +21,50 @@ import { getBanners, getStats, getCategories } from '@/lib/actions';
 
 export default function HomeClient({ banners, stats, categories }) {
     const heroBanner = banners.find(b => b.placement === "Homepage Hero") || banners[0] || {};
-    const specialties = categories.slice(0, 3);
+    const categoriesData = [
+        {
+            name: "Disposable Bed Sheets, Covering Sheets and Pillow Covers",
+            desc: "Premium SMS & PP Spun Bond solutions for hospital beds and examination couches.",
+            href: "/category/aa8807bb-b549-42fa-998f-034fa1a07408",
+            img: "/images/categories/bed-sheets.png"
+        },
+        {
+            name: "Disposable Operation Theatre Sheets",
+            desc: "Essential sterile packs and drapes for general surgical interventions.",
+            href: "/category/7ec31782-50fd-423d-9fe1-bfb45e1f2667",
+            img: "/images/categories/ot-sheets.png"
+        },
+        {
+            name: "Disposable Patient Gowns and Patient Wears",
+            desc: "Full range of patient apparel including standard, full-sleeve, and sleeveless designs.",
+            href: "/category/23e2a86d-dd01-4b89-a14f-6c94b6254a37",
+            img: "/images/categories/patient-wears.png"
+        },
+        {
+            name: "Disposable Sterilization Wrapping Sheets",
+            desc: "Clinical-grade SMS barrier sheets for instrument tray sterilization.",
+            href: "/category/82146ecb-91bc-4389-b4bf-ed2621f60531",
+            img: "/images/categories/sterilization-wraps.png"
+        },
+        {
+            name: "Disposable Surgeon Gowns & Isolation Gowns",
+            desc: "High-performance protective apparel for surgical teams.",
+            href: "/category/c4aa410e-b742-4305-8126-be3fdc8a1587",
+            img: "/images/categories/surgeon-gowns.png"
+        },
+        {
+            name: "Disposable Surgical Drape Packs & Kits",
+            desc: "Custom packs for Cardiovascular, Urology, Neurology and specialized procedures.",
+            href: "/category/eb7661c5-b3b5-4e59-aa55-3f10736c9f54",
+            img: "/images/categories/customized-packs.png"
+        },
+        {
+            name: "General Disposable Items",
+            desc: "Essential protective covers and clinical accessories.",
+            href: "/category/972c2a5d-3d30-4cdf-9b2e-65e91485fa93",
+            img: "/images/categories/general-disposables.png"
+        }
+    ];
     return (
         <div className="bg-white overflow-hidden">
             <SEO
@@ -219,82 +262,46 @@ export default function HomeClient({ banners, stats, categories }) {
                         </Link>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-2 gap-6 md:h-[800px]">
-                        {/* Major Card: Bed Sheets */}
-                        <motion.div
-                            whileHover={{ y: -5 }}
-                            className="bento-item md:col-span-4 md:row-span-1 group min-h-[350px] relative overflow-hidden rounded-[3rem]"
-                        >
-                            <Link href={`/category/${specialties[0]?.id}`} className="h-full flex flex-col p-10">
-                                <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors z-10"></div>
-                                <img
-                                    src={specialties[0]?.image || "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200"}
-                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                                    alt={specialties[0]?.name}
-                                />
-                                <div className="relative z-20 mt-auto">
-                                    <h3 className="text-4xl font-black text-white uppercase tracking-tighter mb-4 leading-none">{specialties[0]?.name}</h3>
-                                    <p className="text-white/80 text-sm max-w-md font-medium tracking-wide">{specialties[0]?.description}</p>
-                                </div>
-                            </Link>
-                        </motion.div>
-
-                        {/* Side Card: OT Sheets - NOW MATCHING STYLE */}
-                        <motion.div
-                            whileHover={{ y: -5 }}
-                            className="bento-item md:col-span-2 md:row-span-1 group min-h-[350px] relative overflow-hidden rounded-[3rem]"
-                        >
-                            <Link href={`/category/${specialties[1]?.id}`} className="h-full flex flex-col p-10">
-                                <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/20 transition-colors z-10"></div>
-                                <img
-                                    src={specialties[1]?.image || "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800"}
-                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                                    alt={specialties[1]?.name}
-                                />
-                                <div className="relative z-20 mt-auto">
-                                    <h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-4 leading-tight">{specialties[1]?.name}</h3>
-                                    <p className="text-white/70 text-xs font-black uppercase tracking-widest leading-none">{specialties[1]?.description?.substring(0, 40)}...</p>
-                                </div>
-                                <div className="absolute top-8 right-8 z-20">
-                                    <div className="w-10 h-10 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center">
-                                        <ArrowRightIcon className="w-5 h-5 text-white" />
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {categoriesData.map((category, idx) => (
+                            <motion.div
+                                key={idx}
+                                whileHover={{ y: -5 }}
+                                className="group relative overflow-hidden rounded-[3rem] aspect-[4/5]"
+                            >
+                                <Link href={category.href} className="h-full flex flex-col p-8">
+                                    <div className="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-colors z-10"></div>
+                                    <img
+                                        src={category.img}
+                                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                                        alt={category.name}
+                                    />
+                                    <div className="relative z-20 mt-auto">
+                                        <h3 className="text-xl font-black text-white uppercase tracking-tighter mb-4 leading-none">{category.name}</h3>
+                                        <p className="text-white/80 text-[10px] font-black uppercase tracking-widest">{category.desc.substring(0, 50)}...</p>
                                     </div>
-                                </div>
-                            </Link>
-                        </motion.div>
+                                    <div className="absolute top-6 right-6 z-20">
+                                        <div className="w-8 h-8 bg-white/20 backdrop-blur-md rounded-xl flex items-center justify-center">
+                                            <ArrowRightIcon className="w-4 h-4 text-white" />
+                                        </div>
+                                    </div>
+                                </Link>
+                            </motion.div>
+                        ))}
 
-                        {/* Mid Card: Patient Gowns - NOW MATCHING STYLE */}
+                        {/* Sustainability Card Integrated */}
                         <motion.div
                             whileHover={{ y: -5 }}
-                            className="bento-item md:col-span-3 md:row-span-1 group min-h-[350px] relative overflow-hidden rounded-[3rem]"
-                        >
-                            <Link href={`/category/${specialties[2]?.id}`} className="h-full flex flex-col p-10">
-                                <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors z-10"></div>
-                                <img
-                                    src={specialties[2]?.image || "https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800"}
-                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                                    alt={specialties[2]?.name}
-                                />
-                                <div className="relative z-20 mt-auto">
-                                    <h3 className="text-3xl font-black text-white uppercase tracking-tighter mb-4 leading-none">{specialties[2]?.name}</h3>
-                                    <p className="text-white/80 text-sm max-w-xs font-medium">{specialties[2]?.description}</p>
-                                </div>
-                            </Link>
-                        </motion.div>
-
-                        {/* Last Card: Sustainability */}
-                        <motion.div
-                            whileHover={{ y: -5 }}
-                            className="bento-item md:col-span-3 md:row-span-1 group bg-medical-50 border-medical-100"
+                            className="group bg-medical-50 border border-medical-100 p-8 rounded-[3rem] flex flex-col justify-center aspect-[4/5]"
                         >
                             <Link href="/quality" className="h-full flex flex-col justify-center">
                                 <div className="flex items-center gap-4 mb-6">
-                                    <div className="px-4 py-2 bg-white rounded-full text-[10px] font-black uppercase tracking-widest text-medical-700 shadow-sm">Certified Manufacturing</div>
-                                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                    <div className="px-3 py-1 bg-white rounded-full text-[8px] font-black uppercase tracking-widest text-medical-700 shadow-sm">Certified</div>
+                                    <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
                                 </div>
-                                <h3 className="text-4xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-6">Uncompromising <br /><span className="text-medical-700">Sterility.</span></h3>
-                                <div className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-400 group-hover:text-medical-700 transition-colors">
-                                    Audit our Cleanrooms <ArrowRightIcon className="w-4 h-4" />
+                                <h3 className="text-2xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-6">Absolute <br /><span className="text-medical-700">Sterility.</span></h3>
+                                <div className="flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-slate-400 group-hover:text-medical-700 transition-colors">
+                                    Audit Labs <ArrowRightIcon className="w-3.5 h-3.5" />
                                 </div>
                             </Link>
                         </motion.div>
