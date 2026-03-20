@@ -71,8 +71,8 @@ export default function HomeClient({ banners, stats, categories }) {
                                 <div className="absolute -inset-4 bg-gradient-to-tr from-medical-500/10 to-transparent blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                 <div className="relative w-full lg:w-[32rem] h-[22rem] lg:h-[26rem] rounded-[2rem] overflow-hidden shadow-2xl z-10">
                                     <Image
-                                        src={heroBanner.preview}
-                                        alt={heroBanner.title}
+                                        src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&q=80&w=1200"
+                                        alt="KRG Medifabb Surgical Disposables Manufacturing"
                                         fill
                                         priority
                                         className="object-cover"
@@ -82,8 +82,12 @@ export default function HomeClient({ banners, stats, categories }) {
                                     <div className="flex items-center gap-6">
                                         <div className="flex -space-x-3">
                                             {[1, 2, 3].map(i => (
-                                                <div key={i} className="w-12 h-12 rounded-full border-4 border-white overflow-hidden shadow-lg">
-                                                    <img src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="HOD" />
+                                                <div 
+                                                    key={i} 
+                                                    className="w-12 h-12 rounded-full border-4 border-white shadow-lg flex items-center justify-center text-white font-bold text-sm"
+                                                    style={{ background: '#1e3a5f' }}
+                                                >
+                                                    DR
                                                 </div>
                                             ))}
                                         </div>
