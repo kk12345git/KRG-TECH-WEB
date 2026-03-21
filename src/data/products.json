@@ -14,7 +14,7 @@
             "Adhesive secure edges"
         ],
         "description": "Standard sterile pack containing essential drapes for general surgical intervention.",
-        "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/gen-surgical-drape-pack.png"
     },
     {
         "id": "mini-drape-pack",
@@ -31,7 +31,7 @@
             "Rapid deployment"
         ],
         "description": "Compact sterile pack for minor surgical and clinical procedures.",
-        "image": "https://images.unsplash.com/photo-1579154235828-ac01eefe3e8e?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/mini-drape-pack.png"
     },
     {
         "id": "universal-drape-pack",
@@ -48,7 +48,7 @@
             "AAMI Level 3 protection"
         ],
         "description": "Comprehensive universal pack designed for a wide variety of surgical procedures.",
-        "image": "https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/universal-drape-pack.png"
     },
     {
         "id": "hb-sag-drape-pack",
@@ -65,7 +65,7 @@
             "Optimized clinical design"
         ],
         "description": "Specialized SAG drape pack engineered for high-barrier surgical requirements.",
-        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/hb-sag-drape-pack.png"
     },
     {
         "id": "hiv-protection-drape-kit",
@@ -82,7 +82,7 @@
             "High-safety disposables"
         ],
         "description": "Reinforced protection kit designed for procedures with high risk of fluid-borne pathogens.",
-        "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200"
+        "image": "/images/products/hiv-protection-drape-kit.png"
     },
     {
         "id": "ortho-drape-pack",
@@ -99,7 +99,7 @@
             "U-Drapes & Limb sleeves"
         ],
         "description": "Primary orthopedic pack including gowns and specialized limb drapes for major bone surgery.",
-        "image": "https://images.unsplash.com/photo-1631815541542-e8fc9529598e?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/ortho-drape-pack.png"
     },
     {
         "id": "knee-o-drape",
@@ -184,7 +184,7 @@
             "Matte finish to reduce glare"
         ],
         "description": "Specialized drape for arthroscopic knee procedures.",
-        "image": "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/knee-arthroscopy.png"
     },
     {
         "id": "shoulder-arthroscopy",
@@ -201,7 +201,7 @@
             "Maximum fluid containment"
         ],
         "description": "Specialized drape optimized for arthroscopic shoulder surgery.",
-        "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/shoulder-arthroscopy.png"
     },
     {
         "id": "lscs-drape-pack",
@@ -218,7 +218,7 @@
             "Complete neonatal care access"
         ],
         "description": "Comprehensive sterile pack for Cesarean section procedures.",
-        "image": "https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/lscs-drape-pack.png"
     },
     {
         "id": "delivery-drape-pack",
@@ -235,7 +235,7 @@
             "Leggings included"
         ],
         "description": "Essential sterile pack for normal vaginal delivery procedures.",
-        "image": "https://images.unsplash.com/photo-1581056399312-60381aa0b5c0?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/delivery-drape-pack.png"
     },
     {
         "id": "dnc-drape-kit",
@@ -252,7 +252,7 @@
             "Compact packaging"
         ],
         "description": "Specialized drape kit for Dilation and Curettage procedures.",
-        "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/dnc-drape-kit.png"
     },
     {
         "id": "hystro-lap-pouch",
@@ -269,7 +269,7 @@
             "Transparent pouch"
         ],
         "description": "Specialized collection pouch for hysteroscopic and laparoscopic gynecology.",
-        "image": "https://images.unsplash.com/photo-1584622781564-1d9876a13d1e?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/hystro-lap-pouch.png"
     },
     {
         "id": "perineal-drape-kit",
@@ -286,7 +286,7 @@
             "Fluid redirection properties"
         ],
         "description": "Kit designed for varied perineal surgical interventions.",
-        "image": "https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/perineal-drape-kit.png"
     },
     {
         "id": "maternity-mat",
@@ -303,7 +303,7 @@
             "Leak-proof backing"
         ],
         "description": "Hygienic absorbent mats for post-delivery and ward use.",
-        "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/maternity-mat.png"
     },
     {
         "id": "cabg-drape-packs",
@@ -924,7 +924,7 @@
         "sterilization": "Non-Sterile (For Wrapping)",
         "moq": "2000 Units",
         "description": "High-performance microbial barrier wrap for instrument tray sterilization.",
-        "image": "https://images.unsplash.com/photo-1583324113626-70df0f43aa2b?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/sms-sterilization-wrap-blue.png"
     },
     {
         "id": "sequential-sterilization-wrap",
@@ -935,7 +935,7 @@
         "sterilization": "Non-Sterile",
         "moq": "1000 Units",
         "description": "Advanced dual-layer wrapping for heavy surgical sets requiring high-strength microbial barrier.",
-        "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/sequential-sterilization-wrap.png"
     },
     {
         "id": "patient-suit-front-open",
@@ -1067,7 +1067,7 @@
         "sterilization": "Non-Sterile (For Wrapping)",
         "moq": "2000 Units",
         "description": "Green-colored microbial barrier wrap for color-coded instrument tray management.",
-        "image": "https://images.unsplash.com/photo-1581056399312-60381aa0b5c0?auto=format&fit=crop&q=80&w=800"
+        "image": "/images/products/sms-sterilization-wrap-green.png"
     },
     {
         "id": "non-woven-sterilization-wrap",

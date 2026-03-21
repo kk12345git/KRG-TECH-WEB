@@ -1,0 +1,223 @@
+Total Products: 80
+Products needing images: 41
+{
+  "DISPOSABLE STERILIZATION WRAPPING SHEETS": [
+    {
+      "id": "sms-sterilization-wrap-blue",
+      "title": "SMS Sterilization Wrap (Blue)",
+      "description": "High-performance microbial barrier wrap for instrument tray sterilization."
+    },
+    {
+      "id": "sequential-sterilization-wrap",
+      "title": "Sequential Sterilization Wrap (Dual Layer)",
+      "description": "Advanced dual-layer wrapping for heavy surgical sets requiring high-strength microbial barrier."
+    },
+    {
+      "id": "2fa6a108-38fe-43e3-80ca-6dad007688ac",
+      "title": "SMS Sterilization Wrap (Green)",
+      "description": "Green-colored microbial barrier wrap for color-coded instrument tray management."
+    },
+    {
+      "id": "9d4dd429-eac3-4504-851e-a296dfa9314c",
+      "title": "Non-Woven Wrap (Blue/Green)",
+      "description": "Standard non-woven wraps for general surgical instrument protection."
+    },
+    {
+      "id": "2bfeb121-c4e7-413c-8506-567974f696d3",
+      "title": "Crepe Paper Wrap",
+      "description": "Medical-grade crepe paper for steam and ethylene oxide sterilization wrapping."
+    },
+    {
+      "id": "ce90a3c2-fcf9-40ca-93ff-0e387655c13e",
+      "title": "Sterilization Pouches (Self Sealing)",
+      "description": "Convenient self-sealing pouches for secure sterilization of individual medical instruments."
+    },
+    {
+      "id": "3f11b5cd-715d-4c2e-a995-fd0bc81ef29b",
+      "title": "Sterilization Reels (Heat Sealing)",
+      "description": "High-quality heat-sealing reels for customizable instrument sterilization length."
+    }
+  ],
+  "DISPOSABLE OPERATION THEATRE SHEETS": [
+    {
+      "id": "fa31e241-1f5c-4b52-89b6-d1bb199c3351",
+      "title": "Mini Drape Pack",
+      "description": "Compact sterile pack for minor surgical and clinical procedures."
+    },
+    {
+      "id": "57138e74-1076-413e-836c-e12f13d31326",
+      "title": "Knee Arthroscopy",
+      "description": "Specialized drape for arthroscopic knee procedures."
+    },
+    {
+      "id": "774b15a5-8f5f-4578-8b00-34497de984da",
+      "title": "Shoulder Arthroscopy",
+      "description": "Specialized drape optimized for arthroscopic shoulder surgery."
+    },
+    {
+      "id": "dd9e7daa-86fd-4dbc-8993-daa9f3268a39",
+      "title": "HIV Protection Drape kit",
+      "description": "Reinforced protection kit designed for procedures with high risk of fluid-borne pathogens."
+    },
+    {
+      "id": "c70faf9e-e5ca-4018-8b2f-91fa0eec3ade",
+      "title": "Universal Drape Pack",
+      "description": "Comprehensive universal pack designed for a wide variety of surgical procedures."
+    },
+    {
+      "id": "2962a7e2-c961-4251-bf18-773c25d05f59",
+      "title": "Ortho Drape pack (with 5 gown & 3 gown)",
+      "description": "Primary orthopedic pack including gowns and specialized limb drapes for major bone surgery."
+    },
+    {
+      "id": "cc7e8625-cae8-4bc5-b0cc-3803ee4bc535",
+      "title": "Hb SAG Drape Pack",
+      "description": "Specialized SAG drape pack engineered for high-barrier surgical requirements."
+    },
+    {
+      "id": "6060e8e6-8242-4fb2-bd2e-43d76c7de3ef",
+      "title": "DNC Drape kit",
+      "description": "Specialized drape kit for Dilation and Curettage procedures."
+    },
+    {
+      "id": "abbcc0ef-5871-42d2-a856-93a15aa47de5",
+      "title": "Hystro lap pouch",
+      "description": "Specialized collection pouch for hysteroscopic and laparoscopic gynecology."
+    },
+    {
+      "id": "b28f6f95-599f-4fd7-97ff-3a071132ad83",
+      "title": "Perineal Drape kit",
+      "description": "Kit designed for varied perineal surgical interventions."
+    },
+    {
+      "id": "c35bafe6-469a-45be-80f2-499d3c9d53b4",
+      "title": "Delivery Drape pack",
+      "description": "Essential sterile pack for normal vaginal delivery procedures."
+    },
+    {
+      "id": "89cc3a57-7403-4b49-acee-c2f154277782",
+      "title": "Maternity Mat",
+      "description": "Hygienic absorbent mats for post-delivery and ward use."
+    },
+    {
+      "id": "3ccd1ced-04a3-445e-a61e-dcd9c895570f",
+      "title": "General Surgical Drape Pack",
+      "description": "Standard sterile pack containing essential drapes for general surgical intervention."
+    },
+    {
+      "id": "3a6e06c5-885c-4c13-9e36-847a0037a0d3",
+      "title": "LSCS Drape pack",
+      "description": "Comprehensive sterile pack for Cesarean section procedures."
+    }
+  ],
+  "DISPOSABLE SURGICAL DRAPE PACKS & KITS": [
+    {
+      "id": "bb2a9225-d161-461b-9cbc-36f09ca092c7",
+      "title": "CABG Drape Packs",
+      "description": "High-complexity pack for open-heart surgery."
+    },
+    {
+      "id": "b9df3491-15a2-42ff-a291-6760f7eb4d92",
+      "title": "Urology Drape Packs",
+      "description": "Specialized packs for transurethral and general urology."
+    },
+    {
+      "id": "2d1fa347-f9b5-42f9-8c15-cd887e9f9e58",
+      "title": "Neurology Drape Packs",
+      "description": "Procedure-specific drapes for neurosurgery."
+    }
+  ],
+  "DISPOSABLE SURGEON GOWNS & ISOLATION GOWNS": [
+    {
+      "id": "eeec4a23-6673-4d4b-97a8-967eb07c90c3",
+      "title": "Surgeon Gowns - SMS Standard",
+      "description": "Standard clinical surgeon gown for general surgical protocols."
+    },
+    {
+      "id": "827e8179-2606-4141-aed2-ee16bca6ae09",
+      "title": "Surgeon Gowns - SMS - Wrap around + Reinforced",
+      "description": "Top-tier reinforced gown for high-risk, high-fluid surgical interventions."
+    }
+  ],
+  "DISPOSABLE BED SHEETS, COVERING SHEETS AND PILLOW COVERS": [
+    {
+      "id": "e553bed9-9fda-4d0d-a16d-ab8380ab7726",
+      "title": "Disposable Bed Sheets With Pillow Cover - PP SPUN BOND",
+      "description": "Standard PP Spunbond bed sheet set for clinics and clinical examination rooms."
+    },
+    {
+      "id": "f0af91df-aa92-4332-a21e-106f1d407de6",
+      "title": "Disposable Bed Sheets With Pillow Cover - SMS",
+      "description": "Premium SMS bed sheet set designed for patient comfort and maximum hygiene barrier."
+    }
+  ],
+  "GENERAL DISPOSABLE ITEMS": [
+    {
+      "id": "a9f73b16-00e0-4b0d-857a-fa392cc23a4a",
+      "title": "Large Sheet",
+      "description": "Universal sterile large sheet for surgical field coverage and patient draping."
+    },
+    {
+      "id": "293b998e-25bf-4bca-8f97-0a850e197774",
+      "title": "Center Hole Sheet",
+      "description": "Fenestrated sterile sheet for localized surgical access and isolation."
+    },
+    {
+      "id": "75dbdd26-66cf-4a97-886e-f15a8ec2e087",
+      "title": "Mayo Cover",
+      "description": "Reinforced mayo stand cover for sterile instrument management in the OR."
+    },
+    {
+      "id": "20543372-8344-4597-9898-6832fb483458",
+      "title": "C-Arm Cover",
+      "description": "Disposable sterile cover for C-Arm imaging systems, ensuring aseptic intraoperative imaging."
+    },
+    {
+      "id": "1a15cd51-e820-4b41-af5e-21231778fb68",
+      "title": "Leggings",
+      "description": "Fluid-resistant surgical leggings for lithotomy and lower limb procedures."
+    },
+    {
+      "id": "6e9c1cec-a0ac-46d8-b974-66074f31343e",
+      "title": "Camera Cover",
+      "description": "Telescopic camera cover for laparoscopic and endoscopic camera systems."
+    },
+    {
+      "id": "8c3eef0e-4d72-4e47-b8a3-9a22cfe58136",
+      "title": "Shoe Cover",
+      "description": "Anti-skid, high-durability shoe covers for clinical and cleanroom environments."
+    },
+    {
+      "id": "5c283711-2720-4be2-9a76-ba2d91c027f7",
+      "title": "Trolley Sheet",
+      "description": "Disposable trolley sheets for patient transport and equipment coverage."
+    },
+    {
+      "id": "33cb695c-c465-48b3-aa7e-fd42e6876941",
+      "title": "Apron",
+      "description": "Liquid-proof protective aprons for debridement, cleaning, and laboratory use."
+    },
+    {
+      "id": "faad78f9-4c9c-4b9d-a40d-eb77f15303f4",
+      "title": "Under Pad",
+      "description": "Super-absorbent under pads for surface protection and patient hygiene management."
+    }
+  ],
+  "DISPOSABLE PATIENT GOWNS AND PATIENT WEARS": [
+    {
+      "id": "f679ccf2-75c8-49a7-995f-3dfa54bd5569",
+      "title": "Leggings (Patient)",
+      "description": "Disposable leggings for patient comfort and modesty during ward stays."
+    },
+    {
+      "id": "2f5f287f-55cb-4b50-96b2-9b4d40736007",
+      "title": "Head Caps (Patient)",
+      "description": "Lightweight head covers for patients to maintain hygiene in clinical environments."
+    },
+    {
+      "id": "f4b39e70-b109-4bcd-b0c9-2ba768832f6f",
+      "title": "Shoe Covers (Patient)",
+      "description": "Disposable shoe covers for patients to prevent cross-contamination within the hospital."
+    }
+  ]
+}
