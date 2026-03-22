@@ -534,6 +534,7 @@ model Product {
   isFeatured     Boolean  @default(false)
   specs          Json?
   certifications Json?
+  kitContents    String?
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
   category       Category @relation(fields: [categoryId], references: [id])
