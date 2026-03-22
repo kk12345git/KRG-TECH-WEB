@@ -167,6 +167,116 @@ export default function ProductDetailClient({ product, productsData }) {
                             </Link>
                         </div>
 
+                        {/* Kit Contents Table */}
+                        {product.kitContents && (() => {
+                          try {
+                            const contents = JSON.parse(product.kitContents)
+                            if (!contents || contents.length === 0) return null
+                            return (
+                              <div style={{
+                                border: '1px solid #e0e8f0',
+                                borderRadius: '12px',
+                                overflow: 'hidden',
+                                margin: '24px 0'
+                              }}>
+                                {/* Header */}
+                                <div style={{
+                                  background: '#1e3a5f',
+                                  padding: '14px 20px',
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px'
+                                }}>
+                                  <span style={{fontSize:'20px'}}>📦</span>
+                                  <h3 style={{
+                                    color: 'white',
+                                    margin: 0,
+                                    fontSize: '16px',
+                                    fontWeight: 700,
+                                    letterSpacing: '0.5px'
+                                  }}>
+                                    Kit Contents &amp; Material Specifications
+                                  </h3>
+                                </div>
+
+                                {/* Table */}
+                                <table style={{width:'100%', borderCollapse:'collapse'}}>
+                                  <thead>
+                                    <tr style={{background:'#f0f4ff'}}>
+                                      <th style={{
+                                        padding:'10px 14px', textAlign:'left',
+                                        fontSize:'11px', fontWeight:700,
+                                        color:'#666', width:'6%',
+                                        borderBottom:'1px solid #e0e8f0',
+                                        textTransform:'uppercase'
+                                      }}>S.No</th>
+                                      <th style={{
+                                        padding:'10px 14px', textAlign:'left',
+                                        fontSize:'11px', fontWeight:700,
+                                        color:'#666', width:'38%',
+                                        borderBottom:'1px solid #e0e8f0',
+                                        textTransform:'uppercase'
+                                      }}>Item / Contents</th>
+                                      <th style={{
+                                        padding:'10px 14px', textAlign:'left',
+                                        fontSize:'11px', fontWeight:700,
+                                        color:'#666',
+                                        borderBottom:'1px solid #e0e8f0',
+                                        textTransform:'uppercase'
+                                      }}>Material &amp; Dimensions</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    {contents.map((c, i) => (
+                                      <tr key={i} style={{
+                                        borderBottom: '1px solid #f0f4ff',
+                                        background: i % 2 === 0 ? 'white' : '#fafcff'
+                                      }}>
+                                        <td style={{
+                                          padding: '11px 14px',
+                                          color: '#aaa',
+                                          fontSize: '13px',
+                                          fontWeight: 600
+                                        }}>{c.no}</td>
+                                        <td style={{
+                                          padding: '11px 14px',
+                                          fontWeight: 700,
+                                          color: '#1e3a5f',
+                                          fontSize: '14px'
+                                        }}>{c.item}</td>
+                                        <td style={{
+                                          padding: '11px 14px',
+                                          color: '#555',
+                                          fontSize: '12px',
+                                          fontFamily: 'monospace',
+                                          lineHeight: '1.5'
+                                        }}>{c.spec}</td>
+                                      </tr>
+                                    ))}
+                                  </tbody>
+                                </table>
+
+                                {/* Footer badge */}
+                                <div style={{
+                                  background: '#f0f7ff',
+                                  padding: '10px 20px',
+                                  borderTop: '1px solid #e0e8f0',
+                                  display: 'flex',
+                                  gap: '16px',
+                                  flexWrap: 'wrap',
+                                  alignItems: 'center'
+                                }}>
+                                  <span style={{fontSize:'12px', color:'#2a5298', fontWeight:600}}>✅ ISO 13485:2016 Certified</span>
+                                  <span style={{fontSize:'12px', color:'#2a5298', fontWeight:600}}>🧪 EO Sterile Validated</span>
+                                  <span style={{fontSize:'12px', color:'#2a5298', fontWeight:600}}>🏭 KRG Medifabb Pvt Ltd, Chennai</span>
+                                </div>
+                              </div>
+                            )
+                          } catch {
+                            return null
+                          }
+                        })()}
+
                         {/* WhatsApp Request Quote Button */}
                         <a
                             href={`https://wa.me/919176468297?text=${encodeURIComponent(
