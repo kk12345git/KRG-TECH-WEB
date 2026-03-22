@@ -1,0 +1,4 @@
+-- This is a baseline migration for an existing production database.
+-- The database was created and managed directly via Supabase before Prisma migrations were set up.
+-- All existing tables (auth schema + public schema) are already present in production.
+-- This migration is intentionally empty so Prisma records it as applied without re-running DDL.
