@@ -1,6 +1,6 @@
 {
   "node": {
-    "406d1b6098f3dc4b5cd820dea80c5ada786c0d7867": {
+    "40407c0f9cf0722c320dd3ab95016d6f7f37c54fbf": {
       "workers": {
         "app/(frontend)/booking/page": {
           "moduleId": 39839,

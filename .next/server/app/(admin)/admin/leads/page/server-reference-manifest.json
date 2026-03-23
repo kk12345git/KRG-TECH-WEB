@@ -1,6 +1,6 @@
 {
   "node": {
-    "00c223f52be34c26ebd50c741f7f124b8c26526fb8": {
+    "00fe045d8118c1a777a9c617b3626adf2735332406": {
       "workers": {
         "app/(admin)/admin/leads/page": {
           "moduleId": 18026,
@@ -15,7 +15,7 @@
       "exportedName": "getLeads",
       "filename": "KRG-TECH-WEB/src/lib/actions.js"
     },
-    "60d2a95086640b21485a0702cb30d285a1298511bd": {
+    "60c0d0d416cdfa37e508666f4e9919582f134295a7": {
       "workers": {
         "app/(admin)/admin/leads/page": {
           "moduleId": 18026,
