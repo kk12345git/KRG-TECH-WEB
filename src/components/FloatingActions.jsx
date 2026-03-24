@@ -22,8 +22,8 @@ export function FloatingActions() {
     };
 
     const actions = [
-        { icon: Phone, label: 'Emergency Support', href: 'tel:+919176468297', color: 'bg-green-600' },
-        { icon: Mail, label: 'Bulk Quote Inquiry', href: 'mailto:director@krgmedifabb.com', color: 'bg-blue-600' },
+        { icon: Phone, label: 'Support: +91 91764 68297 / 98410 98184', href: 'tel:+919176468297', color: 'bg-green-600' },
+        { icon: Mail, label: 'Official: krgmedifabb@gmail.com', href: 'mailto:krgmedifabb@gmail.com', color: 'bg-blue-600' },
         { icon: MessageSquare, label: 'Chat with Specialist', onClick: () => alert('Live support coming soon!'), color: 'bg-medical-600' },
     ];
 

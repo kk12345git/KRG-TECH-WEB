@@ -42,7 +42,7 @@ export default function SupportPage() {
                     >
                         <h2 className="text-3xl font-black text-slate-900 uppercase tracking-tight mb-8">Contact Our Support Desk</h2>
                         <p className="text-xl text-slate-600 mb-12 leading-relaxed">
-                            For product queries, order support, or technical assistance, contact us directly at <span className="text-medical-700 font-bold">krgmedifabb@gmail.com</span> or WhatsApp <span className="text-medical-700 font-bold">+91 9176468297</span>. 
+                            For product queries, order support, or technical assistance, contact us directly at <span className="text-medical-700 font-bold">krgmedifabb@gmail.com</span> or WhatsApp <span className="text-medical-700 font-bold">+91 91764 68297 / 98410 98184</span>. 
                             <br /><br />
                             <span className="text-sm font-black uppercase tracking-widest text-medical-600">Response within 2 working hours.</span>
                         </p>

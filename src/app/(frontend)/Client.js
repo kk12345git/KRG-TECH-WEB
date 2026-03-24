@@ -122,23 +122,10 @@ export default function HomeClient({ banners, stats, categories }) {
                                     />
                                 </div>
                                 <div className="absolute -bottom-10 -left-10 glass p-10 rounded-[2rem] hidden xl:block z-30">
-                                    <div className="flex items-center gap-6">
-                                        <div className="flex -space-x-3">
-                                            {[1, 2, 3].map(i => (
-                                                <div 
-                                                    key={i} 
-                                                    className="w-12 h-12 rounded-full border-4 border-white shadow-lg flex items-center justify-center text-white font-bold text-sm"
-                                                    style={{ background: '#1e3a5f' }}
-                                                >
-                                                    DR
-                                                </div>
-                                            ))}
-                                        </div>
-                                        <div>
-                                            <p className="text-2xl font-black text-slate-900">500+</p>
-                                            <p className="text-[10px] uppercase font-black tracking-widest text-slate-500">Trusted Hospitals</p>
-                                        </div>
-                                    </div>
+                                <div>
+                                    <p className="text-2xl font-black text-slate-900">500+</p>
+                                    <p className="text-[10px] uppercase font-black tracking-widest text-slate-500">Trusted Hospitals</p>
+                                </div>
                                 </div>
                             </div>
                         </div>

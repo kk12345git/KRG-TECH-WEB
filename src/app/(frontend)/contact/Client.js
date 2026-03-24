@@ -100,8 +100,8 @@ export default function ContactClient() {
 
                         <div className="space-y-6 mb-12">
                             {[
-                                { icon: MapPinIcon, label: 'Regd. Office', val: 'No. 50, Shanthi Nagar, Korattur, Chennai - 600050', link: 'https://maps.google.com/?q=No.50,+Shanthi+Nagar,+Korattur,+Chennai+-+600050' },
-                                { icon: MapPinIcon, label: 'Factory', val: 'No.265-D, 11th Street, SIDCO Industrial Estate, Pattaravakkam, Chennai - 600098' },
+                                { icon: MapPinIcon, label: 'Regd. Office', val: 'No.50, Shanthi Nagar, Korattur, Chennai 600050', link: 'https://maps.google.com/?q=No.50,+Shanthi+Nagar,+Korattur,+Chennai+600050' },
+                                { icon: MapPinIcon, label: 'Factory', val: 'No.265-D, 11th Street, SIDCO Industrial Estate, Pattaravakkam, Chennai 600098' },
                                 { icon: PhoneIcon, label: 'Direct Lines', val: '+91 91764 68297 / 98410 98184', link: 'tel:+919176468297' },
                                 { icon: EnvelopeIcon, label: 'Official Email', val: 'krgmedifabb@gmail.com', link: 'mailto:krgmedifabb@gmail.com' },
                             ].map((item) => (
