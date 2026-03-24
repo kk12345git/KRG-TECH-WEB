@@ -1,0 +1,49 @@
+Starting product price and kit contents update...
+(node:13768) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/KRG-TECH-WEB/KRG-TECH-WEB/scripts/updateProductPrices.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to G:\KRG-TECH-WEB\KRG-TECH-WEB\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✅ Updated SKU: 001039SMS
+⚠️ Product not found for SKU: 001039SAV
+✅ Updated SKU: 002002SRH
+⚠️ Product not found for SKU: 003009FOR
+⚠️ Product not found for SKU: 003009DVK
+⚠️ Product not found for SKU: 003009SAI
+✅ Updated SKU: 5007PMS
+⚠️ Product not found for SKU: 5007VMC
+⚠️ Product not found for SKU: 002014SKS
+✅ Updated SKU: 002012SAI
+✅ Updated SKU: 003003PMR
+✅ Updated SKU: 003004PRM
+✅ Updated SKU: 003011CTN
+✅ Updated SKU: 002007GEN
+⚠️ Product not found for SKU: 002010GEN
+✅ Updated SKU: 004001GEN
+✅ Updated SKU: 006006AHC
+✅ Updated SKU: 005005VJO
+✅ Updated SKU: 002004NFU
+✅ Updated SKU: 002004SSS
+✅ Updated SKU: 0010037SKS
+✅ Updated SKU: 001037KAU
+✅ Updated SKU: 002013ARC
+✅ Updated SKU: 001003STD
+⚠️ Product not found for SKU: 001003XXL
+✅ Updated SKU: 001003RFD
+⚠️ Product not found for SKU: 001003SFD
+⚠️ Product not found for SKU: 001003WFD
+⚠️ Product not found for SKU: 001003BFD
+✅ Updated SKU: 001002GEN
+⚠️ Product not found for SKU: 001002FSL
+⚠️ Product not found for SKU: 001002SLS
+⚠️ Product not found for SKU: 001003PSB
+✅ Updated SKU: 001008SMS
+⚠️ Product not found for SKU: 001008BLU
+⚠️ Product not found for SKU: 001008YEL
+⚠️ Product not found for SKU: 001008PSB
+⚠️ Product not found for SKU: 001007SMS
+⚠️ Product not found for SKU: 001012SMF
+
+Update Summary:
+Total processed: 39
+Successfully updated: 20
+Skipped (not found): 19
